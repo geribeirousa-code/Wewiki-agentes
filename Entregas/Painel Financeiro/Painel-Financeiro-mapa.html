@@ -1,0 +1,381 @@
+<title>Painel Financeiro — Gê</title>
+
+<style>
+:root{
+  --papel:#EEF2EF;
+  --papel-2:#F7FAF8;
+  --linha:#CBD8D1;
+  --linha-forte:#A8BDB3;
+  --tinta:#101E19;
+  --tinta-2:#3D544B;
+  --tinta-3:#6E8479;
+  --verde:#0F2A24;
+  --ocre:#9A7420;
+  --ocre-claro:#EFE2C0;
+  --pos:#146A47;
+  --neg:#A33232;
+  --sombra:rgba(16,30,25,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --papel:#0B1210;
+    --papel-2:#131E1A;
+    --linha:#25352E;
+    --linha-forte:#3A5047;
+    --tinta:#E4EDE8;
+    --tinta-2:#A9BDB3;
+    --tinta-3:#7A9187;
+    --verde:#CFE3D8;
+    --ocre:#D9B463;
+    --ocre-claro:#2C2415;
+    --pos:#4FBF8B;
+    --neg:#E27A72;
+    --sombra:rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  --papel:#0B1210; --papel-2:#131E1A; --linha:#25352E; --linha-forte:#3A5047;
+  --tinta:#E4EDE8; --tinta-2:#A9BDB3; --tinta-3:#7A9187;
+  --verde:#CFE3D8; --ocre:#D9B463; --ocre-claro:#2C2415;
+  --pos:#4FBF8B; --neg:#E27A72; --sombra:rgba(0,0,0,.45);
+}
+:root[data-theme="light"]{
+  --papel:#EEF2EF; --papel-2:#F7FAF8; --linha:#CBD8D1; --linha-forte:#A8BDB3;
+  --tinta:#101E19; --tinta-2:#3D544B; --tinta-3:#6E8479;
+  --verde:#0F2A24; --ocre:#9A7420; --ocre-claro:#EFE2C0;
+  --pos:#146A47; --neg:#A33232; --sombra:rgba(16,30,25,.10);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--papel);
+  color:var(--tinta);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+.mono{font-family:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+.folha{max-width:1120px;margin:0 auto;padding:0 24px 96px}
+
+/* ---------- cabeçalho ---------- */
+.topo{
+  padding:64px 0 34px;
+  border-bottom:2px solid var(--linha-forte);
+  display:flex;flex-wrap:wrap;align-items:flex-end;gap:28px;justify-content:space-between;
+}
+.selo{
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ocre);font-weight:700;margin-bottom:14px;
+}
+h1{
+  font-size:clamp(2.5rem,6vw,4rem);line-height:1.02;margin:0;
+  font-weight:400;letter-spacing:-.02em;text-wrap:balance;color:var(--tinta);
+}
+h1 em{font-style:italic;color:var(--ocre)}
+.sub{margin:16px 0 0;max-width:52ch;color:var(--tinta-2);font-size:1.02rem}
+.carimbo{
+  border:1.5px solid var(--linha-forte);border-radius:2px;
+  padding:12px 16px;min-width:190px;background:var(--papel-2);
+}
+.carimbo dt{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-3);margin:0 0 3px}
+.carimbo dd{margin:0 0 11px;font-size:13px;color:var(--tinta)}
+.carimbo dd:last-child{margin-bottom:0}
+
+/* ---------- seções ---------- */
+section{padding-top:56px}
+h2{
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+  color:var(--tinta-3);margin:0 0 4px;
+  display:flex;align-items:center;gap:14px;
+}
+h2::after{content:"";flex:1;height:1px;background:var(--linha)}
+.chamada{
+  font-size:clamp(1.35rem,2.6vw,1.7rem);line-height:1.28;margin:10px 0 26px;
+  font-weight:400;max-width:34ch;text-wrap:balance;color:var(--tinta);
+}
+
+/* ---------- frentes ---------- */
+.frentes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--linha-forte)}
+.frente{padding:24px;border-right:1px solid var(--linha);background:var(--papel-2)}
+.frente:last-child{border-right:none}
+.frente h3{margin:0 0 6px;font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.frente p{margin:0;font-size:.9rem;color:var(--tinta-2)}
+.frente .marca{display:block;width:34px;height:3px;margin-bottom:16px;background:var(--ocre)}
+.frente:nth-child(2) .marca{background:var(--pos)}
+.frente:nth-child(3) .marca{background:var(--tinta-3)}
+
+/* ---------- abas (razão) ---------- */
+.razao{width:100%;border-collapse:collapse;font-size:.93rem}
+.razao caption{text-align:left;font-size:.86rem;color:var(--tinta-3);padding-bottom:12px}
+.razao th{
+  text-align:left;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--tinta-3);font-weight:700;padding:0 14px 9px 0;border-bottom:1.5px solid var(--linha-forte);
+}
+.razao td{padding:13px 14px 13px 0;border-bottom:1px solid var(--linha);vertical-align:top}
+.razao tr:hover td{background:var(--papel-2)}
+.razao .aba{font-weight:600;white-space:nowrap;color:var(--tinta)}
+.razao .oq{color:var(--tinta-2);max-width:46ch}
+.pino{
+  display:inline-block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  font-weight:700;padding:3px 9px;border-radius:2px;white-space:nowrap;
+}
+.pino.digita{background:var(--ocre-claro);color:var(--ocre);border:1px solid var(--ocre)}
+.pino.auto{background:transparent;color:var(--tinta-3);border:1px solid var(--linha-forte)}
+.tabela-rolagem{overflow-x:auto}
+
+/* ---------- rotina ---------- */
+.rotina{list-style:none;margin:0;padding:0;counter-reset:passo;border-top:1.5px solid var(--linha-forte)}
+.rotina li{
+  counter-increment:passo;
+  display:grid;grid-template-columns:64px 148px 1fr;gap:20px;align-items:baseline;
+  padding:18px 0;border-bottom:1px solid var(--linha);
+}
+.rotina li::before{
+  content:counter(passo,decimal-leading-zero);
+  font-size:.82rem;color:var(--ocre);font-weight:700;letter-spacing:.08em;
+  font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+.quando{font-weight:600;font-size:.95rem;color:var(--tinta)}
+.faz{color:var(--tinta-2);font-size:.94rem;max-width:56ch}
+.custo{font-size:.8rem;color:var(--tinta-3);display:block;margin-top:3px}
+
+/* ---------- esteira do extrato ---------- */
+.esteira{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--linha);border:1px solid var(--linha-forte)}
+.etapa{background:var(--papel-2);padding:22px 20px;position:relative}
+.etapa .n{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ocre);font-weight:700}
+.etapa h4{margin:9px 0 7px;font-size:1rem;font-weight:600}
+.etapa p{margin:0;font-size:.86rem;color:var(--tinta-2)}
+
+pre{
+  background:var(--papel-2);border:1px solid var(--linha-forte);border-left:3px solid var(--ocre);
+  padding:16px 18px;overflow-x:auto;font-size:.84rem;line-height:1.65;margin:20px 0 0;
+  color:var(--tinta);border-radius:2px;
+}
+
+/* ---------- instalação ---------- */
+.instalar{border:1.5px solid var(--linha-forte);background:var(--papel-2);padding:30px 32px;border-radius:2px}
+.instalar ol{margin:18px 0 0;padding-left:20px}
+.instalar li{margin-bottom:12px;color:var(--tinta-2)}
+.instalar li strong{color:var(--tinta)}
+.caminho{
+  font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:.82rem;
+  background:var(--papel);border:1px solid var(--linha);padding:2px 7px;border-radius:2px;
+  color:var(--tinta);word-break:break-all;
+}
+
+/* ---------- pendência ---------- */
+.pendencia{
+  border:1.5px solid var(--ocre);background:var(--ocre-claro);
+  padding:26px 30px;border-radius:2px;
+}
+.pendencia h3{margin:0 0 10px;font-size:1.2rem;font-weight:600;color:var(--tinta)}
+.pendencia p{margin:0 0 12px;color:var(--tinta-2);max-width:62ch}
+.pendencia p:last-child{margin-bottom:0}
+
+.rodape{
+  margin-top:70px;padding-top:22px;border-top:2px solid var(--linha-forte);
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
+  font-size:.8rem;color:var(--tinta-3);
+}
+
+@media (max-width:720px){
+  .rotina li{grid-template-columns:38px 1fr;gap:12px}
+  .rotina li .faz{grid-column:2}
+  .topo{padding-top:44px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="folha">
+
+  <header class="topo">
+    <div>
+      <div class="selo">Sistema de controle financeiro pessoal</div>
+      <h1 class="serif">Painel <em>Financeiro</em></h1>
+      <p class="sub">Uma planilha só, três frentes separadas, e uma esteira que transforma extrato bancário em lançamento sem você digitar nada.</p>
+    </div>
+    <dl class="carimbo mono">
+      <dt>Montado em</dt><dd>27 de julho de 2026</dd>
+      <dt>Abas</dt><dd>9</dd>
+      <dt>Frentes</dt><dd>Pessoal · Clean Touch · Internet</dd>
+      <dt>Onde vive</dt><dd>Google Sheets</dd>
+    </dl>
+  </header>
+
+  <section>
+    <h2>As três frentes</h2>
+    <p class="chamada serif">Todo lançamento carrega uma frente. É esse único campo que mantém sua vida e seus negócios separados dentro de uma planilha só.</p>
+    <div class="frentes">
+      <div class="frente">
+        <span class="marca"></span>
+        <h3>Pessoal</h3>
+        <p>Casa, cartões, saúde, o que sai da sua conta. O que você tira das empresas entra aqui como entrada.</p>
+      </div>
+      <div class="frente">
+        <span class="marca"></span>
+        <h3>Clean Touch</h3>
+        <p>O caixa da Clean Touch Cabinets. Fornecedores, ferramentas, recebimentos de cliente.</p>
+      </div>
+      <div class="frente">
+        <span class="marca"></span>
+        <h3>Internet</h3>
+        <p>O que vem e o que sai de tudo que roda online. Fica isolado pra você enxergar se paga o próprio custo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>As nove abas</h2>
+    <p class="chamada serif">Você digita em cinco. As outras quatro se calculam sozinhas — e é justamente por isso que você não deve digitar nelas.</p>
+    <div class="tabela-rolagem">
+      <table class="razao">
+        <caption>Se um número parece errado numa aba automática, o erro está em Lançamentos. Sempre.</caption>
+        <thead>
+          <tr><th>Aba</th><th>Para que serve</th><th>Quem preenche</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="aba">Início</td>
+            <td class="oq">Doze cartões com o retrato do mês: entrou, saiu, saldo por frente, patrimônio, dívida, assinaturas, retorno das estratégias.</td>
+            <td><span class="pino auto">Sozinha</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Lançamentos</td>
+            <td class="oq">O coração. Uma linha por movimento: data, frente, entrada ou saída, categoria, valor. Toda a planilha se alimenta daqui.</td>
+            <td><span class="pino digita">Você</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Resumo Mensal</td>
+            <td class="oq">Os doze meses do ano em linhas, com entrada, saída e saldo de cada frente, mais o acumulado correndo mês a mês.</td>
+            <td><span class="pino auto">Sozinha</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Cartões e Dívidas</td>
+            <td class="oq">Limite e fatura de cada cartão, e cada parcelamento com quantas parcelas faltam e a data em que quita.</td>
+            <td><span class="pino digita">Você</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Patrimônio</td>
+            <td class="oq">Contas, aplicações, reserva e bens de um lado; dívidas do outro. A diferença é o que é seu de verdade.</td>
+            <td><span class="pino digita">Você</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Metas</td>
+            <td class="oq">Alvo, prazo e quanto já foi guardado. A planilha calcula quanto falta guardar por mês pra chegar na data.</td>
+            <td><span class="pino digita">Você</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Assinaturas</td>
+            <td class="oq">Tudo que debita sozinho. Mostra o custo mensal e o custo anual lado a lado — o anual é o que faz cancelar.</td>
+            <td><span class="pino digita">Você</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Estratégias</td>
+            <td class="oq">Cada ideia de fazer dinheiro ou fazer render vira uma linha: investimento, retorno esperado, lucro líquido e payback em meses.</td>
+            <td><span class="pino digita">Você</span></td>
+          </tr>
+          <tr>
+            <td class="aba">Listas</td>
+            <td class="oq">A fonte dos menus suspensos. Mexeu aqui, mudou em todas as abas de uma vez.</td>
+            <td><span class="pino auto">Raramente</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>A rotina</h2>
+    <p class="chamada serif">Cinco compromissos. O primeiro é diário e custa dois minutos; os outros cabem no dia 1 de cada mês.</p>
+    <ol class="rotina">
+      <li>
+        <span class="quando">Todo dia</span>
+        <span class="faz">Abra Lançamentos e registre o que entrou e o que saiu.
+          <span class="custo">2 minutos · e se você me mandar o extrato, nem isso</span></span>
+      </li>
+      <li>
+        <span class="quando">Toda semana</span>
+        <span class="faz">Olhe a coluna Status. O que está <strong>Pendente</strong> e já venceu é o que vira problema.
+          <span class="custo">a planilha pinta essas linhas de amarelo sozinha</span></span>
+      </li>
+      <li>
+        <span class="quando">Dia 1 do mês</span>
+        <span class="faz">Atualize os valores em Patrimônio e preencha uma linha no Snapshot Mensal.
+          <span class="custo">é o que faz seu patrimônio líquido virar uma linha do tempo</span></span>
+      </li>
+      <li>
+        <span class="quando">Dia 1 do mês</span>
+        <span class="faz">Revise Estratégias: o que avançou, o que morreu, qual é a próxima ação de cada uma.
+          <span class="custo">estratégia sem próxima ação escrita não existe</span></span>
+      </li>
+      <li>
+        <span class="quando">A cada 3 meses</span>
+        <span class="faz">Abra Assinaturas e cancele o que não usou. Olhe a coluna <strong>Custo no ano</strong>, não a mensal.
+          <span class="custo">$14/mês parece nada; $168/ano decide</span></span>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>A esteira do extrato</h2>
+    <p class="chamada serif">Você larga o arquivo do banco numa pasta e me avisa. Eu devolvo as linhas prontas, já categorizadas.</p>
+    <div class="esteira">
+      <div class="etapa">
+        <div class="n">Você faz</div>
+        <h4>Larga o arquivo</h4>
+        <p>Extrato, fatura ou export de plataforma na pasta <span class="caminho">Caixa de Entrada/Extratos</span>. Aceita CSV, XLSX e OFX.</p>
+      </div>
+      <div class="etapa">
+        <div class="n">Eu faço</div>
+        <h4>Leio e traduzo</h4>
+        <p>Acho sozinho a coluna de data, descrição e valor. Detecto se o banco usa data brasileira ou americana antes de converter.</p>
+      </div>
+      <div class="etapa">
+        <div class="n">Eu faço</div>
+        <h4>Categorizo</h4>
+        <p>Cada descrição passa por um conjunto de regras que cresce todo mês. O que eu não reconheço, eu te mostro em vez de chutar.</p>
+      </div>
+      <div class="etapa">
+        <div class="n">Você faz</div>
+        <h4>Cola e pronto</h4>
+        <p>Um bloco com as dez colunas na ordem exata da aba Lançamentos. Clica em A5, cola, acabou.</p>
+      </div>
+    </div>
+    <pre>python "Entregas/Painel Financeiro/scripts/extrato_para_lancamentos.py" \
+       "Caixa de Entrada/Extratos" --frente "Clean Touch"</pre>
+  </section>
+
+  <section>
+    <h2>Pra colocar no ar</h2>
+    <div class="instalar">
+      <p style="margin:0;color:var(--tinta-2)">O arquivo está pronto na sua pasta. Falta um passo, e ele é seu porque o conector do Drive não sobe arquivo desse tamanho.</p>
+      <ol>
+        <li>Abra <span class="caminho">GE NEGOCIOS/AGENTES/Entregas/Painel Financeiro/</span></li>
+        <li>Arraste <strong>Painel-Financeiro-Ge.xlsx</strong> pra dentro do Google Drive.</li>
+        <li>No Drive, clique com o botão direito no arquivo → <strong>Abrir com</strong> → <strong>Planilhas Google</strong>. Ele converte e vira uma planilha viva, editável do celular.</li>
+        <li>Renomeie pra <strong>Painel Financeiro</strong> e deixe fixado. Esse vira o link único.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>O que vem agora</h2>
+    <div class="pendencia">
+      <h3>Janeiro em diante</h3>
+      <p>A planilha vive em <strong>dólar</strong> — confirmado. Todas as três frentes na mesma moeda, sem risco de somar coisas diferentes sem perceber.</p>
+      <p>O próximo movimento é seu: largar os extratos pendentes desde janeiro em <span class="caminho">Caixa de Entrada/Extratos</span>, um mês por vez ou todos de uma vez, e me dizer de qual frente é cada um. Eu devolvo os lançamentos categorizados e o Início começa a mostrar número de verdade em vez de zero.</p>
+    </div>
+  </section>
+
+  <footer class="rodape mono">
+    <span>Painel Financeiro · montado pelo time da WeWiki</span>
+    <span>Larry · Silas · Mack</span>
+  </footer>
+
+</div>

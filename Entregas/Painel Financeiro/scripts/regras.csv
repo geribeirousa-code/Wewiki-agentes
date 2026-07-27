@@ -1,0 +1,48 @@
+# padrao;frente;tipo;categoria;forma
+# 'padrao' e procurado como pedaco do texto da descricao, sem acento e sem caixa.
+# Campo vazio = nao mexe. Adicione linhas aqui conforme o Larry for te mostrando o que sobrou.
+pix recebido;;Entrada;Vendas / serviços;Pix / Transferência
+pix enviado;;Saída;Outras saídas;Pix / Transferência
+transferencia recebida;;Entrada;Outras entradas;Pix / Transferência
+transferencia enviada;;Saída;Outras saídas;Pix / Transferência
+zelle;;;;Zelle
+paypal;;;;PayPal
+stripe;;Entrada;Vendas / serviços;Stripe
+tarifa;;Saída;Tarifas bancárias;Débito automático
+taxa;;Saída;Tarifas bancárias;Débito automático
+juros;;Saída;Tarifas bancárias;Débito automático
+iof;;Saída;Impostos e taxas;Débito automático
+pagamento de fatura;;Saída;Cartão - pagamento de fatura;
+aluguel;;Saída;Moradia;
+rent;;Saída;Moradia;
+mortgage;;Saída;Moradia;
+energia;;Saída;Moradia;
+luz;;Saída;Moradia;
+agua;;Saída;Moradia;
+internet;;Saída;Moradia;
+uber;;Saída;Transporte;
+lyft;;Saída;Transporte;
+shell;;Saída;Transporte;
+gas station;;Saída;Transporte;
+posto;;Saída;Transporte;
+supermercado;;Saída;Alimentação;
+market;;Saída;Alimentação;
+walmart;;Saída;Alimentação;
+costco;;Saída;Alimentação;
+restaurante;;Saída;Alimentação;
+ifood;;Saída;Alimentação;
+farmacia;;Saída;Saúde;
+pharmacy;;Saída;Saúde;
+seguro;;Saída;Saúde;
+insurance;;Saída;Saúde;
+netflix;;Saída;Assinaturas;
+spotify;;Saída;Assinaturas;
+google;;Saída;Ferramentas e software;
+adobe;;Saída;Ferramentas e software;
+canva;;Saída;Ferramentas e software;
+openai;;Saída;Ferramentas e software;
+anthropic;;Saída;Ferramentas e software;
+meta pl;;Saída;Marketing;
+facebk;;Saída;Marketing;
+home depot;Clean Touch;Saída;Fornecedores;
+lowes;Clean Touch;Saída;Fornecedores;
