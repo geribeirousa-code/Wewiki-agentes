@@ -1,0 +1,50 @@
+{
+  "marca": "Bowl Green",
+  "tema": "Mitos × Verdades — salada não sustenta",
+  "slides": [
+    {
+      "tipo": "mito-verdade",
+      "rotulo": "Mitos × Verdades",
+      "mitos": [
+        "Salada não sustenta.",
+        "Saudável é sem graça.",
+        "Poke é tudo igual."
+      ],
+      "verdade": "Vicia.<br>Sem culpa.",
+      "assinatura": "assinado: quem já provou 💚"
+    },
+    {
+      "tipo": "expectativa",
+      "rotulo": "Expectativa × Realidade",
+      "expectativa": "vou comer uma saladinha",
+      "tom": "dita em tom de sacrifício",
+      "realidade": "Bowl completo, colorido, com até 200g de proteína.",
+      "chips": ["🍚 base firme", "🐟 salmão fresco", "🥭 manga", "zero sacrifício"]
+    },
+    {
+      "tipo": "numerao",
+      "rotulo": "Números da casa",
+      "acima": "Proteína por bowl",
+      "numero": "200g",
+      "abaixo": "pesada na balança",
+      "giz": "não é estimativa. é balança. 💚",
+      "chips": ["🐟 salmão", "🐠 peixe branco", "🍗 frango grelhado"]
+    },
+    {
+      "tipo": "faq",
+      "rotulo": "Bowl Green responde",
+      "pergunta": "Salada sustenta?",
+      "fonte": "pergunta real de cliente",
+      "resposta": "Vem ver o tamanho do nosso bowl. Base caprichada, até 200g de proteína e cor pra dar e vender. Sustenta o corpo — e o humor. 🥗",
+      "rodape_chip": "manda a sua no WhatsApp 💬"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Vem pro clube",
+      "texto": "O almoço que Xerém pediu. No salão, na retirada ou na sua porta.",
+      "chips": ["#Bowlovers", "🛵 delivery em Xerém"],
+      "botao": "Link da bio",
+      "giz": "a gente separa o seu 💚"
+    }
+  ]
+}

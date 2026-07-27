@@ -1,0 +1,23 @@
+node_modules
+.DS_Store
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Peças renderizadas — ficam só no PC (130MB de PNG não precisam ir pra nuvem).
+# Os .md e .html das Entregas continuam versionados.
+Entregas/**/*.png
+Entregas/**/*.jpg
+Entregas/**/*.jpeg
+
+# Conteúdo pessoal — NÃO sobe pra nuvem por decisão de privacidade.
+# Para incluir depois, apague as duas linhas abaixo e rode: git add "Wiki pessoal"
+Wiki pessoal/
+Caixa de Entrada/
+
+# Permissões locais da máquina
+.claude/settings.local.json
+
+# Paineis de pauta renderizados (HTML com imagens em base64, 12-18MB cada).
+# Sao regeneraveis pela skill pauta-diaria — nao precisam ir pra nuvem.
+Entregas/**/pauta.html

@@ -1,0 +1,122 @@
+{
+  "marca": "Bowl Green",
+  "tema": "10 posts de feed + 10 stories variados. Ficha técnica conferida, sem preço no feed.",
+  "_nota": "Ingredientes e gramagens vêm de dados/fichas.json. Nada inventado.",
+  "posts": [
+    { "tipo": "produto", "foto": "POKE SORA", "nome": "Poke Sora",
+      "descricao": "o campeão absoluto da casa",
+      "chips": ["🐟 salmão 100g", "🍚 arroz japonês", "🥭 manga", "🧀 cream cheese"],
+      "botao": "Link da bio" },
+
+    { "tipo": "raio-x", "foto": "POKE TROPICAL", "nome": "Poke Tropical",
+      "giz": "duas proteínas no mesmo bowl. por isso ele pesa.",
+      "esquerda": [
+        {"titulo": "Salmão 100g", "texto": "cru, fresco, cortado no dia"},
+        {"titulo": "Camarão 100g", "texto": "a segunda proteína do bowl"},
+        {"titulo": "Abacate 90g", "texto": "a cremosidade que amarra"}
+      ],
+      "direita": [
+        {"titulo": "Arroz japonês", "texto": "150g de base temperada"},
+        {"titulo": "Manga e cenoura", "texto": "o agridoce e a crocância"},
+        {"titulo": "Cebola roxa e limão", "texto": "o corte que acorda"}
+      ] },
+
+    { "tipo": "comparativo", "rotulo": "Tira-teima da casa",
+      "a": {"foto": "POKE SORA", "nome": "Sora"},
+      "b": {"foto": "POKE TROPICAL", "nome": "Tropical"},
+      "linhas": [
+        {"rotulo": "Proteína", "a": "100g salmão", "b": "100g salmão<br>+ 100g camarão"},
+        {"rotulo": "Perfil", "a": "agridoce clássico", "b": "tropical intenso"},
+        {"rotulo": "Cremosidade", "a": "cream cheese", "b": "abacate"},
+        {"rotulo": "Pra quem", "a": "quem começa", "b": "quem já é bowlover"}
+      ],
+      "giz": "empate técnico. solução da casa: pede os dois." },
+
+    { "tipo": "trio", "titulo": "Wrap + suco", "subtitulo": "o almoço que cabe na mão",
+      "itens": [
+        {"foto": "WRAP DE FRANGO", "nome": "Frango", "nota": "alface, tomate, cebola<br>e molho de mostarda e mel"},
+        {"foto": "WRAP DE CAMARAO", "nome": "Camarão", "nota": "cenoura, brócolis, cream<br>cheese e teriaki"},
+        {"foto": "SUCOS E DETOX", "nome": "+ Suco", "nota": "acompanha os dois<br>no combo"}
+      ],
+      "botao": "Link da bio" },
+
+    { "tipo": "produto", "foto": "SUCOS E DETOX", "nome": "Suco & Detox",
+      "descricao": "feito na hora, garrafa da casa",
+      "chips": ["🍊 laranja", "🍓 morango", "🍋 limonada suíça", "🥤 vai no combo"],
+      "botao": "Link da bio" },
+
+    { "tipo": "confissao", "rotulo": "Confissões de bowlover",
+      "frase": "Eu disse que hoje ia<br>economizar...<br>aí lembrei do Sora.",
+      "assinatura": "— confissão nº 47, recebida na DM",
+      "cta": "manda a sua na DM" },
+
+    { "tipo": "quiz", "rotulo": "Qual bowlover é você?",
+      "pergunta": "Não come peixe cru.<br>E agora?",
+      "opcoes": [
+        {"foto": "POKE YUKI", "letra": "A", "nome": "Poke Yuki", "perfil": "frango, brócolis e moiashy"},
+        {"foto": "POKE NIKO", "letra": "B", "nome": "Poke Niko", "perfil": "camarão grelhado e kiwi"}
+      ],
+      "giz": "poke sem peixe cru existe. e são dois." },
+
+    { "tipo": "produto", "foto": "SALMÃO DELUXE", "nome": "Salmão Deluxe",
+      "descricao": "isso não é lanche, é jantar",
+      "chips": ["🐟 salmão 160g", "🥦 arroz de brócolis", "🌾 tabule", "🥭 manga"],
+      "botao": "Link da bio" },
+
+    { "tipo": "raio-x", "foto": "POKE YUKI", "nome": "Poke Yuki",
+      "giz": "quem não come peixe cru também é bowlover.",
+      "esquerda": [
+        {"titulo": "Frango 100g", "texto": "grelhado, fatiado na hora"},
+        {"titulo": "Brócolis 100g", "texto": "no vapor, ainda firme"},
+        {"titulo": "Moiashy 80g", "texto": "o feijão que dá textura"}
+      ],
+      "direita": [
+        {"titulo": "Arroz japonês", "texto": "150g de base temperada"},
+        {"titulo": "Milho e tomate", "texto": "a doçura e a acidez"},
+        {"titulo": "Cebola roxa", "texto": "o corte no fim"}
+      ] },
+
+    { "tipo": "comparativo", "rotulo": "Poke × Prato da casa",
+      "a": {"foto": "POKE SORA", "nome": "Poke"},
+      "b": {"foto": "MEET", "nome": "Prato"},
+      "linhas": [
+        {"rotulo": "Proteína", "a": "100g", "b": "150g"},
+        {"rotulo": "Base", "a": "arroz japonês", "b": "arroz + legumes"},
+        {"rotulo": "Perfil", "a": "fresco e leve", "b": "reforçado"},
+        {"rotulo": "Momento", "a": "almoço corrido", "b": "quando bateu fome de leão"}
+      ],
+      "giz": "não é melhor nem pior. é fome diferente." },
+
+    { "tipo": "story", "fundo": "coral", "foto": "POKE SORA", "sobretitulo": "o mais pedido da casa",
+      "nome": "Poke Sora", "botao": "Peça agora ↑", "giz": "salmão 100g, arroz japonês e manga" },
+
+    { "tipo": "story", "fundo": "creme", "foto": "POKE TROPICAL", "sobretitulo": "duas proteínas no mesmo bowl",
+      "nome": "Tropical", "botao": "Quero esse ↑", "giz": "salmão 100g + camarão 100g = 200g" },
+
+    { "tipo": "story", "fundo": "verde", "foto": "POKE NIKO", "sobretitulo": "camarão grelhado e kiwi",
+      "nome": "Poke Niko", "botao": "Peça agora ↑", "giz": "o único com kiwi. vai por mim." },
+
+    { "tipo": "story", "fundo": "menta", "foto": "POKE YUKI", "sobretitulo": "pra quem não come peixe",
+      "nome": "Poke Yuki", "botao": "Quero esse ↑", "giz": "frango, brócolis e moiashy",
+      "enquete": {"pergunta": "Poke sem peixe: pode?", "opcoes": ["CLARO", "NUNCA"]} },
+
+    { "tipo": "story", "fundo": "escuro", "foto": "POKE FRUTOS DO MAR", "sobretitulo": "o mais pesado do cardápio",
+      "nome": "Frutos do Mar", "botao": "Peça agora ↑", "giz": "salmão 100g + peixe branco 100g" },
+
+    { "tipo": "story", "fundo": "creme", "foto": "SUCOS E DETOX", "sobretitulo": "feito na hora, todo dia",
+      "nome": "Suco & Detox", "botao": "Quero o combo ↑", "giz": "acompanha wrap e prato" },
+
+    { "tipo": "story", "fundo": "coral", "foto": "WRAP DE CAMARAO", "sobretitulo": "almoço que cabe na mão",
+      "nome": "Wrap de Camarão", "botao": "Peça agora ↑", "giz": "cenoura, brócolis e teriaki" },
+
+    { "tipo": "story", "fundo": "verde", "foto": "SALMÃO DELUXE", "sobretitulo": "160g de salmão grelhado",
+      "nome": "Salmão Deluxe", "botao": "Quero esse ↑", "giz": "arroz de brócolis e tabule. é jantar." },
+
+    { "tipo": "story", "fundo": "menta", "foto": "TABULE DE CAMARÃO", "sobretitulo": "150g de camarão",
+      "nome": "Tabule", "botao": "Peça agora ↑", "giz": "leve não quer dizer pouco",
+      "enquete": {"pergunta": "Almoço de hoje?", "opcoes": ["LEVE", "REFORÇADO"]} },
+
+    { "tipo": "story", "fundo": "escuro", "foto": "MEET", "sobretitulo": "carne desfiada, 150g",
+      "nome": "Meat", "botao": "Quero esse ↑", "giz": "o prato de quem trabalhou pesado" }
+  ]
+}

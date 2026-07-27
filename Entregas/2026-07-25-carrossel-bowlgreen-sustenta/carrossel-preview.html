@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview do Carrossel · Bowl Green</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Importando fontes da marca para dar a experiência premium -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-bowl: #24573A;
+      --verde-bowl-hover: #1b412b;
+      --salvia: #E4EBDD;
+      --creme: #F2EFE4;
+      --dourado: #C9A24B;
+      --coral: #E8684A;
+      --coral-hover: #cf5639;
+      --branco: #FFFFFF;
+      --texto-escuro: #1A3022;
+      --cinza-leve: #F9F8F6;
+      --borda: #E0DCCE;
+      
+      --font-title: 'Baloo 2', cursive;
+      --font-body: 'Nunito', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--creme);
+      color: var(--texto-escuro);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: var(--branco);
+      border: 2px solid var(--borda);
+      border-radius: 32px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(36, 87, 58, 0.08);
+      display: flex;
+      gap: 50px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+
+    header h1 {
+      font-family: var(--font-title);
+      font-size: 38px;
+      color: var(--verde-bowl);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    header p {
+      font-size: 16px;
+      color: var(--texto-escuro);
+      opacity: 0.8;
+    }
+
+    .badge-marca {
+      background-color: var(--salvia);
+      color: var(--verde-bowl);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    /* Lado Esquerdo: Mockup Celular */
+    .mockup-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .phone-mockup {
+      width: 380px;
+      height: 475px; /* Proporção 4:5 adaptada */
+      background: #121212;
+      border: 12px solid #222;
+      border-radius: 36px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+    }
+
+    .carousel-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Botões do Carrossel */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--verde-bowl);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 10;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--branco);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    .nav-btn.prev {
+      left: 15px;
+    }
+
+    .nav-btn.next {
+      right: 15px;
+    }
+
+    .nav-btn:disabled {
+      opacity: 0;
+      cursor: not-allowed;
+    }
+
+    /* Indicador de Bolinhas (Dots) */
+    .dots-container {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--borda);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: var(--coral);
+      transform: scale(1.2);
+    }
+
+    /* Lado Direito: Legenda e Informações */
+    .post-details {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+    }
+
+    .instagram-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--borda);
+      padding-bottom: 15px;
+    }
+
+    .insta-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-image: url('c:/Users/gerib/OneDrive/Desktop/GE NEGOCIOS/BOWL GREEN/Bowl Green - logo verde original.png');
+      background-size: cover;
+      background-position: center;
+      border: 1px solid var(--borda);
+    }
+
+    .insta-profile-info h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--texto-escuro);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .verified-icon {
+      color: var(--coral);
+      font-size: 14px;
+    }
+
+    .insta-profile-info p {
+      font-size: 12px;
+      color: var(--texto-escuro);
+      opacity: 0.6;
+    }
+
+    .caption-box {
+      background: var(--cinza-leve);
+      border: 1px solid var(--borda);
+      border-radius: 20px;
+      padding: 25px;
+      font-size: 15px;
+      color: var(--texto-escuro);
+      white-space: pre-line;
+      max-height: 280px;
+      overflow-y: auto;
+      border-left: 5px solid var(--verde-bowl);
+    }
+
+    .btn-action {
+      background-color: var(--coral);
+      color: var(--branco);
+      border: none;
+      padding: 16px 28px;
+      border-radius: 16px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.2s ease;
+      box-shadow: 0 6px 20px rgba(232, 104, 74, 0.25);
+    }
+
+    .btn-action:hover {
+      background-color: var(--coral-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(232, 104, 74, 0.35);
+    }
+
+    .btn-action:active {
+      transform: translateY(0);
+    }
+
+    /* Toast de Sucesso */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      background: var(--verde-bowl);
+      color: var(--branco);
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 10px 30px rgba(36, 87, 58, 0.3);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+      }
+      .phone-mockup {
+        width: 100%;
+        max-width: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge-marca">BOWL GREEN · INSTAGRAM</div>
+  
+  <header>
+    <h1>Visualizador de Carrossel</h1>
+    <p>Abaixo você pode ver o carrossel gerado para o Instagram. Ele foi programado no tamanho quadrado adaptativo (proporção 4:5) com as fontes <strong>Baloo 2</strong> e <strong>Nunito</strong> e a paleta de cores da marca.</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- Lado Esquerdo: Mockup de Celular -->
+    <div class="mockup-wrapper">
+      <div class="phone-mockup">
+        <button class="nav-btn prev" id="prevBtn" onclick="moveSlide(-1)" disabled>‹</button>
+        <button class="nav-btn next" id="nextBtn" onclick="moveSlide(1)">›</button>
+        
+        <div class="carousel-container" id="carousel">
+          <div class="carousel-slide">
+            <img src="slide-01.png" alt="Slide 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="slide-02.png" alt="Slide 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="slide-03.png" alt="Slide 3">
+          </div>
+          <div class="carousel-slide">
+            <img src="slide-04.png" alt="Slide 4">
+          </div>
+          <div class="carousel-slide">
+            <img src="slide-05.png" alt="Slide 5">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Indicadores de Bolinhas -->
+      <div class="dots-container" id="dotsContainer">
+        <div class="dot active" onclick="goToSlide(0)"></div>
+        <div class="dot" onclick="goToSlide(1)"></div>
+        <div class="dot" onclick="goToSlide(2)"></div>
+        <div class="dot" onclick="goToSlide(3)"></div>
+        <div class="dot" onclick="goToSlide(4)"></div>
+      </div>
+    </div>
+    
+    <!-- Lado Direito: Legenda e Ação -->
+    <div class="post-details">
+      <div class="instagram-header">
+        <div class="insta-avatar"></div>
+        <div class="insta-profile-info">
+          <h3>Bowl Green <span class="verified-icon">✔</span></h3>
+          <p>@bowlgreen.xerem · Xerém, Rio de Janeiro</p>
+        </div>
+      </div>
+      
+      <div style="display:flex; flex-direction:column; gap: 8px;">
+        <span style="font-weight: 700; font-size: 14px; color: var(--verde-bowl);">Legenda do Post:</span>
+        <div class="caption-box" id="captionText">Se você acha que salada não enche e que saudável é sem graça... o Bowl Green veio para mudar tudo em Xerém. 🥗💚
+
+Nossa missão é simples: comida fresca, colorida, bem temperada e com porções generosas de proteína para você pedir de novo porque quer — nunca por obrigação.
+
+Já somos a casa oficial dos #Bowlovers de Xerém!
+
+👉 Quer provar o almoço que Xerém pediu? Clica no link da bio e faça seu pedido direto pelo WhatsApp de forma rápida e sem taxas.
+
+#BowlGreen #BowlGreenXerem #Bowlovers #XeremComeBem #ComidaSaudavel #SemCulpa #PokeXerem</div>
+      </div>
+      
+      <div>
+        <button class="btn-action" onclick="copyCaption()">
+          <span>📋</span> Copiar Legenda Completa
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast">Legenda copiada para a área de transferência! 💚</div>
+
+  <script>
+    let currentIndex = 0;
+    const totalSlides = 5;
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dots = document.querySelectorAll('.dot');
+
+    function moveSlide(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex >= totalSlides) currentIndex = totalSlides - 1;
+      updateCarousel();
+    }
+
+    function goToSlide(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      // Move o container do carrossel
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      
+      // Atualiza botões
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === totalSlides - 1;
+      
+      // Atualiza dots
+      dots.forEach((dot, idx) => {
+        if (idx === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+
+    function copyCaption() {
+      const text = document.getElementById('captionText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>

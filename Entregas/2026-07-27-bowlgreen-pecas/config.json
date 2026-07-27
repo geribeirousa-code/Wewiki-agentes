@@ -1,0 +1,129 @@
+{
+  "marca": "Bowl Green",
+  "tema": "3 stories para postar agora + 5 posts de feed. Foto de pessoa real como capa, tipografia grande, um esqueleto diferente por peça.",
+  "_ficha": "Gramagens conferidas em dados/fichas.json. Sora: salmão 100g, arroz 180g. Tropical: salmão 100g + camarão 100g = 200g, arroz 150g. Meat: carne 150g. Deluxe: salmão 160g.",
+  "_preco": "Nenhuma peça leva preço — regra da skill.",
+  "pecas": [
+    {
+      "arquivo": "story-1-garfada",
+      "tipo": "story-manchete",
+      "foto": "garfada",
+      "foco": "50% 34%",
+      "rotulo": "salão aberto agora",
+      "manchete": "A PRIMEIRA<br>GARFADA<br>RESOLVE.",
+      "tam": 138,
+      "giz": "poke sora — salmão 100g e arroz japonês 180g",
+      "botao": "Peça agora ↑",
+      "selo_topo": "LACRADO FRESQUINHO",
+      "selo_emoji": "🥗",
+      "selo_pe": "FEITO HOJE"
+    },
+    {
+      "arquivo": "story-2-enquete",
+      "tipo": "story-enquete",
+      "foto": "mesa-dupla",
+      "foco": "50% 30%",
+      "rotulo": "enquete do dia",
+      "pergunta": "ALMOÇO<br>DE HOJE?",
+      "tam": 128,
+      "opcoes": [
+        "LEVE",
+        "REFORÇADO"
+      ],
+      "giz": "responde aí que a cozinha já separa 💚"
+    },
+    {
+      "arquivo": "story-3-suco",
+      "tipo": "story-selo",
+      "foto": "suco",
+      "foco": "48% 32%",
+      "manchete": "FEITO<br>NA HORA.",
+      "tam": 144,
+      "giz": "suco & detox — sai da fruta pro copo",
+      "botao": "Quero o combo ↑"
+    },
+    {
+      "arquivo": "feed-1-manchete",
+      "tipo": "manchete",
+      "foto": "garfada",
+      "foco": "50% 40%",
+      "manchete": "ISSO NÃO<br>É SALADA.<br>É ALMOÇO.",
+      "tam": 116,
+      "giz": "quem come uma vez para de perguntar se sustenta",
+      "chips": [
+        "🐟 salmão 100g",
+        "🍚 arroz japonês 180g",
+        "🥭 manga"
+      ],
+      "botao": "Link da bio",
+      "selo_topo": "LACRADO FRESQUINHO",
+      "selo_emoji": "🥗",
+      "selo_pe": "FEITO HOJE"
+    },
+    {
+      "arquivo": "feed-2-numerao",
+      "tipo": "numerao",
+      "foto": "maos-bowl",
+      "foco": "52% 46%",
+      "acima": "poke tropical",
+      "numero": "200g",
+      "tam": 186,
+      "abaixo": "DE PROTEÍNA<br>NUM BOWL SÓ",
+      "giz": "salmão 100g + camarão 100g. somado, não estimado."
+    },
+    {
+      "arquivo": "feed-3-polaroid",
+      "tipo": "polaroid",
+      "foto": "mesa-dupla",
+      "foco": "50% 36%",
+      "manchete": "ALMOÇO<br>DE DUAS.",
+      "tam": 122,
+      "giz": "cada uma no seu bowl. ninguém divide o de ninguém.",
+      "botao": "Link da bio",
+      "selo_topo": "SEM CULPA NENHUMA",
+      "selo_emoji": "💚",
+      "selo_pe": "BOWLOVER"
+    },
+    {
+      "arquivo": "feed-4-faixa",
+      "tipo": "faixa-lateral",
+      "foto": "maos-bowl",
+      "foco": "56% 48%",
+      "lateral": "Bowlover",
+      "manchete": "CABE NA<br>MÃO.<br>SEGURA<br>O DIA.",
+      "tam": 106,
+      "itens": [
+        {
+          "valor": "200g",
+          "rotulo": "de proteína"
+        },
+        {
+          "valor": "150g",
+          "rotulo": "de arroz japonês"
+        },
+        {
+          "valor": "90g",
+          "rotulo": "de abacate"
+        }
+      ],
+      "giz": "poke tropical, pesado na balança",
+      "botao": "Link da bio"
+    },
+    {
+      "arquivo": "feed-5-duo",
+      "tipo": "duo",
+      "foto": "entrega",
+      "foco": "50% 20%",
+      "prato": "SALMÃO DELUXE",
+      "manchete": "CHEGOU.<br>E É JANTAR.",
+      "tam": 118,
+      "giz": "salmão deluxe, 160g grelhado na hora",
+      "chips": [
+        "🐟 salmão 160g",
+        "🌾 tabule 100g",
+        "🥦 brócolis"
+      ],
+      "botao": "Link da bio"
+    }
+  ]
+}

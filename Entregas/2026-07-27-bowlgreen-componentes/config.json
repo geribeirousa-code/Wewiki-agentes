@@ -1,0 +1,207 @@
+{
+  "marca": "Bowl Green",
+  "tema": "Componentes do Design System em post: capa de Reel, escala de sabor, um pra cada dia premium, promoção/urgência, torneio e Bowl Green Responde",
+  "pecas": [
+    {
+      "tipo": "capa-reel",
+      "arquivo": "01-capa-reel-A",
+      "foto": "maos-bowl",
+      "foco": "50% 46%",
+      "rotulo": "sem marmita triste",
+      "manchete": "CABE NA MÃO.<br>SUSTENTA O DIA.",
+      "tam": 118,
+      "giz": "e ainda sobra ânimo pra tarde 💚",
+      "botao": "Vem ver por dentro ▸"
+    },
+    {
+      "tipo": "capa-reel",
+      "arquivo": "02-capa-reel-B",
+      "foto": "maos-bowl",
+      "foco": "50% 46%",
+      "veu": 0.42,
+      "rotulo": "12h em Xerém",
+      "manchete": "ISSO AQUI<br>É ALMOÇO.",
+      "tam": 192,
+      "giz": "não é “saladinha”. é almoço de verdade.",
+      "botao": "Assiste até o fim ▸"
+    },
+    {
+      "tipo": "capa-reel",
+      "arquivo": "03-capa-reel-C",
+      "foto": "maos-bowl",
+      "foco": "50% 46%",
+      "rotulo": "pedido de hoje",
+      "manchete": "SEGURA ATÉ<br>O JANTAR.",
+      "tam": 178,
+      "giz": "até 200g de proteína — pergunta pra quem já provou 💚",
+      "botao": "Peça no WhatsApp ▸"
+    },
+
+    {
+      "tipo": "escala-sabor",
+      "arquivo": "04-escala-tropical",
+      "prato": "POKE TROPICAL",
+      "nome": "TROPICAL",
+      "nivel": "AGRIDOCE",
+      "linha": "Salmão <b>+</b> camarão, manga, abacate e limão sobre arroz japonês. <b>200g de proteína</b> — a soma dos dois.",
+      "chips": ["🐟 salmão 100g", "🦐 camarão 100g", "🥭 manga", "🥑 abacate 90g"],
+      "giz": "o agridoce oficial da casa 🥭",
+      "botao": "Todo prato tem seu ponto"
+    },
+    {
+      "tipo": "escala-sabor",
+      "arquivo": "05-escala-philadelfia",
+      "prato": "POKE PHILADELFIA",
+      "nome": "PHILADELFIA",
+      "nivel": "CREMOSO",
+      "linha": "Salmão, <b>40g de cream cheese</b>, kiwi, pepino e repolho roxo. O mais macio do cardápio.",
+      "chips": ["🐟 salmão 100g", "🧀 cream cheese 40g", "🥝 kiwi", "🥢 arroz japonês 150g"],
+      "giz": "pra quem gosta de bowl que abraça 🥢",
+      "botao": "Todo prato tem seu ponto"
+    },
+    {
+      "tipo": "escala-sabor",
+      "arquivo": "06-escala-sunsalmao",
+      "prato": "SUN SALMÃO",
+      "nome": "SUN<br>SALMÃO",
+      "tam": 104,
+      "nivel": "LEVE",
+      "linha": "<b>200g de folhas</b>, 160g de salmão, brócolis e um fio de cream cheese. Leve sem ser pouco.",
+      "chips": ["🐟 salmão 160g", "🥬 folhas 200g", "🥦 brócolis 100g", "🫒 azeitona"],
+      "giz": "leve não é sinônimo de fome 💚",
+      "botao": "Todo prato tem seu ponto"
+    },
+
+    {
+      "tipo": "semana-premium",
+      "arquivo": "07-um-pra-cada-dia-premium",
+      "titulo": "UM PRA<br>CADA DIA",
+      "giz": "sete dias, sete bowls, zero repetição",
+      "dias": [
+        { "dia": "SEG", "emoji": "🐟", "nome": "Poke Sora", "sub": "salmão, manga e cream cheese no arroz japonês", "hoje": true },
+        { "dia": "TER", "emoji": "🌯", "nome": "Wrap de Frango", "sub": "almoço de uma mão só, de volta pro corre" },
+        { "dia": "QUA", "emoji": "🦐", "nome": "Poke Niko", "sub": "camarão com kiwi — o dia de arriscar" },
+        { "dia": "QUI", "emoji": "🥑", "nome": "GuacaFit", "sub": "carne desfiada e abacate sobre 200g de folhas" },
+        { "dia": "SEX", "emoji": "🥭", "nome": "Poke Tropical", "sub": "salmão + camarão. sexta merece os dois" },
+        { "dia": "SÁB", "emoji": "✦", "nome": "Salmão Deluxe", "sub": "160g de salmão, arroz e trigo de tabule" },
+        { "dia": "DOM", "emoji": "🍋", "nome": "Sun Salmão", "sub": "domingo leve pra semana começar inteira" }
+      ],
+      "botao": "Escolhe o teu dia"
+    },
+
+    {
+      "tipo": "urgencia",
+      "arquivo": "08-urgencia-feed",
+      "rotulo": "🐟 acabando",
+      "acima": "TERMÔMETRO DO DIA",
+      "numero": "7",
+      "manchete": "SALMÕES<br>DO DIA",
+      "tam": 82,
+      "prato": "POKE SORA",
+      "texto_largura": 560,
+      "texto": "O peixe chega fresco de manhã e acaba junto com o dia. Quando bate zero, acabou — aqui não tem congelado esperando ninguém.",
+      "barra_rotulo": "o dia começou com 30",
+      "barra_giz": "zona coral: corre! 🏃",
+      "pct": 77,
+      "barra_esq": "✏️ número do dia — confirmar antes de postar",
+      "barra_dir": "@bowlgreenxerem",
+      "selo_topo": "ENQUANTO DURA",
+      "selo_emoji": "🐟",
+      "selo_pe": "CHEGOU HOJE",
+      "botao": "Peça no WhatsApp"
+    },
+    {
+      "tipo": "story-urgencia",
+      "arquivo": "09-urgencia-story",
+      "foto": "garfada",
+      "foco": "50% 40%",
+      "rotulo": "acabando hoje",
+      "numero": "7",
+      "manchete": "SALMÕES<br>DO DIA",
+      "tam": 76,
+      "texto": "Chegou fresco de manhã. Quando acabar, acabou — sem congelado esperando ninguém.",
+      "barra_rotulo": "o dia começou com 30",
+      "barra_giz": "corre! 🏃",
+      "pct": 77,
+      "botao": "Peça agora ↑"
+    },
+
+    {
+      "tipo": "torneio",
+      "arquivo": "10-torneio-sabores",
+      "rotulo": "você decidiu nos stories 📲",
+      "titulo": "QUEM LEVA<br>A COROA?",
+      "semis": [
+        [["SORA", true], ["NIKO", false]],
+        [["TROPICAL", true], ["PHILA", false]]
+      ],
+      "final": ["SORA", "TROPICAL"],
+      "campeao": "SORA",
+      "campeao_giz": "o povo tem bom gosto",
+      "texto": "Quatro pratos entraram. Um saiu com a coroa — e com fila no delivery.",
+      "giz": "próxima chave: os wraps entram na disputa 🌯",
+      "botao": "Vota nos stories"
+    },
+
+    {
+      "tipo": "responde",
+      "arquivo": "11-responde-dores-1",
+      "titulo": "VOCÊ PERGUNTOU.",
+      "tam": 92,
+      "perguntas": [
+        {
+          "pergunta": "Salada não sustenta, né?",
+          "resposta": "A base é arroz japonês ou 200g de folhas, e a proteína vai de 100g a 200g. Só o Sun Salmão tem 160g de salmão. Sustenta o corpo — e o humor.",
+          "emoji": "🥗"
+        },
+        {
+          "pergunta": "É caro comparado à marmita",
+          "resposta": "Não é a mesma compra. É peixe fresco, hortifrúti comprado toda semana e proteína pesada na hora do preparo.",
+          "emoji": "🐟"
+        },
+        {
+          "pergunta": "Vou me sentir culpada depois?",
+          "resposta": "Sermão não sai da nossa cozinha. Gostoso primeiro, saudável de bônus. Vicia, sem culpa. 💚",
+          "emoji": "💚"
+        }
+      ],
+      "chip": "manda a sua no WhatsApp 💬",
+      "botao": "Link da bio"
+    },
+    {
+      "tipo": "responde",
+      "arquivo": "12-responde-dores-2",
+      "titulo": "A GENTE RESPONDE.",
+      "tam": 84,
+      "perguntas": [
+        {
+          "pergunta": "Todo dia a mesma marmita triste…",
+          "resposta": "São 28 pratos no cardápio. Dá pra passar um mês sem repetir — e ainda descobrir que camarão com kiwi funciona. Pergunta pro Poke Niko.",
+          "emoji": "🦐"
+        },
+        {
+          "pergunta": "Em Xerém tem opção saudável?",
+          "resposta": "Tem, e é aqui: Estr. de Xerém, 890, em frente ao Mercado Antunes. Você não precisa mais ir longe pra comer bem.",
+          "emoji": "📍"
+        },
+        {
+          "pergunta": "Comida saudável não enche",
+          "resposta": "Base, proteína generosa e toppings até a tampa quase não fechar. Vem ver o tamanho do bowl antes de decidir.",
+          "emoji": "🍚"
+        }
+      ],
+      "chip": "manda a sua no WhatsApp 💬",
+      "botao": "Link da bio"
+    },
+
+    {
+      "tipo": "story-escala",
+      "arquivo": "13-escala-story-tuna",
+      "prato": "POKE TUNA",
+      "nome": "TUNA",
+      "nivel": "REFRESCANTE",
+      "giz": "camarão, abacate e limão — o mais fresco da régua",
+      "botao": "Onde mora o seu? ↑"
+    }
+  ]
+}

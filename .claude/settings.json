@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"c:/Users/gerib/.claude/skills\" 2>&1 | head -40; echo \"=== plugins/marketplace ===\"; ls \"c:/Users/gerib/.claude\" 2>&1)",
+      "Read(//c/Users/gerib/.claude/skills/**)",
+      "Read(//c/Users/gerib/.claude/**)",
+      "Bash(mkdir -p \"c:/Users/gerib/OneDrive/Desktop/GE NEGOCIOS/AGENTES/.claude/skills/carousel-preview/scripts\")",
+      "Bash(cp \"C:/Users/gerib/AppData/Local/Temp/claude/c--Users-gerib-OneDrive-Desktop-GE-NEGOCIOS-AGENTES/b10a553a-26bc-47a2-ace0-155e87d1e48b/scratchpad/carousel-preview/carousel-preview/scripts/carousel_preview.py\" \"c:/Users/gerib/OneDrive/Desktop/GE NEGOCIOS/AGENTES/.claude/skills/carousel-preview/scripts/carousel_preview.py\")",
+      "Edit(/.claude/skills/carousel-preview/**)",
+      "Bash(python .claude/skills/carousel-preview/scripts/carousel_preview.py \"Entregas/2026-07-25-carrossel-bowlgreen-sustenta/\")",
+      "Bash(ls -la \"c:/Users/gerib/OneDrive/Desktop/GE NEGOCIOS/AGENTES/.agents\" 2>&1; echo \"=== busca por geradores de carrossel ===\"; find \"C:/Users/gerib/AppData/Local/Temp/claude\" -iname \"*carousel*\" -o -iname \"*carrossel*\" 2>/dev/null | head -30)",
+      "Read(//c/Users/gerib/AppData/Local/Temp/claude/**)"
+    ]
+  }
+}

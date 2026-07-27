@@ -1,0 +1,88 @@
+{
+  "data": "2026-07-27",
+  "pecas": [
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Story 1 · academia · SUN SALMÃO",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["story-1-academia.png"],
+      "angulo": "Saindo da academia, no meio do passo, sem olhar pra câmera. O horário de pico do pós-treino.",
+      "legenda": "Sun Salmão: 160g de salmão grelhado sobre 200g de folhas.",
+      "hashtags": "",
+      "observacao": "Sticker de link em cima do PEÇA AGORA."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Story 2 · loja · WRAP DE CAMARÃO",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["story-2-loja.png"],
+      "angulo": "Dona de loja no meio das araras. Almoça sem fechar a porta.",
+      "legenda": "Wrap de camarão + suco. Dá pra comer no balcão.",
+      "hashtags": "",
+      "observacao": "Sticker de link em cima do QUERO ESSE."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Story 3 · balcão · enquete",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["story-3-balcao.png"],
+      "angulo": "Casal no balcão do salão, contraluz de fim de tarde. Story de interação.",
+      "legenda": "Salão ou delivery?",
+      "hashtags": "",
+      "observacao": "Põe a enquete nativa por cima das duas caixas."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 1 · cartaz · GUACAFIT",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["feed-1-cartaz.png"],
+      "angulo": "Pós-treino masculino, câmera baixa, no meio da garfada. Imagem inteira de fundo, palavra na frente.",
+      "legenda": "Treino pesado pede prato pesado.\n\nGuacaFit: 150g de carne desfiada e 90g de abacate sobre 200g de mix de folhas, com tomate, pepino, cenoura, repolho roxo e limão.\n\nNão é o que você come pra compensar. É o que você come porque quer.\n\nLink da bio.",
+      "hashtags": "#BowlGreen #GuacaFit #Bowlovers #BowlGreenXerem #Xerem"
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 2 · vazado · TROPICAL",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["feed-2-vazado.png"],
+      "angulo": "Macro com molho escorrendo. A letra vazada deixa a foto passar por dentro.",
+      "legenda": "Não é salada.\n\nPoke Tropical: salmão 100g + camarão 100g, duas proteínas pesadas na balança no mesmo bowl. Com 150g de arroz japonês, abacate, manga, cenoura e cebola roxa embaixo.\n\nÉ o mais pesado que a gente monta com peixe cru.\n\nLink da bio.",
+      "hashtags": "#BowlGreen #PokeTropical #Bowlovers #BowlGreenXerem #Xerem"
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 3 · moldura · PHILADELFIA",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["feed-3-moldura.png"],
+      "angulo": "Dona de salão entre uma cliente e outra. Fala com quem não tem hora de almoço.",
+      "legenda": "Quem trabalha atendendo gente não escolhe a hora do almoço.\n\nO Poke Philadelfia resolve em 15 minutos: salmão 100g, cream cheese, pepino, cenoura, repolho roxo e kiwi sobre arroz japonês.\n\nChega pronto, come em pé se precisar, e sustenta até o fim do expediente.\n\nLink da bio.",
+      "hashtags": "#BowlGreen #PokePhiladelfia #Bowlovers #BowlGreenXerem #Xerem"
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 4 · etiqueta · FRUTOS DO MAR",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["feed-4-etiqueta.png"],
+      "angulo": "Consultório médico, vista de cima, sem rosto. Ficha técnica em etiqueta.",
+      "legenda": "Frutos do Mar, aberto.\n\n100g de salmão + 100g de peixe branco. Duas proteínas somadas, 200g no total, sobre 150g de arroz japonês, com ervilha, pepino, manga, cebola roxa e nori.\n\nÉ o bowl de quem tem 40 minutos e não quer voltar com fome.\n\nLink da bio.",
+      "hashtags": "#BowlGreen #PokeFrutosDoMar #Bowlovers #BowlGreenXerem #Xerem"
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 5 · onda · POKE YUKI",
+      "pasta": "2026-07-27-bowlgreen-v3",
+      "arquivos": ["feed-5-onda.png"],
+      "angulo": "Split orgânico, prato recortado ao centro. Única peça sem pessoa — dá respiro no grid.",
+      "legenda": "Tem pra quem não come peixe cru.\n\nPoke Yuki: 100g de frango grelhado, 100g de brócolis no vapor e 80g de feijão moiashy sobre arroz japonês, com tomate, milho e cebola roxa.\n\nPoke sem peixe existe. E é dos mais pedidos.\n\nLink da bio.",
+      "hashtags": "#BowlGreen #PokeYuki #Bowlovers #BowlGreenXerem #ComidaDeVerdade"
+    }
+  ]
+}

@@ -1,0 +1,1027 @@
+{
+  "Fresh Grill": {
+    "ingredientes": [
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 200
+      },
+      {
+        "id": "frango",
+        "nome": "Frango / Peito",
+        "gramas": 150
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "ervilha",
+        "nome": "Ervilha",
+        "gramas": 40
+      },
+      {
+        "id": "azeitona",
+        "nome": "Azeitonas Verdes",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      }
+    ],
+    "proteina_g": 150
+  },
+  "GuacaFit": {
+    "ingredientes": [
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 200
+      },
+      {
+        "id": "carne",
+        "nome": "Carne Desfiada",
+        "gramas": 150
+      },
+      {
+        "id": "abacate",
+        "nome": "Abacate",
+        "gramas": 90
+      },
+      {
+        "id": "limao",
+        "nome": "Limão",
+        "gramas": 40
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "repolho_roxo",
+        "nome": "Repolho Roxo",
+        "gramas": 40
+      }
+    ],
+    "proteina_g": 150
+  },
+  "Tabule de Camarão": {
+    "ingredientes": [
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 200
+      },
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 150
+      },
+      {
+        "id": "trigo",
+        "nome": "Trigo de Tabule",
+        "gramas": 80
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 20
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      }
+    ],
+    "proteina_g": 150
+  },
+  "Sun Salmão": {
+    "ingredientes": [
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 200
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 160
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 100
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "repolho_roxo",
+        "nome": "Repolho Roxo",
+        "gramas": 40
+      },
+      {
+        "id": "azeitona",
+        "nome": "Azeitonas Verdes",
+        "gramas": 40
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 20
+      }
+    ],
+    "proteina_g": 160
+  },
+  "Chicken Grill": {
+    "ingredientes": [
+      {
+        "id": "frango",
+        "nome": "Frango / Peito",
+        "gramas": 150
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 100
+      },
+      {
+        "id": "arroz_branco",
+        "nome": "Arroz Branco",
+        "gramas": 100
+      },
+      {
+        "id": "moiashy",
+        "nome": "Feijão Moiashy",
+        "gramas": 80
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "azeitona",
+        "nome": "Azeitonas Verdes",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      }
+    ],
+    "proteina_g": 150
+  },
+  "Meat": {
+    "ingredientes": [
+      {
+        "id": "carne",
+        "nome": "Carne Desfiada",
+        "gramas": 150
+      },
+      {
+        "id": "arroz_branco",
+        "nome": "Arroz Branco",
+        "gramas": 100
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 80
+      },
+      {
+        "id": "azeitona",
+        "nome": "Azeitonas Verdes",
+        "gramas": 40
+      },
+      {
+        "id": "repolho_roxo",
+        "nome": "Repolho Roxo",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      }
+    ],
+    "proteina_g": 150
+  },
+  "Camarão Tropical": {
+    "ingredientes": [
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 150
+      },
+      {
+        "id": "arroz_branco",
+        "nome": "Arroz Branco",
+        "gramas": 100
+      },
+      {
+        "id": "abacate",
+        "nome": "Abacate",
+        "gramas": 90
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "limao",
+        "nome": "Limão",
+        "gramas": 40
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      }
+    ],
+    "proteina_g": 150
+  },
+  "Salmão Deluxe": {
+    "ingredientes": [
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 160
+      },
+      {
+        "id": "arroz_branco",
+        "nome": "Arroz Branco",
+        "gramas": 100
+      },
+      {
+        "id": "trigo",
+        "nome": "Trigo de Tabule",
+        "gramas": 100
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 50
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      }
+    ],
+    "proteina_g": 160
+  },
+  "Poke Sora": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 180
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 100
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "ervilha",
+        "nome": "Ervilha",
+        "gramas": 40
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Noriá": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "peixe_branco",
+        "nome": "Peixe Branco",
+        "gramas": 100
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "milho",
+        "nome": "Milho",
+        "gramas": 40
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 20
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Niko": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 100
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "repolho_roxo",
+        "nome": "Repolho Roxo",
+        "gramas": 40
+      },
+      {
+        "id": "kiwi",
+        "nome": "Kiwi",
+        "gramas": 20
+      },
+      {
+        "id": "milho",
+        "nome": "Milho",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Tori": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "carne",
+        "nome": "Carne Desfiada",
+        "gramas": 100
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 100
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "ervilha",
+        "nome": "Ervilha",
+        "gramas": 40
+      },
+      {
+        "id": "milho",
+        "nome": "Milho",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Yuki": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "frango",
+        "nome": "Frango / Peito",
+        "gramas": 100
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 100
+      },
+      {
+        "id": "moiashy",
+        "nome": "Feijão Moiashy",
+        "gramas": 80
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "milho",
+        "nome": "Milho",
+        "gramas": 20
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Philadelfia": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 100
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "repolho_roxo",
+        "nome": "Repolho Roxo",
+        "gramas": 40
+      },
+      {
+        "id": "kiwi",
+        "nome": "Kiwi",
+        "gramas": 20
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Tuna": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 100
+      },
+      {
+        "id": "abacate",
+        "nome": "Abacate",
+        "gramas": 90
+      },
+      {
+        "id": "limao",
+        "nome": "Limão",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 40
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 100
+  },
+  "Poke Frutos do Mar": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 100
+      },
+      {
+        "id": "peixe_branco",
+        "nome": "Peixe Branco",
+        "gramas": 100
+      },
+      {
+        "id": "ervilha",
+        "nome": "Ervilha",
+        "gramas": 40
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 40
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 200
+  },
+  "Poke Tropical": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 150
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 100
+      },
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 100
+      },
+      {
+        "id": "abacate",
+        "nome": "Abacate",
+        "gramas": 90
+      },
+      {
+        "id": "limao",
+        "nome": "Limão",
+        "gramas": 40
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 40
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 20
+      },
+      {
+        "id": "nori",
+        "nome": "Nori",
+        "gramas": 3
+      }
+    ],
+    "proteina_g": 200
+  },
+  "Wrap Frango": {
+    "ingredientes": [
+      {
+        "id": "wrap",
+        "nome": "Wrap",
+        "gramas": 1000
+      },
+      {
+        "id": "suco_laranja",
+        "nome": "Suco Laranja",
+        "gramas": 100
+      },
+      {
+        "id": "frango",
+        "nome": "Frango / Peito",
+        "gramas": 50
+      },
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 50
+      },
+      {
+        "id": "tomate",
+        "nome": "Tomate",
+        "gramas": 20
+      },
+      {
+        "id": "cebola_roxa",
+        "nome": "Cebola Roxa",
+        "gramas": 10
+      }
+    ],
+    "proteina_g": 50
+  },
+  "Wrap Camarão": {
+    "ingredientes": [
+      {
+        "id": "wrap",
+        "nome": "Wrap",
+        "gramas": 1000
+      },
+      {
+        "id": "suco_laranja",
+        "nome": "Suco Laranja",
+        "gramas": 100
+      },
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 50
+      },
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 50
+      },
+      {
+        "id": "brocolis",
+        "nome": "Brócolis",
+        "gramas": 30
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 20
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 10
+      }
+    ],
+    "proteina_g": 50
+  },
+  "Wrap Salmão": {
+    "ingredientes": [
+      {
+        "id": "wrap",
+        "nome": "Wrap",
+        "gramas": 1000
+      },
+      {
+        "id": "suco_laranja",
+        "nome": "Suco Laranja",
+        "gramas": 100
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 50
+      },
+      {
+        "id": "mix_folhas",
+        "nome": "Mix de Folhas",
+        "gramas": 50
+      },
+      {
+        "id": "peino",
+        "nome": "Pepino",
+        "gramas": 30
+      },
+      {
+        "id": "cenoura",
+        "nome": "Cenoura",
+        "gramas": 20
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 10
+      }
+    ],
+    "proteina_g": 50
+  },
+  "Suco Laranja": {
+    "ingredientes": [
+      {
+        "id": "suco_laranja",
+        "nome": "Suco Laranja",
+        "gramas": 1000
+      }
+    ],
+    "proteina_g": 0
+  },
+  "Limonada Suíça": {
+    "ingredientes": [
+      {
+        "id": "suco_limao",
+        "nome": "Suco Limão",
+        "gramas": 100
+      }
+    ],
+    "proteina_g": 0
+  },
+  "Suco Morango": {
+    "ingredientes": [
+      {
+        "id": "polpa_morango",
+        "nome": "Polpa Morango",
+        "gramas": 100
+      }
+    ],
+    "proteina_g": 0
+  },
+  "Salada Fruta Manga": {
+    "ingredientes": [
+      {
+        "id": "iogurte",
+        "nome": "Iogurte Natural",
+        "gramas": 60
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "gramas": 40
+      },
+      {
+        "id": "chia",
+        "nome": "Chia",
+        "gramas": 5
+      },
+      {
+        "id": "mel",
+        "nome": "Mel",
+        "gramas": 5
+      },
+      {
+        "id": "granola",
+        "nome": "Granola",
+        "gramas": 2
+      }
+    ],
+    "proteina_g": 0
+  },
+  "Salada Fruta Kiwi": {
+    "ingredientes": [
+      {
+        "id": "iogurte",
+        "nome": "Iogurte Natural",
+        "gramas": 60
+      },
+      {
+        "id": "kiwi",
+        "nome": "Kiwi",
+        "gramas": 40
+      },
+      {
+        "id": "chia",
+        "nome": "Chia",
+        "gramas": 5
+      },
+      {
+        "id": "mel",
+        "nome": "Mel",
+        "gramas": 5
+      },
+      {
+        "id": "granola",
+        "nome": "Granola",
+        "gramas": 2
+      }
+    ],
+    "proteina_g": 0
+  },
+  "Salada Fruta Abacate": {
+    "ingredientes": [
+      {
+        "id": "iogurte",
+        "nome": "Iogurte Natural",
+        "gramas": 60
+      },
+      {
+        "id": "kiwi",
+        "nome": "Kiwi",
+        "gramas": 40
+      },
+      {
+        "id": "abacate",
+        "nome": "Abacate",
+        "gramas": 5
+      },
+      {
+        "id": "mel",
+        "nome": "Mel",
+        "gramas": 5
+      },
+      {
+        "id": "granola",
+        "nome": "Granola",
+        "gramas": 2
+      }
+    ],
+    "proteina_g": 0
+  },
+  "Oniguiri Camarão": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 80
+      },
+      {
+        "id": "camarao",
+        "nome": "Camarão",
+        "gramas": 50
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 10
+      }
+    ],
+    "proteina_g": 50
+  },
+  "Oniguiri Salmão": {
+    "ingredientes": [
+      {
+        "id": "arroz_japones",
+        "nome": "Arroz Japonês",
+        "gramas": 80
+      },
+      {
+        "id": "salmao",
+        "nome": "Salmão",
+        "gramas": 50
+      },
+      {
+        "id": "cream_cheese",
+        "nome": "Cream Cheese",
+        "gramas": 10
+      }
+    ],
+    "proteina_g": 50
+  }
+}

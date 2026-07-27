@@ -1,0 +1,124 @@
+{
+  "data": "2026-07-26",
+  "pecas": [
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 01 · Produto — Poke Sora",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-01.png"],
+      "angulo": "DESEJO. O carro-chefe abre a leva.",
+      "legenda": "O Sora não é o mais caro. É o mais pedido.\n\n100g de salmão cru fresco sobre 180g de arroz japonês temperado. Manga, pepino, cenoura, ervilha e cream cheese por cima. Nori pra fechar.\n\nQuem pede uma vez, pede toda semana. A gente já parou de se surpreender.\n\nQual é o seu dia oficial do Sora? Conta aqui embaixo 💚",
+      "hashtags": "#BowlGreen #PokeSora #BowlGreenXerem #Bowlovers #Xerem #SalmaoFresco #PokeXerem" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 02 · Raio-X — Poke Tropical",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-02.png"],
+      "angulo": "EDUCA. Traduz percepção de valor abrindo o prato camada por camada.",
+      "legenda": "Abrindo o Tropical camada por camada.\n\n100g de salmão cru. Mais 100g de camarão. Duas proteínas no mesmo bowl — 200g no total, pesados na balança.\n\nEmbaixo, 150g de arroz japonês. Em volta: abacate pela cremosidade, manga e cenoura pelo agridoce e pela crocância, cebola roxa e limão pra acordar tudo.\n\nNenhuma camada é enfeite.\n\nSalva pra lembrar na hora de pedir 💚",
+      "hashtags": "#PokeTropical #BowlGreen #BowlGreenXerem #Bowlovers #Xerem #ProteinaDeVerdade #ComidaDeVerdade" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 03 · Tira-teima — Sora × Tropical",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-03.png"],
+      "angulo": "BRINCA. Escolha binária: divide a audiência e dobra o comentário.",
+      "legenda": "A briga mais antiga do balcão: Sora ou Tropical?\n\nSora é o clássico. 100g de salmão, cream cheese, agridoce redondo. É por onde todo bowlover começa.\n\nTropical é o pesado. 100g de salmão + 100g de camarão, abacate no lugar do cream cheese. É pra quem já sabe o que quer.\n\nEmpate técnico. A solução oficial da casa é pedir os dois — mas a gente sabe que você vai escolher.\n\nComenta SORA ou TROPICAL. Sem cima do muro 👇",
+      "hashtags": "#BowlGreen #PokeSora #PokeTropical #Bowlovers #BowlGreenXerem #Xerem" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 04 · Trio — Wrap + suco",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-04.png"],
+      "angulo": "VENDE. Apresenta uma linha inteira que quase ninguém sabe que existe.",
+      "legenda": "Nem todo dia dá pra sentar e comer com garfo.\n\nWrap de frango: alface, tomate, cebola e molho de mostarda e mel.\nWrap de camarão: cenoura, brócolis, cream cheese e teriaki.\n\nOs dois saem com suco. É o almoço que cabe na mão e resolve o dia corrido.\n\nQual dos dois vai ser o seu?",
+      "hashtags": "#WrapBowlGreen #BowlGreen #BowlGreenXerem #Bowlovers #Xerem #AlmocoRapido #DeliveryXerem" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 05 · Produto — Suco & Detox",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-05.png"],
+      "angulo": "DESEJO. A bebida é margem alta e quase nunca aparece no feed.",
+      "legenda": "A garrafa que sai junto com o seu bowl.\n\nLaranja, morango, limonada suíça. Feito na hora, na garrafa da casa — nada de pó, nada de polpa parada.\n\nNo combo ela sai por menos. Pergunta no balcão ou marca no pedido do WhatsApp.\n\nQual sabor você leva?",
+      "hashtags": "#SucoNatural #BowlGreen #BowlGreenXerem #Bowlovers #Xerem #LimonadaSuica #FeitoNaHora" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 06 · Confissão de bowlover",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-06.png"],
+      "angulo": "GENTE. Formato mais salvo e mais mandado em close friends. Zero produto na tela.",
+      "legenda": "Confissão nº 47 da comunidade bowlover.\n\n“Eu disse que hoje ia economizar... aí lembrei do Sora.”\n\nA gente entende. Quando bate a vontade de comer bem sem pesar, o WhatsApp abre sozinho.\n\nManda a sua confissão na DM. As melhores viram post 🗣️",
+      "hashtags": "#ConfissoesBowlover #BowlGreen #BowlGreenXerem #Bowlovers #Xerem #ComidaQueVicia" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 07 · Quiz — não come peixe cru",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-07.png"],
+      "angulo": "BRINCA + quebra de objeção. A objeção nº 1 de quem nunca pediu poke.",
+      "legenda": "“Eu não como peixe cru.”\n\nA gente ouve isso todo dia — e tem dois pratos pra isso.\n\nA) Poke Yuki: frango grelhado, brócolis no vapor, moiashy, milho e tomate.\nB) Poke Niko: camarão grelhado, kiwi, cenoura, milho e repolho roxo.\n\nNenhum dos dois tem peixe cru. Os dois são poke de verdade.\n\nComenta A ou B e a gente separa o seu 👇",
+      "hashtags": "#BowlGreen #PokeYuki #PokeNiko #Bowlovers #BowlGreenXerem #Xerem #SemPeixeCru" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 08 · Produto — Salmão Deluxe",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-08.png"],
+      "angulo": "DESEJO + reposicionamento: a marca também é jantar, não só almoço.",
+      "legenda": "160g de salmão grelhado. Isso não é lanche.\n\nEmbaixo, arroz de brócolis e tabule. Manga por cima pra cortar a gordura do peixe.\n\nÉ o prato que a gente indica quando alguém diz que quer jantar bem sem dormir pesado.\n\nSalão, retirada ou delivery em Xerém.",
+      "hashtags": "#SalmaoDeluxe #BowlGreen #BowlGreenXerem #Bowlovers #Xerem #JantarLeve #SalmaoGrelhado" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 09 · Raio-X — Poke Yuki",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-09.png"],
+      "angulo": "EDUCA. Prova que o poke sem peixe é tão completo quanto o de salmão.",
+      "legenda": "O Yuki por dentro.\n\n100g de frango grelhado e fatiado na hora. 100g de brócolis no vapor, ainda firme. 80g de moiashy pela textura. Milho e tomate pela doçura e pela acidez. Cebola roxa no fim.\n\nTudo sobre 150g de arroz japonês temperado.\n\nQuem não come peixe cru também é bowlover — e come igual.",
+      "hashtags": "#PokeYuki #BowlGreen #BowlGreenXerem #Bowlovers #Xerem #FrangoGrelhado #ComidaDeVerdade" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem",
+      "plataforma": "Feed 10 · Comparativo — Poke × Prato da casa",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-10.png"],
+      "angulo": "EDUCA. Resolve a dúvida que trava o pedido de quem é novo no cardápio.",
+      "legenda": "Poke ou prato da casa? Depende da fome.\n\nPoke: 100g de proteína sobre arroz japonês. Fresco, leve, resolve o almoço corrido sem te deixar lento à tarde.\n\nPrato da casa: 150g de proteína, arroz e legumes. Reforçado, pra quando bateu fome de leão.\n\nNão é melhor nem pior. É fome diferente.\n\nSalva esse post — ele resolve sua próxima dúvida no cardápio 💚",
+      "hashtags": "#BowlGreen #BowlGreenXerem #Bowlovers #Xerem #ComidaDeVerdade #AlmocoSaudavel" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 01 · 10h30 — Poke Sora (coral)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-11.png"],
+      "angulo": "Abre o dia com o carro-chefe, antes da fome bater.",
+      "legenda": "Sticker: link do WhatsApp.\nCaixinha: “Hoje é dia de Sora?”" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 02 · 11h30 — Tropical (creme)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-12.png"],
+      "angulo": "Pico do almoço com o argumento de peso: 200g.",
+      "legenda": "Sticker: link do WhatsApp + contagem regressiva do almoço." },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 03 · 12h15 — Poke Niko (verde)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-13.png"],
+      "angulo": "Curiosidade do kiwi — puxa resposta na DM.",
+      "legenda": "Responder na DM quem achar estranho: “então você ainda não provou 😏”" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 04 · 13h — Poke Yuki (menta, com enquete)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-14.png"],
+      "angulo": "Quebra de objeção com enquete embutida: “poke sem peixe: pode?”",
+      "legenda": "A enquete já está na arte. Use o sticker de enquete do Instagram por cima, alinhado." },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 05 · 14h — Frutos do Mar (escuro)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-15.png"],
+      "angulo": "Fartura pra quem almoça tarde e está com fome acumulada.",
+      "legenda": "Sticker: “deslize pra cima e escolha o seu”." },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 06 · 15h30 — Suco & Detox (creme)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-16.png"],
+      "angulo": "Horário da vontade de algo gelado. Bebida é margem alta.",
+      "legenda": "Caixinha de pergunta: “qual sabor você quer amanhã?”" },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 07 · 17h — Wrap de Camarão (coral)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-17.png"],
+      "angulo": "Fim de expediente: o almoço tardio / lanche reforçado.",
+      "legenda": "Sticker: link do WhatsApp." },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 08 · 19h — Salmão Deluxe (verde)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-18.png"],
+      "angulo": "Reposiciona a marca para o jantar.",
+      "legenda": "Texto de apoio manual: “ainda dá tempo de jantar bem”." },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 09 · 20h — Tabule (menta, com enquete)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-19.png"],
+      "angulo": "Enquete LEVE × REFORÇADO — alimenta a pauta de amanhã com dado real.",
+      "legenda": "Anota o resultado da enquete: ele define qual prato abre o feed de amanhã." },
+
+    { "marca": "Bowl Green", "handle": "@bowlgreenxerem", "plataforma": "Story 10 · 21h — Meat (escuro)",
+      "pasta": "2026-07-26-bowlgreen-feed", "arquivos": ["slide-20.png"],
+      "angulo": "Fecha o dia falando com quem trabalhou pesado.",
+      "legenda": "Sticker: link do WhatsApp + “amanhã tem mais”." }
+  ]
+}

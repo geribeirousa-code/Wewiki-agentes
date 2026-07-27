@@ -1,0 +1,125 @@
+{
+  "marca": "Bowl Green",
+  "tema": "Refação da pauta de 27/07 na direção das referências da Gê: público A, foto sangrando, palavra gigante na frente, um prato diferente por peça.",
+  "_ficha": "Wrap Frango: frango 50g, mix de folhas, tomate, cebola roxa, acompanha suco. Tabule de Camarão: camarão 150g, trigo 80g, mix de folhas 200g. Poke Tropical: salmão 100g + camarão 100g. Poke Niko: camarão 100g, arroz 150g, kiwi 20g. Poke Philadelfia: salmão 100g, cream cheese 40g, kiwi 20g. Salmão Deluxe: salmão 160g.",
+  "_preco": "Nenhuma peça leva preço.",
+  "pecas": [
+    {
+      "arquivo": "story-1-suco",
+      "tipo": "story-cartaz",
+      "foto": "marmore-suco",
+      "foco": "50% 46%",
+      "rotulo": "feito hoje",
+      "palavra": "SUCO.",
+      "tam": 200,
+      "giz": "laranja, morango ou limonada suíça — espremido na hora",
+      "botao": "Quero o combo ↑"
+    },
+    {
+      "arquivo": "story-2-varanda",
+      "tipo": "story-vazado",
+      "foto": "varanda",
+      "foco": "50% 42%",
+      "vazado": "FIM DE",
+      "cheio": "TARDE.",
+      "tam": 170,
+      "topo": 620,
+      "giz": "poke philadelfia — salmão 100g, cream cheese e kiwi",
+      "botao": "Peça agora ↑"
+    },
+    {
+      "arquivo": "story-3-enquete",
+      "tipo": "story-moldura",
+      "foto": "mesa-marmore",
+      "foco": "50% 38%",
+      "rotulo": "enquete do dia",
+      "pergunta": "GRELHADO<br>OU FRIO?",
+      "tam": 132,
+      "opcoes": [
+        "GRELHADO",
+        "FRIO"
+      ],
+      "giz": "responde que a cozinha já separa"
+    },
+    {
+      "arquivo": "feed-1-cartaz",
+      "tipo": "cartaz",
+      "foto": "carro-wrap",
+      "foco": "50% 48%",
+      "palavra": "SEM<br>PARAR.",
+      "tam": 214,
+      "topo": 340,
+      "giz": "wrap de frango + suco. o almoço que não pede mesa.",
+      "botao": "Link da bio",
+      "canto": "Xerém · RJ"
+    },
+    {
+      "arquivo": "feed-2-vazado",
+      "tipo": "vazado",
+      "foto": "hashi-drizzle",
+      "foco": "50% 42%",
+      "rotulo": "poke tropical",
+      "vazado": "NÃO É",
+      "cheio": "SALADA.",
+      "tam": 182,
+      "topo": 330,
+      "giz": "salmão 100g + camarão 100g. duas proteínas, um bowl.",
+      "botao": "Link da bio"
+    },
+    {
+      "arquivo": "feed-3-moldura",
+      "tipo": "moldura",
+      "foto": "mesa-marmore",
+      "foco": "50% 74%",
+      "rotulo": "almoço · xerém",
+      "titulo": "MESA<br>POSTA.",
+      "tam": 146,
+      "giz": "salmão deluxe e tabule de camarão, lado a lado",
+      "botao": "Link da bio",
+      "selo_topo": "LACRADO FRESQUINHO",
+      "selo_emoji": "🥗",
+      "selo_pe": "FEITO HOJE"
+    },
+    {
+      "arquivo": "feed-4-etiqueta",
+      "tipo": "etiqueta",
+      "foto": "escritorio",
+      "foco": "50% 34%",
+      "rotulo": "ficha da casa",
+      "titulo": "POKE<br>NIKO",
+      "tam": 92,
+      "itens": [
+        {
+          "valor": "100g",
+          "rotulo": "de camarão"
+        },
+        {
+          "valor": "150g",
+          "rotulo": "de arroz japonês"
+        },
+        {
+          "valor": "20g",
+          "rotulo": "de kiwi — só ele tem"
+        }
+      ],
+      "giz": "o único do cardápio com kiwi. vai por mim.",
+      "botao": "Link da bio",
+      "selo_topo": "PESADO NA BALANÇA",
+      "selo_emoji": "⚖️",
+      "selo_pe": "SEM ACHISMO",
+      "topo": 300
+    },
+    {
+      "arquivo": "feed-5-onda",
+      "tipo": "onda",
+      "prato": "TABULE DE CAMARÃO",
+      "rotulo": "do cardápio",
+      "titulo": "LEVE NÃO É<br>POUCO.",
+      "tam": 118,
+      "numero": "150g",
+      "numero_label": "de camarão",
+      "giz": "mais 200g de mix de folhas e 80g de trigo de tabule",
+      "botao": "Link da bio"
+    }
+  ]
+}

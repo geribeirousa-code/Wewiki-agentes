@@ -1,0 +1,81 @@
+{
+  "marca": "Bowl Green",
+  "tema": "Elenco pedido pela Gê: academia, secretária, dona de salão, médica, loja, balcão. Público A/B, ticket R$ 50. Um prato diferente em cada peça.",
+  "_ficha": "Sun Salmão: salmão 160g, mix de folhas 200g, brócolis 100g. Wrap Camarão: camarão 50g, brócolis, cenoura, cream cheese, acompanha suco. Poke Sora: salmão 100g, arroz 180g. GuacaFit: carne desfiada 150g, abacate 90g, mix 200g. Poke Tropical: salmão 100g + camarão 100g. Poke Philadelfia: salmão 100g, cream cheese 40g, kiwi 20g. Poke Frutos do Mar: salmão 100g + peixe branco 100g. Poke Yuki: frango 100g, brócolis 100g, moiashy 80g.",
+  "_preco": "Nenhuma peça leva preço.",
+
+  "pecas": [
+    { "arquivo": "story-1-academia", "tipo": "story-cartaz",
+      "foto": "academia-mulher", "foco": "50% 34%",
+      "rotulo": "pós-treino",
+      "palavra": "TREINO<br>FEITO.",
+      "tam": 168,
+      "giz": "sun salmão — 160g de salmão grelhado sobre 200g de folhas",
+      "botao": "Peça agora ↑" },
+
+    { "arquivo": "story-2-loja", "tipo": "story-vazado",
+      "foto": "loja", "foco": "50% 40%",
+      "vazado": "SEM", "cheio": "FECHAR.",
+      "tam": 176, "topo": 600,
+      "giz": "wrap de camarão + suco. dá pra comer no balcão.",
+      "botao": "Quero esse ↑" },
+
+    { "arquivo": "story-3-balcao", "tipo": "story-moldura",
+      "foto": "balcao", "foco": "50% 42%",
+      "rotulo": "enquete do dia",
+      "pergunta": "SALÃO OU<br>DELIVERY?",
+      "tam": 124,
+      "opcoes": ["SALÃO", "DELIVERY"],
+      "giz": "responde que a cozinha já separa" },
+
+    { "arquivo": "feed-1-cartaz", "tipo": "cartaz",
+      "foto": "academia-homem", "foco": "50% 42%",
+      "palavra": "DEPOIS<br>DO PESO.",
+      "tam": 196, "topo": 320,
+      "giz": "guacafit — 150g de carne desfiada e 90g de abacate",
+      "botao": "Link da bio",
+      "canto": "Xerém · RJ" },
+
+    { "arquivo": "feed-2-vazado", "tipo": "vazado",
+      "foto": "hashi-drizzle", "foco": "50% 42%",
+      "rotulo": "poke tropical",
+      "vazado": "NÃO É", "cheio": "SALADA.",
+      "tam": 182, "topo": 330,
+      "giz": "salmão 100g + camarão 100g. duas proteínas, um bowl.",
+      "botao": "Link da bio" },
+
+    { "arquivo": "feed-3-moldura", "tipo": "moldura",
+      "foto": "salao", "foco": "50% 40%",
+      "rotulo": "entre uma cliente e outra",
+      "titulo": "PAUSA<br>DE 15.",
+      "tam": 148,
+      "giz": "poke philadelfia — salmão 100g, cream cheese e kiwi",
+      "botao": "Link da bio",
+      "selo_topo": "LACRADO FRESQUINHO", "selo_emoji": "🥗", "selo_pe": "FEITO HOJE" },
+
+    { "arquivo": "feed-4-etiqueta", "tipo": "etiqueta",
+      "foto": "clinica", "foco": "50% 30%",
+      "topo": 220,
+      "rotulo": "ficha da casa",
+      "titulo": "FRUTOS<br>DO MAR",
+      "tam": 86,
+      "itens": [
+        { "valor": "100g", "rotulo": "de salmão" },
+        { "valor": "100g", "rotulo": "de peixe branco" },
+        { "valor": "150g", "rotulo": "de arroz japonês" }
+      ],
+      "giz": "duas proteínas somadas. 200g no total.",
+      "botao": "Link da bio",
+      "selo_topo": "PESADO NA BALANÇA", "selo_emoji": "⚖️", "selo_pe": "SEM ACHISMO" },
+
+    { "arquivo": "feed-5-onda", "tipo": "onda",
+      "prato": "POKE YUKI",
+      "rotulo": "sem peixe cru",
+      "titulo": "TEM PRA<br>QUEM NÃO COME.",
+      "tam": 96,
+      "numero": "100g",
+      "numero_label": "de frango grelhado",
+      "giz": "mais 100g de brócolis e 80g de feijão moiashy",
+      "botao": "Link da bio" }
+  ]
+}

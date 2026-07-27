@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bowl Green · Central de Ativação do Instagram (@bowlgreenxerem)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400;500;600;700;800;900&family=Shantell+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde: #1C3527;
+    --verde-hover: #14271C;
+    --salvia: #8EAB94;
+    --salvia-soft: #F1F5F2;
+    --coral: #E8684A;
+    --coral-ink: #B14A2F;
+    --coral-soft: #FDF1EE;
+    --dourado: #C9A24B;
+    --dourado-ink: #8A6314;
+    --dourado-soft: #FAF5E8;
+    --creme: #FDFCF7;
+    --navy: #16281E;
+    --texto: #1C3527;
+    --texto2: #4A6352;
+    --texto3: #7D9685;
+    --branco: #FFFFFF;
+    --font-heading: 'Luckiest Guy', cursive;
+    --font-hand: 'Shantell Sans', cursive;
+    --font-body: 'Montserrat', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--creme);
+    color: var(--texto);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  /* Header */
+  .app-header {
+    background: var(--verde);
+    color: var(--branco);
+    padding: 30px 25px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 30px rgba(28,53,39,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .app-header h1 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: var(--dourado);
+  }
+
+  .app-header p {
+    font-size: 14px;
+    color: var(--salvia);
+  }
+
+  .insta-tag {
+    background: var(--coral);
+    color: var(--branco);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Profile Mockup Box */
+  .profile-container {
+    max-width: 520px;
+    margin: 0 auto 40px;
+    background: var(--branco);
+    border: 2px solid #EDEADB;
+    border-radius: 28px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .profile-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--verde), var(--salvia));
+    border: 3px solid var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--branco);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+
+  .stats {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .stat-val { font-weight: 800; font-size: 16px; color: var(--verde); }
+  .stat-lbl { font-size: 11px; color: var(--texto3); }
+
+  .bio-title {
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--verde);
+    margin-bottom: 6px;
+  }
+
+  .bio-text {
+    font-size: 13px;
+    line-height: 1.55;
+    background: var(--salvia-soft);
+    padding: 14px 18px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Destaques Row */
+  .highlights-section-title {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    color: var(--verde);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .highlights-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .highlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 80px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .highlight-card:hover { transform: translateY(-4px); }
+
+  .highlight-ring {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, var(--dourado), var(--verde));
+  }
+
+  .highlight-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 2px solid var(--branco);
+  }
+
+  .highlight-lbl {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--verde);
+    text-align: center;
+  }
+
+  /* Story Viewer Modal */
+  .story-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+  }
+
+  .story-modal.active { display: flex; }
+
+  .phone-screen {
+    width: 360px;
+    height: 640px;
+    background: var(--verde);
+    border-radius: 36px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    color: var(--branco);
+  }
+
+  .story-progress-bar {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 15px;
+  }
+
+  .progress-step {
+    height: 3px;
+    flex: 1;
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+  }
+
+  .progress-step.active { background: var(--dourado); }
+
+  .story-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .story-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--dourado);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+
+  .story-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .story-title {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    color: var(--dourado);
+    margin-bottom: 12px;
+  }
+
+  .story-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .story-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    color: var(--branco);
+    border: none;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .story-nav-btn.prev { left: 10px; }
+  .story-nav-btn.next { right: 10px; }
+  .close-story {
+    position: absolute;
+    top: 15px; right: 15px;
+    background: none; border: none;
+    color: var(--branco); font-size: 24px;
+    cursor: pointer; z-index: 10;
+  }
+
+  /* Grid 10 Feed Posts Section */
+  .feed-section-title {
+    font-family: var(--font-heading);
+    font-size: 26px;
+    color: var(--verde);
+    margin: 40px 0 20px;
+  }
+
+  .feed-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+  }
+
+  .post-visual-card {
+    background: var(--branco);
+    border: 2px solid #EDEADB;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .post-visual-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(28,53,39,0.12);
+  }
+
+  .post-banner {
+    padding: 30px 20px;
+    text-align: center;
+    color: var(--branco);
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post-tag {
+    position: absolute;
+    top: 15px; left: 15px;
+    background: rgba(0,0,0,0.25);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .post-headline {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    line-height: 1.25;
+    margin-top: 15px;
+  }
+
+  .post-content-area {
+    padding: 20px;
+  }
+
+  .post-caption-preview {
+    font-size: 13px;
+    color: var(--texto);
+    background: var(--salvia-soft);
+    padding: 15px;
+    border-radius: 14px;
+    white-space: pre-line;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--verde);
+  }
+
+  .btn-copy {
+    width: 100%;
+    background: var(--verde);
+    color: var(--branco);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-copy:hover { background: var(--verde-hover); }
+
+  /* Notification Toast */
+  .toast {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    background: var(--dourado);
+    color: var(--navy);
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+  }
+
+  .toast.show { display: block; animation: popUp 0.3s ease; }
+
+  @keyframes popUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+  <!-- App Header -->
+  <div class="app-header">
+    <div>
+      <h1>Bowl Green · Instagram Kit</h1>
+      <p>Painel de Ativação dos Destaques & 10 Posts do Feed para Hoje</p>
+    </div>
+    <div class="insta-tag">
+      <span>📲 Instagram Oficial:</span>
+      <strong>@bowlgreenxerem</strong>
+    </div>
+  </div>
+
+  <!-- Profile Mockup Container -->
+  <div class="profile-container">
+    <div class="profile-top">
+      <div class="avatar">🥗</div>
+      <div class="stats">
+        <div>
+          <div class="stat-val">10</div>
+          <div class="stat-lbl">posts hoje</div>
+        </div>
+        <div>
+          <div class="stat-val">1.8k</div>
+          <div class="stat-lbl">bowlovers</div>
+        </div>
+        <div>
+          <div class="stat-val">Xerém</div>
+          <div class="stat-lbl">localização</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bio-title">Bowl Green | Saladas, Pokes & Bowls 🥗</div>
+    <div class="bio-text">
+      🥗 A primeira casa de bowls & pokes de Xerém.<br>
+      🐟 Peixe fresco todo dia, proteína generosa e comida de verdade.<br>
+      💚 Comida que vicia, sem culpa | #Bowlovers<br>
+      📍 Salão, Retirada & Delivery em Xerém e região<br>
+      👇 Peça pelo WhatsApp no link abaixo:<br>
+      <strong style="color:var(--verde); text-decoration:underline;">wa.me/bowlgreenxerem</strong>
+    </div>
+
+    <!-- Interactive Highlights -->
+    <div class="highlights-section-title">
+      <span>✨ Destaques do Perfil (Clique para Ver os Stories)</span>
+    </div>
+
+    <div class="highlights-grid">
+      <div class="highlight-card" onclick="openStory('quem_somos')">
+        <div class="highlight-ring"><div class="highlight-inner">🥗</div></div>
+        <div class="highlight-lbl">Quem Somos</div>
+      </div>
+
+      <div class="highlight-card" onclick="openStory('pokes')">
+        <div class="highlight-ring"><div class="highlight-inner">🐟</div></div>
+        <div class="highlight-lbl">Cardápio</div>
+      </div>
+
+      <div class="highlight-card" onclick="openStory('delivery')">
+        <div class="highlight-ring"><div class="highlight-inner">🛵</div></div>
+        <div class="highlight-lbl">Delivery</div>
+      </div>
+
+      <div class="highlight-card" onclick="openStory('confissoes')">
+        <div class="highlight-ring"><div class="highlight-inner">💬</div></div>
+        <div class="highlight-lbl">Confissões</div>
+      </div>
+
+      <div class="highlight-card" onclick="openStory('promos')">
+        <div class="highlight-ring"><div class="highlight-inner">🎁</div></div>
+        <div class="highlight-lbl">Promos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story Viewer Modal -->
+  <div class="story-modal" id="storyModal">
+    <div class="phone-screen" id="phoneScreen">
+      <button class="close-story" onclick="closeStory()">✕</button>
+
+      <div>
+        <div class="story-progress-bar" id="storyProgressBar"></div>
+        <div class="story-header">
+          <div class="story-avatar">🥗</div>
+          <div>
+            <div style="font-weight:700; font-size:13px;" id="storyCategoryName">Bowl Green</div>
+            <div style="font-size:10px; opacity:0.8;">@bowlgreenxerem</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="story-nav-btn prev" onclick="prevSlide()">‹</button>
+      
+      <div class="story-body">
+        <div class="story-title" id="storySlideTitle">Título</div>
+        <div class="story-desc" id="storySlideDesc">Conteúdo do Story</div>
+      </div>
+
+      <button class="story-nav-btn next" onclick="nextSlide()">›</button>
+
+      <div style="text-align:center; font-size:11px; opacity:0.7; margin-top:10px;">
+        Toque nos lados ou use as setas para navegar nos Stories
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 Feed Posts Grid Section -->
+  <h2 class="feed-section-title">📌 Grade dos 10 Posts para o Feed (@bowlgreenxerem)</h2>
+  <p style="margin-bottom: 25px; color: var(--texto2); font-size: 14px;">
+    Confira os cards visuais e clique em <strong>"Copiar Legenda"</strong> para publicar no Instagram hoje mesmo!
+  </p>
+
+  <div class="feed-grid-container">
+
+    <!-- POST 01 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--verde);">
+        <span class="post-tag">📌 Fixado · Post 01</span>
+        <div style="font-size:40px; margin-bottom:10px;">🥗</div>
+        <div class="post-headline" style="color:var(--dourado);">Bem-vindo à casa do sabor sem culpa em Xerém.</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap1">Se você acha que salada não enche e que saudável é sem graça... o Bowl Green veio para mudar tudo em Xerém. 🥗💚
+
+Nossa missão é simples: comida fresca, colorida, bem temperada e com porções generosas de proteína pra você pedir de novo porque quer — nunca por obrigação.
+
+Já somos a casa dos #Bowlovers de Xerém!
+
+Clica no link da bio e vem conhecer nosso cardápio oficial.
+
+#BowlGreen #BowlGreenXerem #Bowlovers #Xerem #ComidaSaudavel #PokeXerem</div>
+        <button class="btn-copy" onclick="copyCaption('cap1')">📋 Copiar Legenda do Post 01</button>
+      </div>
+    </div>
+
+    <!-- POST 02 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--navy);">
+        <span class="post-tag">Campeão · Post 02</span>
+        <div style="font-size:40px; margin-bottom:10px;">🐟</div>
+        <div class="post-headline" style="color:var(--dourado);">Poke Sora: Salmão fresco de verdade.</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap2">Não adianta tentar resistir. Quem pede o Sora uma vez, pede toda semana. 🐟
+
+Salmão fresco de verdade, arroz temperado no ponto, Manga, Sunomono e a nossa combinação secreta de molhos que desce redondo.
+
+Qual é o seu dia oficial do Sora? Conte nos comentários!
+
+#BowlGreen #PokeSora #BowlGreenXerem #SalmaoFresco #Bowlovers #XeremComeBem</div>
+        <button class="btn-copy" onclick="copyCaption('cap2')">📋 Copiar Legenda do Post 02</button>
+      </div>
+    </div>
+
+    <!-- POST 03 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--coral);">
+        <span class="post-tag">Carrossel · Post 03</span>
+        <div style="font-size:40px; margin-bottom:10px;">🥊</div>
+        <div class="post-headline">MITO × VERDADE: "Salada não enche"?</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap3">Mito desmascarado no primeiro bowl! 🥊
+
+No Bowl Green, nossos pokes e bowls vêm com até 200g de proteína nobre + base completa pra te sustentar a tarde inteira com energia e leveza.
+
+Slide 1: MITO — Salada é só alface.
+Slide 2: VERDADE — O Bowl Green tem prato completo, colorido e muito saboroso.
+Slide 3: VERDADE — Você come bem sem dar aquele peso no estômago.
+
+Peça o seu no WhatsApp (link na bio).
+
+#BowlGreen #MitosEVerdades #ComidaDeVerdade #ZeroCulpa #Xerem</div>
+        <button class="btn-copy" onclick="copyCaption('cap3')">📋 Copiar Legenda do Post 03</button>
+      </div>
+    </div>
+
+    <!-- POST 04 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--verde);">
+        <span class="post-tag">Vitrine · Post 04</span>
+        <div style="font-size:40px; margin-bottom:10px;">🥭</div>
+        <div class="post-headline" style="color:var(--dourado);">Poke Tropical: O pôr do sol de Xerém na tigela.</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap4">O Poke Tropical é aquela combinação agridoce perfeita que conquista no primeiro garfado. 🥭
+
+Salmão fresquinho, manga suculenta, gergelim e o toque especial da casa. É refrescância pura pra deixar o seu dia muito mais leve.
+
+Disponível para salão, retirada e delivery em Xerém!
+
+#PokeTropical #BowlGreen #BowlGreenXerem #Refrescante #DeliveryXerem</div>
+        <button class="btn-copy" onclick="copyCaption('cap4')">📋 Copiar Legenda do Post 04</button>
+      </div>
+    </div>
+
+    <!-- POST 05 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--navy); border: 2px dashed var(--dourado);">
+        <span class="post-tag" style="background:var(--dourado); color:var(--navy);">🎬 Reels · Post 05</span>
+        <div style="font-size:40px; margin-bottom:10px;">🎥</div>
+        <div class="post-headline" style="color:var(--branco);">15 segundos montando o seu Bowl Green.</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap5">Dê o play e sinta a textura dos ingredientes comprados frescos toda semana. 🎥
+
+Aqui o controle de qualidade é levado a sério: corte preciso, hortifrúti fresco e montagem feita na hora do seu pedido.
+
+Deu água na boca? Pedido a um clique no link da bio!
+
+#BowlGreen #ReelsFood #MontandoOBowl #Xerem #ComidaDeVerdade #Bowlovers</div>
+        <button class="btn-copy" onclick="copyCaption('cap5')">📋 Copiar Legenda do Post 05</button>
+      </div>
+    </div>
+
+    <!-- POST 06 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--salvia);">
+        <span class="post-tag">Frango · Post 06</span>
+        <div style="font-size:40px; margin-bottom:10px;">🍗</div>
+        <div class="post-headline" style="color:var(--verde);">Chicken Grill: Frango grelhado direto ao ponto.</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap6">Pra quem prefere sabor clássico, direto ao ponto e sem erro. 🍗
+
+Nosso Chicken Grill entrega tiras de frango grelhado marinado, base reforçada e legumes frescos pra garantir a sua meta de proteína do dia.
+
+Comida reforçada pra encarar a rotina em Xerém!
+
+#ChickenGrill #BowlGreen #ProteinaGenuina #AlmocoSaudavel #Xerem</div>
+        <button class="btn-copy" onclick="copyCaption('cap6')">📋 Copiar Legenda do Post 06</button>
+      </div>
+    </div>
+
+    <!-- POST 07 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--coral);">
+        <span class="post-tag">Confissão · Post 07</span>
+        <div style="font-size:40px; margin-bottom:10px;">🗣️</div>
+        <div class="post-headline">"Vou economizar... aí lembrei do Sora."</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap7">Confissão nº 47 da comunidade Bowlover! 🗣️
+
+A gente entende. Quando bate a vontade de comer algo gostoso, leve e rápido, o aplicativo do Bowl Green já abre sozinho no celular.
+
+Quem mais tá nessa situação hoje? 😅
+
+#ConfissoesBowlover #BowlGreen #ComidaQueVicia #Xerem #Bowlovers</div>
+        <button class="btn-copy" onclick="copyCaption('cap7')">📋 Copiar Legenda do Post 07</button>
+      </div>
+    </div>
+
+    <!-- POST 08 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--verde); border: 2px dashed var(--dourado);">
+        <span class="post-tag" style="background:var(--dourado); color:var(--navy);">🎁 Cupom · Post 08</span>
+        <div style="font-size:40px; margin-bottom:10px;">🎟️</div>
+        <div class="post-headline" style="color:var(--dourado);">BOWLOVER10: 10% OFF no seu bowl!</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap8">Quer experimentar a primeira casa de bowls de Xerém com desconto especial? 🎟️
+
+Use o cupom BOWLOVER10 no WhatsApp ou no balcão e ganhe 10% OFF no seu bowl de hoje!
+
+Válido para pedidos efetuados hoje. Aproveite!
+
+#CupomBowlGreen #Bowlover10 #DescontoXerem #DeliveryXerem #BowlGreen</div>
+        <button class="btn-copy" onclick="copyCaption('cap8')">📋 Copiar Legenda do Post 08</button>
+      </div>
+    </div>
+
+    <!-- POST 09 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--navy);">
+        <span class="post-tag">Combo · Post 09</span>
+        <div style="font-size:40px; margin-bottom:10px;">🍋</div>
+        <div class="post-headline" style="color:var(--dourado);">Seu suco sai por R$ 5,00 no combo!</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap9">Limonada Suíça geladinha pra escoltar o seu bowl preferido. 🍋
+
+Matemática simples que desce redondo: peça qualquer bowl do cardápio e adicione a limonada por apenas R$ 5,00!
+
+Peça o seu combo no link da bio.
+
+#LimonadaSuica #ComboBowlGreen #Xerem #Refrescante #Bowlovers</div>
+        <button class="btn-copy" onclick="copyCaption('cap9')">📋 Copiar Legenda do Post 09</button>
+      </div>
+    </div>
+
+    <!-- POST 10 -->
+    <div class="post-visual-card">
+      <div class="post-banner" style="background:var(--verde);">
+        <span class="post-tag">Delivery · Post 10</span>
+        <div style="font-size:40px; margin-bottom:10px;">🛵</div>
+        <div class="post-headline" style="color:var(--dourado);">Entregamos em toda a região de Xerém!</div>
+      </div>
+      <div class="post-content-area">
+        <div class="post-caption-preview" id="cap10">Tá no trabalho ou em casa e quer receber seu Bowl Green bem embalado e fresquinho? 🛵
+
+Entregamos em Santo Antônio, Jardim Olímpico, Canaã e toda a região de Xerém!
+
+Clica no link da bio, faça seu pedido no WhatsApp e receba aí na sua porta.
+
+#DeliveryXerem #BowlGreen #SantoAntonio #JardimOlimpico #Xerem</div>
+        <button class="btn-copy" onclick="copyCaption('cap10')">📋 Copiar Legenda do Post 10</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Legenda copiada para a área de transferência! 💚</div>
+
+  <script>
+    // Story Data
+    const storiesData = {
+      quem_somos: {
+        category: "🥗 Quem Somos",
+        slides: [
+          { title: "Bem-vindo ao Bowl Green! 🥗", desc: "Nascemos do desejo de entregar comida saudável, colorida e gostosa de verdade no dia a dia de Xerém." },
+          { title: "Frescor Sem Desculpa 🐟", desc: "Nossos peixes e hortifrútis são comprados semanalmente. Nada de comida sem graça ou requentada." },
+          { title: "Prazer Sem Culpa 💚", desc: "Acreditamos em pratos fartos que sustentam o dia sem pesar no estômago. Seja bem-vindo à comunidade Bowlover!" }
+        ]
+      },
+      pokes: {
+        category: "🐟 Cardápio & Pokes",
+        slides: [
+          { title: "Poke Sora — R$ 38,70 🐟", desc: "Nosso campeão de vendas! Salmão fresco, base temperada, manga suculenta e molho especial da casa." },
+          { title: "Poke Tropical — R$ 47,50 🥭", desc: "Refrescância pura! A combinação perfeita de salmão fresco com o toque agridoce da manga." },
+          { title: "Chicken Grill 🍗", desc: "Pra quem prefere frango grelhado marinado no capricho com vegetal fresco." }
+        ]
+      },
+      delivery: {
+        category: "🛵 Delivery & Retirada",
+        slides: [
+          { title: "Entregamos na sua Porta! 🛵", desc: "Atendemos Santo Antônio, Jardim Olímpico, Canaã e toda a região de Xerém." },
+          { title: "Peça pelo WhatsApp 📲", desc: "Nosso cardápio é prático e direto no WhatsApp. Clique no link da nossa bio!" }
+        ]
+      },
+      confissoes: {
+        category: "💬 Confissões de Bowlover",
+        slides: [
+          { title: "Confissão #47 🗣️", desc: "“Eu disse que hoje ia economizar... aí lembrei do Sora e não resisti!” — @cliente_xerem" },
+          { title: "Confissão #112 💚", desc: "“O problema não é pedir de novo. É fingir que pensei duas vezes!” — Bowlover Fiel" }
+        ]
+      },
+      promos: {
+        category: "🎁 Promos & Cupons",
+        slides: [
+          { title: "Cupom BOWLOVER10 🎟️", desc: "Ganhe 10% OFF no seu primeiro bowl usando o cupom BOWLOVER10 no balcão ou WhatsApp!" },
+          { title: "Limonada a R$ 5 🍋", desc: "Na compra de qualquer bowl, adicione a Limonada Suíça geladinha por apenas R$ 5,00." }
+        ]
+      }
+    };
+
+    let currentCategory = 'quem_somos';
+    let currentSlideIndex = 0;
+
+    function openStory(cat) {
+      currentCategory = cat;
+      currentSlideIndex = 0;
+      renderStory();
+      document.getElementById('storyModal').classList.add('active');
+    }
+
+    function closeStory() {
+      document.getElementById('storyModal').classList.remove('active');
+    }
+
+    function renderStory() {
+      const data = storiesData[currentCategory];
+      const slide = data.slides[currentSlideIndex];
+
+      document.getElementById('storyCategoryName').innerText = data.category;
+      document.getElementById('storySlideTitle').innerText = slide.title;
+      document.getElementById('storySlideDesc').innerText = slide.desc;
+
+      // Render progress bar
+      const barContainer = document.getElementById('storyProgressBar');
+      barContainer.innerHTML = '';
+      data.slides.forEach((_, idx) => {
+        const step = document.createElement('div');
+        step.className = 'progress-step' + (idx === currentSlideIndex ? ' active' : '');
+        barContainer.appendChild(step);
+      });
+    }
+
+    function nextSlide() {
+      const data = storiesData[currentCategory];
+      if (currentSlideIndex < data.slides.length - 1) {
+        currentSlideIndex++;
+        renderStory();
+      } else {
+        closeStory();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+        renderStory();
+      }
+    }
+
+    function copyCaption(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2500);
+      });
+    }
+  </script>
+
+</body>
+</html>

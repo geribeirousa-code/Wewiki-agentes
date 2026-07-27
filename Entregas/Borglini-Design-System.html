@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borglini · Design System & Instagram Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #0A0A0A;
+    --card-bg: #141414;
+    --card-elevated: #1E1E1E;
+    --gold: #C5A059;
+    --gold-bright: #E5C17C;
+    --gold-soft: rgba(197, 160, 89, 0.12);
+    --gold-border: rgba(197, 160, 89, 0.3);
+    --cream: #F9F6F0;
+    --cream-muted: rgba(249, 246, 240, 0.65);
+    --charcoal: #2B2625;
+    --accent-glow: rgba(197, 160, 89, 0.15);
+    --font-cinzel: 'Cinzel', serif;
+    --font-playfair: 'Playfair Display', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    background-color: var(--bg-dark);
+    color: var(--cream);
+    font-family: var(--font-montserrat);
+    line-height: 1.6;
+    padding: 30px;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(197, 160, 89, 0.04) 0%, transparent 50%);
+  }
+
+  /* Header Header */
+  .header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 1px solid var(--gold-border);
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .header-monogram {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-cinzel);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold);
+    box-shadow: 0 0 25px var(--gold-soft);
+  }
+
+  .header h1 {
+    font-family: var(--font-cinzel);
+    font-size: 42px;
+    letter-spacing: 0.15em;
+    color: var(--cream);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    font-family: var(--font-playfair);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold);
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    color: var(--cream);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .tab-btn:hover, .tab-btn.active {
+    background: var(--gold);
+    color: var(--bg-dark);
+    font-weight: 600;
+    box-shadow: 0 4px 20px var(--gold-soft);
+  }
+
+  /* Section Styles */
+  .section-title {
+    font-family: var(--font-cinzel);
+    font-size: 26px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin: 40px 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-border), transparent);
+  }
+
+  /* Color Cards */
+  .grid-colors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .color-card {
+    background: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .color-card:hover { transform: translateY(-5px); }
+
+  .color-swatch {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+  }
+
+  .color-info {
+    padding: 20px;
+  }
+
+  .color-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .color-hex {
+    font-family: monospace;
+    color: var(--gold);
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  /* Instagram Profile Mockup */
+  .insta-mockup-container {
+    max-width: 480px;
+    margin: 0 auto 50px;
+    background: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    border-radius: 32px;
+    padding: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  }
+
+  .insta-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .insta-username {
+    font-family: var(--font-cinzel);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .insta-profile-main {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-cinzel);
+    font-size: 34px;
+    color: var(--gold);
+  }
+
+  .profile-stats {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .stat-num { font-weight: 700; font-size: 15px; }
+  .stat-label { font-size: 11px; color: var(--cream-muted); }
+
+  .bio-box {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.02);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 2px solid var(--gold);
+  }
+
+  .bio-line { margin-bottom: 4px; }
+  .bio-link { color: var(--gold); font-weight: 600; text-decoration: none; }
+
+  /* Highlights Section */
+  .highlights-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 70px;
+  }
+
+  .highlight-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: transform 0.2s ease;
+  }
+
+  .highlight-circle:hover { transform: scale(1.08); }
+  .highlight-title { font-size: 10px; font-weight: 500; text-align: center; letter-spacing: 0.05em; }
+
+  /* Grid 3x3 Feed Mockup */
+  .feed-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .feed-post-card {
+    aspect-ratio: 1;
+    background: var(--card-elevated);
+    border: 1px solid var(--gold-border);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .feed-post-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 20px var(--gold-soft);
+    transform: scale(1.02);
+  }
+
+  .post-number-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--gold);
+    color: var(--bg-dark);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 20px;
+  }
+
+  .post-type-tag {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .post-headline-preview {
+    font-family: var(--font-playfair);
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--cream);
+    margin: 10px 0;
+  }
+
+  .post-footer {
+    font-size: 10px;
+    color: var(--cream-muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Full Post Detail Card */
+  .post-detail-modal {
+    background: var(--card-bg);
+    border: 1px solid var(--gold-border);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .caption-box {
+    background: var(--bg-dark);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 13.5px;
+    white-space: pre-wrap;
+    margin-top: 15px;
+    color: var(--cream);
+  }
+
+  .copy-btn {
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+  }
+
+  .copy-btn:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    body { padding: 15px; }
+    .header h1 { font-size: 28px; }
+    .feed-grid { grid-template-columns: repeat(1, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-monogram">B</div>
+    <h1>Borglini</h1>
+    <p>Design System & Kit de Lançamento no Instagram</p>
+
+    <div class="nav-tabs">
+      <button class="tab-btn active" onclick="scrollToSection('tokens')">Identidade Visual</button>
+      <button class="tab-btn" onclick="scrollToSection('perfil')">Perfil do Instagram</button>
+      <button class="tab-btn" onclick="scrollToSection('destaques')">Destaques</button>
+      <button class="tab-btn" onclick="scrollToSection('feed')">Grade de 10 Posts (Hoje)</button>
+    </div>
+  </header>
+
+  <!-- Section 1: Visual Tokens -->
+  <section id="tokens">
+    <h2 class="section-title">01. Tokens Visuais & Paleta de Cores</h2>
+    <div class="grid-colors">
+      
+      <div class="color-card">
+        <div class="color-swatch" style="background:#121212; border-bottom: 1px solid var(--gold-border);">
+          <span style="color:var(--gold); font-size:12px;">Preto Borglini</span>
+        </div>
+        <div class="color-info">
+          <div class="color-title">Borglini Black</div>
+          <div class="color-hex" onclick="copyText('#121212')">#121212</div>
+          <p style="font-size:11px; color:var(--cream-muted); margin-top:6px;">Fundo principal, sobriedade e sofisticação silenciosa.</p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background:#C5A059;">
+          <span style="color:#121212; font-weight:700; font-size:12px;">Dourado Champagne</span>
+        </div>
+        <div class="color-info">
+          <div class="color-title">Champagne Gold</div>
+          <div class="color-hex" onclick="copyText('#C5A059')">#C5A059</div>
+          <p style="font-size:11px; color:var(--cream-muted); margin-top:6px;">Detalhes nobres, bordas, ícones e destaques de texto.</p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background:#F9F6F0;">
+          <span style="color:#121212; font-weight:700; font-size:12px;">Creme Suave</span>
+        </div>
+        <div class="color-info">
+          <div class="color-title">Warm Cream</div>
+          <div class="color-hex" onclick="copyText('#F9F6F0')">#F9F6F0</div>
+          <p style="font-size:11px; color:var(--cream-muted); margin-top:6px;">Tipografia principal em fundos escuros e cards claros.</p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background:#2B2625;">
+          <span style="color:var(--gold); font-size:12px;">Grafite Nobre</span>
+        </div>
+        <div class="color-info">
+          <div class="color-title">Charcoal Gray</div>
+          <div class="color-hex" onclick="copyText('#2B2625')">#2B2625</div>
+          <p style="font-size:11px; color:var(--cream-muted); margin-top:6px;">Cards secundários e profundidade de contraste.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 2: Instagram Profile Setup -->
+  <section id="perfil">
+    <h2 class="section-title">02. Configuração do Perfil do Instagram</h2>
+    
+    <div class="insta-mockup-container">
+      <div class="insta-header">
+        <span class="insta-username">borglini</span>
+        <span style="color:var(--gold); font-size:18px;">✦</span>
+      </div>
+
+      <div class="insta-profile-main">
+        <div class="profile-avatar">B</div>
+        <div class="profile-stats">
+          <div>
+            <div class="stat-num">10</div>
+            <div class="stat-label">publicações</div>
+          </div>
+          <div>
+            <div class="stat-num">1.4k</div>
+            <div class="stat-label">seguidores</div>
+          </div>
+          <div>
+            <div class="stat-num">180</div>
+            <div class="stat-label">seguindo</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-family: var(--font-cinzel); font-weight: 700; font-size: 15px; margin-bottom: 8px;">
+        Borglini | Sofisticação & Design
+      </div>
+
+      <div class="bio-box">
+        <div class="bio-line">✨ A essência da elegância atemporal e sofisticação.</div>
+        <div class="bio-line">🏛️ Design exclusivo, materiais nobres e acabamento impecável.</div>
+        <div class="bio-line">✈️ Envio para todo o Brasil | Atendimento personalizado.</div>
+        <div class="bio-line" style="margin-top:8px;">👇 Descubra o universo Borglini no link abaixo:</div>
+        <a href="#" class="bio-link">wa.me/borglini-atendimento</a>
+      </div>
+
+      <!-- Highlights Preview -->
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 12px;">
+        Destaques do Perfil
+      </div>
+      <div class="highlights-row" id="destaques">
+        <div class="highlight-item">
+          <div class="highlight-circle">🏛️</div>
+          <div class="highlight-title">Sobre Nós</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-circle">✨</div>
+          <div class="highlight-title">Coleção</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-circle">🔍</div>
+          <div class="highlight-title">Detalhes</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-circle">📦</div>
+          <div class="highlight-title">Como Comprar</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-circle">💬</div>
+          <div class="highlight-title">Clientes</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: 10 Feed Posts Grid -->
+  <section id="feed">
+    <h2 class="section-title">03. Grade Inicial dos 10 Posts (Feed para Hoje)</h2>
+    <p style="margin-bottom: 25px; color: var(--cream-muted); font-size: 14px;">
+      Clique em qualquer post abaixo para abrir a legenda completa pronta para publicar e sugestão de conteúdo visual.
+    </p>
+
+    <div class="feed-grid">
+      
+      <!-- Post 01 -->
+      <div class="feed-post-card" onclick="showPostDetail(1)">
+        <span class="post-number-badge">📌 Fixado</span>
+        <span class="post-type-tag">Carrossel · Boas-Vindas</span>
+        <div class="post-headline-preview">"Um novo capítulo em elegância."</div>
+        <div class="post-footer">
+          <span>Post 01</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 02 -->
+      <div class="feed-post-card" onclick="showPostDetail(2)">
+        <span class="post-number-badge">Post 02</span>
+        <span class="post-type-tag">Estático · Manifesto</span>
+        <div class="post-headline-preview">"A sofisticação reside na simplicidade do essencial."</div>
+        <div class="post-footer">
+          <span>Post 02</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 03 -->
+      <div class="feed-post-card" onclick="showPostDetail(3)">
+        <span class="post-number-badge">Post 03</span>
+        <span class="post-type-tag">Foto · Vitrine Hero 01</span>
+        <div class="post-headline-preview">"A perfeição em cada traço."</div>
+        <div class="post-footer">
+          <span>Post 03</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 04 -->
+      <div class="feed-post-card" onclick="showPostDetail(4)">
+        <span class="post-number-badge">Post 04</span>
+        <span class="post-type-tag">Carrossel · Qualidade</span>
+        <div class="post-headline-preview">"O que torna uma peça inigualável?"</div>
+        <div class="post-footer">
+          <span>Post 04</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 05 -->
+      <div class="feed-post-card" onclick="showPostDetail(5)" style="border-color: var(--gold);">
+        <span class="post-number-badge" style="background:var(--gold-bright);">🎬 Reels Central</span>
+        <span class="post-type-tag">Reels · Apresentação</span>
+        <div class="post-headline-preview">"Welcome to Borglini."</div>
+        <div class="post-footer">
+          <span>Post 05</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 06 -->
+      <div class="feed-post-card" onclick="showPostDetail(6)">
+        <span class="post-number-badge">Post 06</span>
+        <span class="post-type-tag">Lifestyle · Vitrine Hero 02</span>
+        <div class="post-headline-preview">"A presença de quem sabe o seu valor."</div>
+        <div class="post-footer">
+          <span>Post 06</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 07 -->
+      <div class="feed-post-card" onclick="showPostDetail(7)">
+        <span class="post-number-badge">Post 07</span>
+        <span class="post-type-tag">Card Tipográfico</span>
+        <div class="post-headline-preview">"Edições limitadas. Atenção ilimitada."</div>
+        <div class="post-footer">
+          <span>Post 07</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 08 -->
+      <div class="feed-post-card" onclick="showPostDetail(8)">
+        <span class="post-number-badge">Post 08</span>
+        <span class="post-type-tag">Carrossel · Guia de Estilo</span>
+        <div class="post-headline-preview">"3 cuidados para manter suas peças por anos."</div>
+        <div class="post-footer">
+          <span>Post 08</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+      <!-- Post 09 -->
+      <div class="feed-post-card" onclick="showPostDetail(9)">
+        <span class="post-number-badge">Post 09</span>
+        <span class="post-type-tag">Foto · Composição</span>
+        <div class="post-headline-preview">"Versatilidade & Distinção."</div>
+        <div class="post-footer">
+          <span>Post 09</span>
+          <span>Ver legenda →</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Post 10 Highlighted -->
+    <div style="margin-top: 20px;">
+      <div class="feed-post-card" onclick="showPostDetail(10)" style="aspect-ratio: auto; padding: 25px;">
+        <span class="post-number-badge" style="position:static; display:inline-block; margin-bottom:10px;">Post 10 · Fechamento do Dia</span>
+        <span class="post-type-tag" style="display:block; margin-bottom:8px;">Card de Chamada Final / Atendimento</span>
+        <div class="post-headline-preview" style="font-size:20px;">"Estamos prontos para te atender."</div>
+        <p style="font-size:13px; color:var(--cream-muted); margin-bottom:15px;">
+          Post de direcionamento para o WhatsApp e atendimento exclusivo. Clique para copiar a legenda completa.
+        </p>
+        <div class="post-footer">
+          <span>Ver detalhes do Post 10</span>
+          <span>Copiar legenda →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail Box -->
+    <div class="post-detail-modal" id="detailDisplay">
+      <h3 id="detailTitle" style="font-family:var(--font-cinzel); color:var(--gold); font-size:22px; margin-bottom:10px;">
+        Selecione um post acima para visualizar a legenda completa
+      </h3>
+      <div id="detailMeta" style="font-size:12px; color:var(--gold-bright); margin-bottom:15px;"></div>
+      <div class="caption-box" id="detailCaption">
+        Clique em qualquer um dos 10 cards acima para carregar o texto formatado com emojis e hashtags prontas.
+      </div>
+      <button class="copy-btn" onclick="copyCaption()">📋 Copiar Legenda Selecionada</button>
+    </div>
+
+  </section>
+
+  <script>
+    const postsData = {
+      1: {
+        title: "POST 01 (Fixado 📌) — Abertura & Lançamento",
+        meta: "Formato: Carrossel 3 Slides | Horário sugerido: 09:00",
+        caption: `Há detalhes que não apenas compõem um estilo, mas definem uma presença.
+
+Nascemos do desejo de entregar o extraordinário: design refinado, atenção meticulosa a cada acabamento e uma experiência pensada para quem exige o melhor.
+
+Seja bem-vindo à Borglini.
+
+Conheça nossa proposta no link da bio.
+
+#Borglini #EleganciaAtemporal #EstiloRefinado #NovoCapitulo #DesignExclusivo`
+      },
+      2: {
+        title: "POST 02 — Manifesto da Marca",
+        meta: "Formato: Imagem Estática Conceitual | Horário sugerido: 10:30",
+        caption: `Menos excesso, mais significado.
+
+Na Borglini, acreditamos que a verdadeira sofisticação não precisa gritar para ser percebida. Ela se revela na escolha consciente dos materiais, na precisão das linhas e no caimento perfeito.
+
+O luxo silencioso que acompanha o seu ritmo.
+
+#Borglini #QuietLuxury #DesignMinimalista #Sofisticacao #Exclusividade`
+      },
+      3: {
+        title: "POST 03 — Vitrine Hero 01",
+        meta: "Formato: Foto de Produto em Alta Definição | Horário sugerido: 12:00",
+        caption: `Pensado para se destacar de forma sutil e inesquecível.
+
+Cada peça Borglini carrega a harmonia perfeita entre forma, função e elegância.
+
+Disponível para pedidos a partir de hoje. Fale com nosso atendimento exclusivo pelo link da bio.
+
+#Borglini #ColecaoExclusiva #Detalhamento #QualidadePremium #Estilo`
+      },
+      4: {
+        title: "POST 04 — Qualidade & Matéria-Prima",
+        meta: "Formato: Carrossel 4 Slides | Horário sugerido: 13:30",
+        caption: `Não é apenas o visual. É a sensação de tocar e perceber a qualidade superior em cada detalhe.
+
+Selecionei materiais de alto padrão para garantir que sua experiência com a Borglini supere todas as expectativas.
+
+Slide 1: Seleção rigorosa de matérias-primas.
+Slide 2: Acabamento feito com precisão artesanal.
+Slide 3: Durabilidade e presença marcante.
+
+Qual detalhe mais importa para você? Conte nos comentários.
+
+#Borglini #QualidadeArtesanal #MateriaisNobres #Excelencia #ModaElegante`
+      },
+      5: {
+        title: "POST 05 — Reels Central da Grade",
+        meta: "Formato: Reels 12 segs | Horário sugerido: 15:00",
+        caption: `Dê o play e sinta a atmosfera Borglini.
+
+Nosso feed oficial está no ar com uma proposta feita para quem valoriza a autêntica sofisticação.
+
+Siga nosso perfil e acompanhe os lançamentos diários.
+
+#Borglini #ReelsInstagram #Lancamento #Branding #EstiloAtemporal`
+      },
+      6: {
+        title: "POST 06 — Lifestyle & Contexto de Uso",
+        meta: "Formato: Imagem de Contexto | Horário sugerido: 16:30",
+        caption: `A elegância não é uma ocasião especial. É uma escolha diária.
+
+A linha Borglini foi desenvolvida para transitar com facilidade entre compromissos importantes e momentos de pausa, sempre mantendo a classe.
+
+Disponível em edições limitadas. Garanta o seu no link da bio.
+
+#Borglini #EstiloDeVida #LifestylePremium #Presenca #Exclusividade`
+      },
+      7: {
+        title: "POST 07 — Edições Limitadas",
+        meta: "Formato: Card Tipográfico Minimalista | Horário sugerido: 18:00",
+        caption: `Não produzimos em massa. Criamos experiências seletas.
+
+Cada lote Borglini é produzido sob demanda rigorosa de qualidade para que você possua um item genuinamente exclusivo.
+
+Garantia de autenticidade e excelência em cada entrega.
+
+#Borglini #EdicaoLimitada #ExclusividadeTotal #AtendimentoExclusivo`
+      },
+      8: {
+        title: "POST 08 — Guia de Estilo & Longevidade",
+        meta: "Formato: Carrossel Educativo | Horário sugerido: 19:30",
+        caption: `Investir em qualidade exige saber cuidar.
+
+Salva este post para consultar sempre que precisar manter suas peças com aparência de recém-saídas da loja.
+
+1️⃣ Armazene em local arejado e livre de umidade direta.
+2️⃣ Utilize produtos apropriados para limpeza suave.
+3️⃣ Respeite a estrutura natural do material ao guardar.
+
+A Borglini entrega qualidade para durar uma vida inteira.
+
+#Borglini #DicasDeEstilo #Conservacao #Cuidados #Elegancia`
+      },
+      9: {
+        title: "POST 09 — Versatilidade & Coleção",
+        meta: "Formato: Imagem Composta | Horário sugerido: 21:00",
+        caption: `Uma peça. Infinitas combinações impecáveis.
+
+Projetado para se harmonizar com o seu guarda-roupa/estilo pessoal sem esforço.
+
+Peça a sua diretamente no nosso canal de atendimento (link na bio).
+
+#Borglini #Versatilidade #DesignContemporaneo #EstiloMasculino #EstiloFeminino`
+      },
+      10: {
+        title: "POST 10 — Fechamento do Lançamento & CTA",
+        meta: "Formato: Card de Atendimento | Horário sugerido: 22:00",
+        caption: `O novo perfil Borglini está totalmente no ar!
+
+Estamos com nosso atendimento exclusivo via WhatsApp pronto para tirar suas dúvidas, enviar o catálogo completo e auxiliar no seu pedido.
+
+Clique no link da nossa bio e fale diretamente com nossa equipe.
+
+#Borglini #AtendimentoPersonalizado #FaleConosco #NovoPerfil #Elegancia`
+      }
+    };
+
+    let currentPost = 1;
+
+    function showPostDetail(id) {
+      currentPost = id;
+      const data = postsData[id];
+      document.getElementById('detailTitle').innerText = data.title;
+      document.getElementById('detailMeta').innerText = data.meta;
+      document.getElementById('detailCaption').innerText = data.caption;
+      
+      document.getElementById('detailDisplay').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function copyCaption() {
+      const text = document.getElementById('detailCaption').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Legenda copiada para a área de transferência!');
+      });
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Código HEX copiado: ' + text);
+      });
+    }
+
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

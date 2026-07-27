@@ -1,0 +1,82 @@
+{
+  "data": "2026-07-27",
+  "pecas": [
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Capa de Reel · escolher UMA das três",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["01-capa-reel-A.png", "02-capa-reel-B.png", "03-capa-reel-C.png"],
+      "angulo": "A legenda vai na frente da foto, ancorada no rodapé — a comida fica na parte clara, a palavra na parte escura.",
+      "legenda": "Almoço não precisa ser triste.\n\nCabe na mão, sustenta o dia e ainda sobra ânimo pra tarde. Sem sermão, sem contagem de nada — só comida fresca de verdade.\n\nBase de arroz japonês ou 200g de folhas. Proteína de 100g a 200g. Preparo na hora, hortifrúti comprado toda semana.\n\nEstr. de Xerém, 890 — em frente ao Mercado Antunes.",
+      "hashtags": "#BowlGreen #Bowlovers #XeremComeBem #poke #comidafresca",
+      "atencao": "A foto aqui é MODELO. Salva a sua foto (a da mão segurando o bowl) em 'BOWL GREEN/Fotos/reels/' e eu regenero a capa escolhida com ela — o layout já está pronto esperando o arquivo."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed · Escala de Sabor (3 posts)",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["04-escala-tropical.png", "05-escala-philadelfia.png", "06-escala-sunsalmao.png"],
+      "angulo": "Componente ESCALA DE SABOR do Design System: cada prato ganha seu ponto na régua leve → intenso.",
+      "legenda": "Onde mora o seu sabor?\n\nTodo prato do cardápio tem um ponto na régua. O Tropical mora no agridoce. O Philadelfia, no cremoso. O Sun Salmão, no leve — que aqui não é sinônimo de pouco.\n\nSão 28 pratos, cada um com seu lugar. Comenta qual é o teu ponto que a gente indica o prato certo. 💚",
+      "hashtags": "#BowlGreen #Bowlovers #XeremComeBem #escaladesabor #poke",
+      "observacao": "Gramaturas conferidas na ficha técnica: Tropical soma salmão 100g + camarão 100g = 200g. Philadelfia leva 40g de cream cheese. Sun Salmão, 200g de folhas + 160g de salmão. Nenhum número inventado."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed · Um pra cada dia · Edição Premium",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["07-um-pra-cada-dia-premium.png"],
+      "angulo": "UM PRA CADA HORA DO DIA no tratamento do card premium (navy + dourado). Mata a dor do almoço repetitivo.",
+      "legenda": "Sete dias. Sete bowls. Zero repetição.\n\nSegunda de Sora, terça de wrap na mão, quarta de arriscar no camarão com kiwi, quinta de abacate, sexta que merece salmão E camarão, sábado deluxe, domingo leve.\n\nA marmita é sempre a mesma. Aqui, não.\n\nSalva esse post e usa de guia na hora de pedir. 🗓️",
+      "hashtags": "#BowlGreen #Bowlovers #XeremComeBem #cardapiodasemana",
+      "observacao": "O realce dourado marca SEGUNDA como 'hoje'. Se for postar em outro dia, me fala qual que eu troco."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed + Story · Promoção & Urgência",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["08-urgencia-feed.png", "09-urgencia-story.png"],
+      "angulo": "CONTAGEM REGRESSIVA + TERMÔMETRO DE UNIDADES, o mesmo recado nos dois formatos.",
+      "legenda": "O peixe chega fresco de manhã e acaba junto com o dia.\n\nQuando o termômetro bate zero, acabou de verdade — aqui não tem congelado esperando ninguém no freezer.\n\nO dia começou com 30. Corre que ainda dá. 🏃",
+      "hashtags": "#BowlGreen #Bowlovers #XeremComeBem #salmaofresco",
+      "atencao": "O número 7 (de 30) é EXEMPLO. Me passa o número real do dia antes de postar — a peça já carrega o aviso '✏️ confirmar antes de postar' justamente por isso."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed · Torneio dos Sabores",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["10-torneio-sabores.png"],
+      "angulo": "Chaveamento do Design System: quatro pratos, semifinal, final e o campeão de coroa. Engajamento puro.",
+      "legenda": "Quatro pratos entraram. Um saiu com a coroa.\n\nSora bateu Niko na semi. Tropical passou pelo Philadelfia. E na final o clássico levou — o povo tem bom gosto.\n\nPróxima chave: os wraps entram na disputa. Fica de olho nos stories, quem decide é você. 👑",
+      "hashtags": "#BowlGreen #Bowlovers #XeremComeBem #torneiodesabores",
+      "atencao": "O resultado mostrado é EXEMPLO. O certo é rodar as enquetes nos stories primeiro e eu regerar com o resultado real — senão a peça anuncia uma votação que não aconteceu."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Feed · Bowl Green Responde (2 posts)",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["11-responde-dores-1.png", "12-responde-dores-2.png"],
+      "angulo": "As seis dores mapeadas do público viram pergunta de cliente e resposta da casa, em balões de conversa.",
+      "legenda": "Você perguntou, a gente responde — sem enrolar.\n\n\"Salada não sustenta\" · \"É caro comparado à marmita\" · \"Vou me sentir culpada depois?\" · \"Todo dia a mesma marmita triste\" · \"Em Xerém tem opção saudável?\" · \"Comida saudável não enche\"\n\nSeis dúvidas que chegam toda semana no direct. Respondidas com número, não com sermão.\n\nFicou faltando a sua? Manda no WhatsApp. 💬",
+      "hashtags": "#BowlGreen #Bowlovers #XeremComeBem #perguntasfrequentes",
+      "observacao": "As seis perguntas saíram do mapa emocional de dores e das objeções do CONTEXTO-MARCA — não foram inventadas. Todo número citado veio da ficha técnica."
+    },
+    {
+      "marca": "Bowl Green",
+      "handle": "@bowlgreenxerem",
+      "plataforma": "Story · Escala de Sabor",
+      "pasta": "2026-07-27-bowlgreen-componentes",
+      "arquivos": ["13-escala-story-tuna.png"],
+      "angulo": "A régua em 9:16 virando pergunta de story — isca para a caixinha de perguntas.",
+      "legenda": "Onde mora o seu? Responde aí. 📲",
+      "hashtags": "",
+      "observacao": "Sobe a caixinha de pergunta do Instagram por cima do CTA coral."
+    }
+  ]
+}
