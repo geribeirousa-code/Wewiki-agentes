@@ -9,37 +9,67 @@
 
 ## 1. INFORMAÇÕES DE RENDA
 
-### Sua Renda (Applicant)
+### SUA RENDA + MARIDO (Household)
 
 | Campo | Status | Valor | Notas |
 |---|---|---|---|
-| **Fonte 1: Emprego/Empresa** | ⚠️ Precisa documentar | ? | Renda que vem da sua empresa |
-| **Fonte 2: Outras rendas** | ⚠️ Precisa documentar | ? | Se houver |
-| **Total Mensal Estimado** | ⚠️ Não calculado | ? | Soma de todas as fontes |
+| **Fonte: Renda da Empresa** | ✅ Documentada via | ? | **Extratos da conta da empresa** — todos vossos ganhos passam por aqui |
+| **Total Mensal (Você + Marido)** | ⚠️ Não calculado | ? | Soma do que vocês ganham via empresa |
 
 **Comprovantes necessários:**
-- [ ] Extrato bancário (últimos 2-3 meses)
-- [ ] Declaração de imposto (últimas 2 années fiscais)
-- [ ] Contracheque recente (ou equivalente para autônomo)
-- [ ] Contrato ou comprovante de atividade da empresa
+- [ ] **Extrato bancário da empresa** (últimos 2-3 meses) — ESTA É A PROVA PRINCIPAL
+- [ ] Declaração de imposto (últimas 2 années)
+- [ ] Contrato da empresa ou comprovante de incorporação
+- [ ] ⚠️ NÃO use extrato pessoal (vocês não têm movimentação lá)
 
 ---
 
-### Renda do André
+### Renda do ANDRÉ (Estudante)
 
 | Campo | Status | Valor | Notas |
 |---|---|---|---|
-| **Relação com você** | ⚠️ Esclarecer | ? | Dependente? Cônjuge? Outro? |
-| **Fonte de renda** | ⚠️ Esclarecer | ? | Funcionário da sua empresa? Autônomo? Outra? |
-| **Montante mensal** | ⚠️ Não documentado | ? | Quanto ganha? |
-| **Como aparecer na aplicação** | 🔴 **CRÍTICO** | ? | "Não pode aparecer como..." — qual é a categoria correta? |
-| **Total da renda familiar** | ⚠️ Não calculado | ? | Sua renda + André |
+| **Relação** | ✅ Esclarecido | Estudante | Trabalha mas é dependente/estudante |
+| **Fonte de renda** | ✅ Esclarecido | Empresa | Trabalha para a empresa — renda vai pra conta da empresa, NÃO pessoal dele |
+| **Montante mensal** | ⚠️ Não documentado | ? | Quanto ele recebe mensalmente? |
+| **Comprovante** | 🔴 **CRÍTICO** | ? | Apenas extrato da empresa (não tem extrato pessoal com movimentação) |
+| **Categoria na app** | ✅ Claro | Household member/dependente | Ele mora com você, renda documentada pela empresa |
 
 **Comprovantes necessários:**
-- [ ] Extrato bancário do André (últimos 2-3 meses)
-- [ ] Declaração de imposto (últimas 2 années)
-- [ ] Contracheque ou equivalente
-- [ ] Se sócio/colaborador: contrato ou comprovante
+- [ ] **Extrato bancário da empresa** (mostra quanto dele passa por lá)
+- [ ] Declaração de imposto (mostra renda dele vs vosso)
+- [ ] Comprovante de que ele trabalha (contrato, email, comprovante de vendas, etc.)
+- [ ] ✅ NÃO precisa de extrato pessoal dele (exatamente o ponto — ele é estudante, não deve ter movimentação)
+
+---
+
+### Renda da TIA (Mora com vocês)
+
+| Campo | Status | Valor | Notas |
+|---|---|---|---|
+| **Relação** | ✅ Esclarecido | Mora com você | Tia do marido, co-residente |
+| **Fonte de renda** | ✅ Documentada | Limpeza de casas | Trabalho autônomo/informal — MAS tem extrato bancário |
+| **Montante mensal** | ⚠️ Não documentado | ? | Quanto entra mensalmente na conta dela? |
+| **Como aparecer** | ✅ Claro | Household member | Ela mora com você — deve contar para "unidade familiar" |
+| **Comprovante** | ✅ Disponível | Extrato pessoal | Diferente de vocês — ELA TEM movimentação |
+
+**Comprovantes necessários:**
+- [ ] **Extrato bancário da tia** (últimos 2-3 meses) — PROVA de renda de limpeza
+- [ ] Declaração de imposto (se houver; se trabalha informal, pode não ter)
+- [ ] ⚠️ Se não tiver formal: carta dela explicando como ganha, ou comprovante de cliente
+- [ ] Identidade (frente e verso)
+
+---
+
+## 🔑 Ponto-chave: Três Estratégias de Renda
+
+### Você + Marido
+→ Renda documentada pela **empresa** (extrato comercial)
+
+### André
+→ Renda documentada pela **empresa** (mesma conta de vocês, mas mostra quanto dele)
+
+### Tia
+→ Renda documentada pelo **extrato pessoal dela** (limpeza de casas, trabalho informal)
 
 ---
 

@@ -117,26 +117,36 @@ André não aparece na aplicação
 
 ---
 
-## Como Decidir
+## NOVA INFORMAÇÃO: RENDA VIA EMPRESA
 
-**Faça estas perguntas:**
+**Você esclareceu:** Todos vocês (você, marido, André) ganham via empresa. Não há contas pessoais com movimentação — só a conta comercial.
 
-1. **Qual é o income cap do programa?**
-   - Se sua renda + André > cap → Opção 3 ou 4
-   - Se sua renda + André < cap → Opção 1 ou 2
+Isso **MUDA A ESTRATÉGIA:**
 
-2. **André vai morar com você?**
-   - Sim → Opção 1 ou 2 (co-resident)
-   - Não → Opção 3 ou 4 (contribui de longe)
+### A renda de André é documentada por:
+✅ **Extrato bancário da empresa** (não dele pessoal)
+✅ **Declaração de imposto** (mostra renda de funcionário)
+❌ **NÃO por extrato pessoal** (ele é estudante, não pode ter movimentação suspeita)
 
-3. **Qual é a relação legal de André com você?**
-   - Dependente/filho → Opção 1 (dependent income)
-   - Parceiro/cônjuge → Opção 2 (co-applicant)
-   - Amigo/colateral → Opção 3 (additional income) ou 4 (excluir)
+### Categoria correta do André:
+**"Household Member - Dependent with employment income"**
 
-4. **Quanto André contribui?**
-   - 100% recorrente, formalizado → Opção 1, 2, ou 3
-   - Ocasional/informal → Opção 4 (excluir)
+Ou simplesmente: **"Dependent"** + documentação pela empresa.
+
+---
+
+## Nova Decisão Rápida
+
+Dado que **você, marido e André têm renda via empresa**, e **tia tem renda própria de limpeza**:
+
+| Pessoa | Aparece como | Documentação |
+|---|---|---|
+| Você | Applicant (Primary) | Extrato da empresa + ID |
+| Marido | Applicant 2 (Spouse) | Extrato da empresa + ID |
+| André | Household Member (Dependent/Student) | Extrato da empresa + Comprovante de trabalho |
+| Tia | Household Member (Extended Family) | Extrato pessoal dela + ID |
+
+**Vantagem:** Tem 3 fontes diferentes de comprovação, mas André está coberto pela empresa (perfeito).
 
 ---
 
