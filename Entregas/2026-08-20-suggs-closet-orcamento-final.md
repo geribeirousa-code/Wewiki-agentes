@@ -7,16 +7,28 @@
 
 ---
 
+## NATUREZA DO SERVIÇO
+
+⚠️ **Este é um projeto de MARCENARIA CUSTOMIZADA no local, não uma simples instalação.**
+
+Este serviço envolve **fabricação personalizada na residência do cliente**, com corte preciso de painéis, montagem de estrutura, e instalação completa. Diferencia-se de instalações pré-fabricadas por exigir alta precisão, múltiplas medições, e ajustes contínuos durante o processo.
+
+**Tipo de Trabalho**: Marcenaria especializada com painéis de geladeira  
+**Local de Execução**: Na casa do cliente (trabalho in loco)  
+**Complexidade**: ⭐⭐⭐⭐⭐ Muito alta (paredes angulares, múltiplos closets interconectados)  
+
+---
+
 ## ESCOPO DO TRABALHO
 
 ### Descrição do Projeto
 
-Serviço de marcenaria customizada para instalação de closets com painéis de geladeira, envolvendo:
+Serviço de **marcenaria customizada** para fabricação e instalação de closets com painéis de geladeira no local, envolvendo:
 
-✓ Corte de painéis no local (medidas precisas)  
-✓ Montagem de estrutura (múltiplos closets interconectados)  
+✓ Corte de painéis no local (medidas precisas e customizadas)  
+✓ Montagem de estrutura (múltiplos closets interconectados com paredes angulares)  
 ✓ Instalação de prateleiras e gavetas  
-✓ Instalação de cabideiros e acabamento  
+✓ Instalação de cabideiros e acabamento final  
 
 ### Componentes do Projeto
 
@@ -28,6 +40,18 @@ Serviço de marcenaria customizada para instalação de closets com painéis de 
 | **Primary Closet** | Closet grande frontal | 1 unidade |
 
 **Tamanho Total**: Aproximadamente 300 pés lineares / 200 ft²
+
+### Fatores de Complexidade
+
+Este projeto apresenta **alta complexidade técnica**:
+
+- ⭐ **Paredes angulares (Peak)**: Requerem cortes e medições especializadas; cada ângulo adiciona 30-40% ao tempo de fabricação
+- ⭐ **Paredes duplas angular (V-shape)**: Estrutura interconectada que exige simetria e precisão extrema entre lados
+- ⭐ **Tamanho grande**: ~200 ft² de closets integrados requer planejamento detalhado, transporte cuidadoso e coordenação precisa
+- ⭐ **Material especial**: Painéis de geladeira/isopor são delicados e exigem cuidado no corte para evitar lascos
+- ⭐ **Múltiplos componentes integrados**: Gavetas, prateleiras, cabideiros — cada elemento afeta os outros
+
+**Diferença Crítica**: Este NÃO é trabalho de instalação de produtos pré-fabricados. É **fabricação customizada no local**, com cada medida ajustada às características específicas da residência.
 
 ---
 
@@ -48,29 +72,51 @@ Serviço de marcenaria customizada para instalação de closets com painéis de 
 
 ## O QUE ESTÁ INCLUÍDO
 
-✓ Mão de obra especializada em marcenaria  
-✓ Uso de ferramentas profissionais  
-✓ Corte de painéis no local  
-✓ Montagem de estrutura  
+**Este orçamento cobre APENAS mão de obra e uso de ferramentas especializado:**
+
+✓ Mão de obra especializada em marcenaria customizada  
+✓ Uso de ferramentas profissionais (serras, furadeiras, nível de precisão, etc)  
+✓ Medições precisas e planejamento de corte  
+✓ Corte de painéis no local (fabricação in loco)  
+✓ Montagem de estrutura (incluindo paredes angulares)  
 ✓ Instalação de prateleiras, gavetas e cabideiros  
-✓ Acabamento e ajustes finais  
-✓ Limpeza do local após trabalho  
+✓ Ajustes e precisão durante execução  
+✓ Acabamento final e alinhamento  
+✓ Limpeza do local após trabalho completo  
 
 ---
 
 ## O QUE NÃO ESTÁ INCLUÍDO
 
-✗ Painéis de geladeira (por conta do construtor)  
-✗ Hardware adicional (puxadores, dobradiças, etc.)  
+**O cliente (construtor) é responsável por:**
+
+✗ Painéis de geladeira/isopor (fornecimento do material)  
+✗ Hardware adicional (puxadores, dobradiças, correr de gavetas, etc.)  
 ✗ Pintura ou acabamento em paint  
-✗ Estrutura de base ou preparação da parede  
+✗ Estrutura de base ou reparos de parede
+✗ Limpeza/preparação prévia do espaço (apenas limpeza pós-trabalho está incluída)
+
+**Nota**: Este orçamento refere-se UNICAMENTE a mão de obra e ferramentas. Todos os materiais são fornecidos pelo cliente/construtor.  
 
 ---
 
-## TIMELINE
+## CRONOGRAMA & COMPLEXIDADE
 
-**Duração Estimada**: 10-12 dias de trabalho (80-100 horas)  
-**Cronograma**: A combinar com o cliente  
+### Tempo de Execução
+
+**Duração Média**: **~15 dias de trabalho**  
+**Horas Estimadas**: 100-120 horas (incluindo medições, ajustes, contingência)
+
+**Motivo da Duração**:
+- Múltiplas medições precisas (paredes irregulares, ângulos complexos)
+- Corte customizado de painéis no local (não pré-fabricado)
+- Ajustes contínuos durante montagem
+- Montagem de estrutura interconectada (interdependências entre closets)
+- Acabamento e ajustes finais
+
+Este é trabalho de **marcenaria especializada**, não instalação de produtos prontos. Cada closet é fabricado especificamente para as medidas e características da casa do cliente.
+
+**Agendamento**: A combinar com o cliente (recomendado bloco de 15 dias consecutivos)  
 
 ---
 
@@ -88,15 +134,21 @@ Serviço de marcenaria customizada para instalação de closets com painéis de 
 
 ## OBSERVAÇÕES IMPORTANTES
 
-1. **Tolerâncias**: Tolerância de ±1/8" em cortes precisos (padrão de mercado)
+1. **Tipo de Serviço**: Este é trabalho de **MARCENARIA CUSTOMIZADA**, não instalação pré-fabricada. Cada medida é cortada especificamente no local para ajustar-se às características da residência.
 
-2. **Materiais**: O cliente é responsável pela aquisição de todos os painéis, hardware e materiais
+2. **Precisão Técnica**: Tolerância de ±1/8" em cortes precisos (padrão de mercado para marcenaria especializada). As paredes angulares exigem precisão extrema.
 
-3. **Acessibilidade**: Acesso fácil ao local é essencial para cumprir o cronograma
+3. **Materiais**: O cliente/construtor é responsável pela aquisição de TODOS os painéis, hardware, puxadores, dobradiças e materiais. Nossa responsabilidade é unicamente o serviço de corte, montagem e instalação.
 
-4. **Mudanças de Escopo**: Alterações solicitadas durante a execução podem resultar em custos adicionais
+4. **Acessibilidade**: Acesso fácil ao local é essencial para cumprir o cronograma de 15 dias. Espaço adequado para trabalho e transporte de estruturas é crítico.
 
-5. **Garantia**: Garantia de 12 meses em trabalho executado
+5. **Cronograma**: A duração de ~15 dias é estimada para execução ininterrupta. Pausas ou atrasos podem estender o cronograma.
+
+6. **Mudanças de Escopo**: Alterações solicitadas durante a execução (mudanças de dimensão, ângulos, layout) podem resultar em custos adicionais e atrasos.
+
+7. **Garantia**: Garantia de 12 meses no trabalho de marcenaria executado (não cobre defeitos de materiais fornecidos pelo cliente).
+
+8. **Preparação**: O local deve estar vazio e preparado para receber o trabalho. Remoção de conteúdo dos closets é responsabilidade do cliente.
 
 ---
 
