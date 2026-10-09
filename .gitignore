@@ -21,3 +21,6 @@ Caixa de Entrada/
 # Paineis de pauta renderizados (HTML com imagens em base64, 12-18MB cada).
 # Sao regeneraveis pela skill pauta-diaria — nao precisam ir pra nuvem.
 Entregas/**/pauta.html
+
+# Torneios da skill /arena (arquivos de trabalho dos sub-agentes)
+.arena/
