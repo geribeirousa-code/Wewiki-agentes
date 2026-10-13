@@ -83,11 +83,12 @@ def _colide(r, caixas):
     return False
 
 
-def mapa_svg(mapa, cor="#FF7EB6", largura=520):
+def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None, tinta=None):
     """`mapa` (do JSON do dia): regiao, lugares[], rotas[], rios_destaque[], textos[], nota."""
     nomes = mapa.get("lugares", [])
     for r in mapa.get("rotas", []):
         nomes = nomes + [n for n in r["lugares"] if n not in nomes]
+    AGUA, TERRA_COR, BORDA = agua or globals()["AGUA"], terra or globals()["TERRA_COR"], borda or globals()["BORDA"]
     desconhecidos = [n for n in nomes if n not in LUGARES]
     if desconhecidos:
         raise SystemExit("Lugares fora de dados/lugares.json (adicione com fonte): " + ", ".join(desconhecidos))
@@ -130,8 +131,11 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520):
     ja_mar = set()
     for nome, (lon, lat) in MARES.items():
         if dentro(lon, lat) and nome.strip() not in ja_mar:
-            ja_mar.add(nome.strip())
             x, y = f(lon, lat)
+            meia = len(nome.strip()) * 9.5 * 0.56 / 2 + 8
+            if x - meia < 4 or x + meia > largura - 4:
+                continue
+            ja_mar.add(nome.strip())
             reserva(x, y, nome.strip(), 9.5, "middle")
             o.append(txt(x, y, nome.strip(), 9.5, "#6BA8CC", 700, "font-style:italic;letter-spacing:1px", "middle"))
     for nome, (_, (lon, lat)) in RIOS.items():

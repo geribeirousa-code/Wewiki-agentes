@@ -1,0 +1,168 @@
+{
+  "numero": 1,
+  "paleta": "salvia",
+  "bloco": "lei",
+  "titulo": "Do Éden a Babel",
+  "passagem": "Gênesis 1–12",
+  "visao_geral": "Gênesis abre a Bíblia com duas perguntas: **de onde viemos?** e **quem é Deus?** Nesta semana você percorre o começo de tudo: a criação, a queda, o primeiro luto, o dilúvio, a aliança com Noé e o orgulho de Babel. No fim, uma virada: Deus chama **uma pessoa**, Abraão, para abençoar todas as famílias da terra (Gn 12:1–3).",
+  "fundo_titulo": "O pano de fundo",
+  "ficha": [
+    [
+      "Livro",
+      "Hebraico: **Bereshit** (“No princípio”)",
+      "consenso"
+    ],
+    [
+      "Autor",
+      "Tradição: **Moisés**. Composição discutida.",
+      "debate"
+    ],
+    [
+      "Quando",
+      "Tradição: ~1450–1250 a.C. Acadêmicos: séc. X–V a.C.",
+      "debate"
+    ],
+    [
+      "Para quem",
+      "Israel, o povo da aliança",
+      "maioria"
+    ]
+  ],
+  "cenario": "Os capítulos 1–11 contam o que aconteceu **antes** de Israel existir e são lidos num mundo cheio de outras histórias de origem. Na Mesopotâmia, por exemplo, o poema **Enuma Elish** fala de deuses em guerra. Gênesis responde de outro jeito: um só Deus, que cria por palavra e abençoa.",
+  "mapa": {
+    "regiao": "bbox",
+    "lugares": [
+      "Ur",
+      "Harã",
+      "Siquém"
+    ],
+    "rotas": [
+      {
+        "lugares": [
+          "Ur",
+          "Harã",
+          "Siquém"
+        ],
+        "cor": "#C9482A"
+      }
+    ],
+    "rios_destaque": [
+      "Tigre",
+      "Eufrates"
+    ],
+    "textos": [
+      {
+        "texto": "Mesopotâmia",
+        "lon": 46.8,
+        "lat": 35.2
+      }
+    ],
+    "legenda": "A rota de Abraão (Gn 11:31–12:6): de **Ur** a **Harã** e depois a **Siquém**, em Canaã. Cidades e traçado são esquemáticos; a localização de **Ur** (círculo tracejado) e a do Éden (que não aparece) são discutidas.",
+    "bbox": [
+      33,
+      30,
+      51,
+      37.4
+    ]
+  },
+  "linha_do_tempo": {
+    "titulo": "A semana em seis cenas",
+    "itens": [
+      {
+        "rotulo": "Gn 1–2",
+        "texto": "Criação"
+      },
+      {
+        "rotulo": "Gn 3–4",
+        "texto": "Queda e Caim"
+      },
+      {
+        "rotulo": "Gn 5–6",
+        "texto": "Genealogia e violência"
+      },
+      {
+        "rotulo": "Gn 7–9",
+        "texto": "Dilúvio e aliança"
+      },
+      {
+        "rotulo": "Gn 10–11",
+        "texto": "Nações e Babel"
+      },
+      {
+        "rotulo": "Gn 12",
+        "texto": "Chamado de Abraão",
+        "destaque": true
+      }
+    ],
+    "nota": "Gn 1–11 não traz datas. A Bíblia não data a criação nem o dilúvio."
+  },
+  "plano": [
+    {
+      "ref": "Gênesis 1–2",
+      "nota": "A criação: Deus fala, e o mundo existe"
+    },
+    {
+      "ref": "Gênesis 3–4",
+      "nota": "A queda e o primeiro luto"
+    },
+    {
+      "ref": "Gênesis 5–6",
+      "nota": "Genealogia e um mundo corrompido"
+    },
+    {
+      "ref": "Gênesis 7–8",
+      "nota": "O dilúvio e a memória de Deus"
+    },
+    {
+      "ref": "Gênesis 9–10",
+      "nota": "A aliança com Noé e as nações"
+    },
+    {
+      "ref": "Gênesis 11–12",
+      "nota": "Babel e o chamado de Abraão"
+    }
+  ],
+  "palavras": [
+    {
+      "pt": "No princípio",
+      "orig": "בְּרֵאשִׁית",
+      "translit": "bereshit",
+      "strong": "H7225",
+      "texto": "“começo”; nome hebraico do livro"
+    },
+    {
+      "pt": "imagem",
+      "orig": "צֶלֶם",
+      "translit": "tselem",
+      "strong": "H6754",
+      "texto": "“imagem, representação”"
+    },
+    {
+      "pt": "aliança",
+      "orig": "בְּרִית",
+      "translit": "berit",
+      "strong": "H1285",
+      "texto": "“pacto”; aparece com Noé (Gn 9)"
+    },
+    {
+      "pt": "descansou",
+      "orig": "שָׁבַת",
+      "translit": "shavat",
+      "strong": "H7673",
+      "texto": "“cessar”; origem de Shabat"
+    }
+  ],
+  "cultura": [
+    {
+      "titulo": "Os vizinhos contavam outra história",
+      "texto": "O Enuma Elish babilônico fala de uma luta entre deuses. Gn 1 contrasta: sem batalha, só a palavra de Deus.",
+      "certeza": "maioria"
+    },
+    {
+      "titulo": "Sol e lua sem nome",
+      "texto": "Gn 1:16 diz “luzeiros”. Povos vizinhos adoravam esses astros; muitos leem aí o recado: são criaturas.",
+      "certeza": "maioria"
+    }
+  ],
+  "bencao": "Que nesta semana você redescubra que foi feita à imagem de Deus, chamada pelo nome e sustentada pela mesma palavra que acendeu a luz no primeiro dia. Que o seu descanso seja confiança, e o seu trabalho, adoração."
+}

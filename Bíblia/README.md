@@ -7,6 +7,7 @@ Plano de **1 hora por dia, 6 dias por semana**, focado em contexto, cultura e te
 | `mapa-de-progresso.pdf` | **Imprima frente e verso (Carta, sem margens), dobre em 4 e guarde na Bíblia.** Pinte cada capítulo ao terminar. |
 | `mapa-de-progresso.html` | A mesma folha (abre no navegador; Ctrl+P). |
 | `estudos/DIA-NNN-….pdf` | O estudo do dia, 3 páginas. Já existe o Dia 1 (Gênesis 1–2) como modelo. |
+| `planner/planner-prototipo.pdf` | Protótipo do planner botânico (6 páginas) para aprovar o visual antes de produzir as 94 semanas. |
 | `plano.json` | Os 562 dias. |
 | `progresso.json` | Capítulos já estudados (o mapa usa isto para sair marcado). |
 

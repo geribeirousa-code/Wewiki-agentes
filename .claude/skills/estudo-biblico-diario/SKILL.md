@@ -83,6 +83,16 @@ Chaves obrigatórias: `dia`, `data`, `bloco`, `sigla`, `livro`, `capitulos`, `pa
 
 `python .../gerar_mapa.py --pdf` gera `Bíblia/mapa-de-progresso.pdf`: **1 folha Carta frente e verso**, dobrada duas vezes (fica com ~10,8 × 14 cm) para guardar dentro da Bíblia. Um quadradinho por capítulo, uma cor por bloco, selos dos 9 blocos, barra geral de progresso e linhas para versículos marcados. Impressão: papel Carta, **sem margens**, **gráficos de plano de fundo ligados**, frente e verso (virar pela borda longa).
 
+## Planner impresso (estilo botânico, para encadernar)
+
+Direção visual da Gê (referência: planner floral em espiral): fundo creme, verde-sálvia, rosa-blush, mostarda, terracota e azul; títulos serifados com toques manuscritos; ilustrações de tulipas, margaridas e folhas; cada semana com uma cor própria. **Não copiar marca, logotipo nem texto do produto de referência**; só a estética.
+
+`python .../planner.py --pdf` gera `Bíblia/planner/planner-prototipo.pdf` (Carta; margem da espiral à esquerda nas páginas ímpares e à direita nas pares).
+
+Estrutura planejada: **capa → boas-vindas → sumário → [por semana: abertura (2 páginas) + 6 páginas de dia]**. Conteúdo em `Bíblia/planner/semanas/SEMANA-NN.json` (visão geral, pano de fundo, mapa, linha do tempo, plano de leitura, palavras da semana, bênção) e nos `DIA-NNN-*.json` (use `leitura.estrutura_planner` com 6 linhas; o planner mostra até 6 palavras e 6 conexões, 2 perguntas). As mesmas regras de fidelidade ao original e de selos de certeza valem aqui.
+
+Status: **protótipo de 6 páginas** (capa, boas-vindas, sumário, semana 1 em 2 páginas, dia 1). Falta produzir as 94 semanas e dividir em volumes para encadernar.
+
 ## Limites honestos
 
 - Mapas são **esquemáticos** (contorno Natural Earth, domínio público; rios desenhados à mão). Não servem como cartografia.
