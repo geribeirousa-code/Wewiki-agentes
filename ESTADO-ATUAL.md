@@ -13,6 +13,9 @@ ela disser, e você corrige este arquivo.
   **Clean Touch Cabinets** (EN). Últimas entregas registradas em `Entregas/`:
   `2026-07-27-bowlgreen-componentes`, `-editorial`, `-pecas`.
 - Frente de ferramentas (2026-10-09): skill `/arena` instalada e no `main`.
+- - Frente pessoal (2026-10-13): **estudo bíblico diário** — skill `estudo-biblico-diario`, pasta `Bíblia/`
+  (plano de 562 dias, mapa de progresso para imprimir, folha do Dia 1 como modelo). Detalhes em
+  `Bíblia/README.md`. Capas de bloco ainda não automatizadas.
 - **A confirmar com a Gê:** se há entregas ou fios mais recentes que julho. Veja também
   `Wiki equipe/tarefas/abertas/` e o último log em `Wiki equipe/logs-de-sessao/`.
 

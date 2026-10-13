@@ -1,0 +1,321 @@
+{
+  "dia": 1,
+  "data": "2026-10-13",
+  "bloco": "lei",
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "capitulos": [
+    1,
+    2
+  ],
+  "passagem": "Gênesis 1–2",
+  "titulo": "No princípio: Deus fala, e o mundo existe",
+  "pergunta_guia": "Se Deus cria só com a palavra e chama tudo de “bom”, o que isso diz sobre quem Ele é — e sobre o valor do que Ele fez?",
+  "contexto": {
+    "ficha": [
+      [
+        "Livro",
+        "Hebraico: **Bereshit** (“No princípio”). “Gênesis” vem do grego da Septuaginta: “origem”.",
+        "consenso"
+      ],
+      [
+        "Autor",
+        "A tradição judaica e cristã atribui a **Moisés**. Como o livro foi composto é discutido entre estudiosos.",
+        "debate"
+      ],
+      [
+        "Quando",
+        "Tradição: entre ~1450 e ~1250 a.C. Propostas acadêmicas: séculos X–V a.C.",
+        "debate"
+      ],
+      [
+        "Para quem",
+        "Israel, o povo da aliança. O livro explica de onde esse povo veio e quem é o seu Deus.",
+        "maioria"
+      ],
+      [
+        "Língua",
+        "Hebraico bíblico, escrito da direita para a esquerda.",
+        "texto"
+      ],
+      [
+        "Gênero",
+        "Narrativa em prosa, com ritmo e refrões repetidos (Gn 1 soa quase como um poema).",
+        "consenso"
+      ]
+    ],
+    "cenario": "Gênesis 1–2 abre a Bíblia respondendo duas perguntas: **de onde viemos?** e **quem é Deus?** Os povos ao redor de Israel explicavam o mundo por batalhas entre muitos deuses. Aqui existe **um só Deus**, sem rival, e tudo nasce da sua palavra.",
+    "cultura": [
+      {
+        "titulo": "Os vizinhos contavam outra história",
+        "icone": "livro",
+        "texto": "Na Mesopotâmia, o poema babilônico **Enuma Elish** conta que o mundo nasce da luta entre deuses e que os humanos são feitos para servi-los. Gn 1 contrasta: sem batalha, Deus cria por palavra e **abençoa** os humanos.",
+        "certeza": "maioria"
+      },
+      {
+        "titulo": "Sol e lua sem nome",
+        "icone": "sol",
+        "texto": "Em Gn 1:14–16, sol e lua são chamados de **“luzeiros”**, sem os nomes comuns. Povos vizinhos adoravam esses astros como deuses. Muitos estudiosos leem aí o recado: são criaturas, não divindades.",
+        "certeza": "maioria"
+      },
+      {
+        "titulo": "Imagem de Deus",
+        "icone": "coroa",
+        "texto": "No mundo antigo, reis espalhavam **imagens** suas pelo território para mostrar autoridade. Gn 1:26–27 diz que **todo** ser humano, não só o rei, é imagem de Deus. O alcance exato dessa ideia é discutido.",
+        "certeza": "maioria"
+      },
+      {
+        "titulo": "Dois focos, dois nomes de Deus",
+        "icone": "palmeira",
+        "texto": "Gn 1:1–2:3 usa **Elohim** (“Deus”) e olha o cosmos inteiro. Gn 2:4–25 usa **YHWH Elohim** (“Senhor Deus”) e olha de perto o jardim e as pessoas. Uns leem como dois ângulos do mesmo evento; outros veem duas tradições reunidas.",
+        "certeza": "debate"
+      }
+    ]
+  },
+  "linha_do_tempo": {
+    "titulo": "Os sete dias: dar forma → encher → descansar",
+    "itens": [
+      {
+        "rotulo": "Dia 1",
+        "texto": "Luz"
+      },
+      {
+        "rotulo": "Dia 2",
+        "texto": "Céu e águas separados"
+      },
+      {
+        "rotulo": "Dia 3",
+        "texto": "Terra seca e plantas"
+      },
+      {
+        "rotulo": "Dia 4",
+        "texto": "Luzeiros: sol, lua, estrelas"
+      },
+      {
+        "rotulo": "Dia 5",
+        "texto": "Peixes e aves"
+      },
+      {
+        "rotulo": "Dia 6",
+        "texto": "Animais e seres humanos",
+        "destaque": true
+      },
+      {
+        "rotulo": "Dia 7",
+        "texto": "Deus descansa e santifica",
+        "destaque": true
+      }
+    ],
+    "nota": "Os dias 1–3 dão forma a “espaços”; os dias 4–6 os enchem (luz → luzeiros; céu e mar → aves e peixes; terra → animais e humanos). O padrão está no texto; o que ele quer dizer é interpretado de modos diferentes. A Bíblia não dá uma data para a criação."
+  },
+  "mapa": {
+    "regiao": "mesopotamia",
+    "lugares": [
+      "Assur"
+    ],
+    "rios_destaque": [
+      "Tigre",
+      "Eufrates"
+    ],
+    "textos": [
+      {
+        "texto": "Assíria",
+        "lon": 42.4,
+        "lat": 37.9
+      }
+    ],
+    "legenda": "Gn 2:10–14 cita quatro rios; dois deles são o **Tigre** (“Hidequel”) e o **Eufrates**. **Onde ficava o Éden é discutido: o mapa não marca esse lugar.**"
+  },
+  "leitura": {
+    "estrutura": [
+      {
+        "ref": "1:1",
+        "titulo": "Abertura",
+        "observe": "Uma frase que resume tudo. Quem é o sujeito? Compare com Jo 1:1."
+      },
+      {
+        "ref": "1:2",
+        "titulo": "Ponto de partida",
+        "observe": "Terra sem forma e vazia, trevas, águas — e o Espírito de Deus presente."
+      },
+      {
+        "ref": "1:3–13",
+        "titulo": "Dias 1–3",
+        "observe": "Conte quantas vezes aparecem “Disse Deus” e “Deus viu que era bom”. Que “espaços” são formados?"
+      },
+      {
+        "ref": "1:14–31",
+        "titulo": "Dias 4–6",
+        "observe": "O que enche cada espaço? Marque as bênçãos em 1:22 e 1:28."
+      },
+      {
+        "ref": "2:1–3",
+        "titulo": "Dia 7",
+        "observe": "Único dia sem “houve tarde e manhã”. Deus o abençoa e o separa como santo."
+      },
+      {
+        "ref": "2:4–7",
+        "titulo": "Segundo foco: o homem",
+        "observe": "Mesma criação, visto de perto: a terra e o ser humano formado dela."
+      },
+      {
+        "ref": "2:8–17",
+        "titulo": "O jardim",
+        "observe": "Duas árvores, quatro rios e uma única ordem. Qual é a ordem?"
+      },
+      {
+        "ref": "2:18–25",
+        "titulo": "Homem e mulher",
+        "observe": "O primeiro “não é bom” da Bíblia (2:18). Por que aparece se tudo era “bom”?"
+      }
+    ],
+    "observe_tambem": [
+      "Refrões que se repetem: “Disse Deus”, “Haja”, “E assim foi”, “Deus viu que era bom”, “houve tarde e manhã”. Pinte cada um de uma cor.",
+      "O verbo “criar” (bara’) aparece em 1:1, 1:21 e 1:27 (e em 2:3). Marque os três: o que há de especial em cada ocasião?",
+      "A palavra “dia” (yom) é lida de modos diferentes por cristãos que levam o texto a sério. Observe como o próprio texto a usa, e anote sua dúvida em vez de forçar uma resposta."
+    ]
+  },
+  "original": [
+    {
+      "pt": "No princípio",
+      "orig": "בְּרֵאשִׁית",
+      "translit": "bereshit",
+      "lingua": "hebraico",
+      "strong": "H7225",
+      "significado": "“Começo”, “primeiras partes”. Vem da mesma raiz de rosh (“cabeça”). É o nome hebraico do livro.",
+      "nvi": "No princípio",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "criou",
+      "orig": "בָּרָא",
+      "translit": "bara’",
+      "lingua": "hebraico",
+      "strong": "H1254",
+      "significado": "Nesta forma, só Deus é sujeito: nenhum humano “bara’”. Que Deus criou “do nada” é uma leitura do conjunto do texto, não só do verbo.",
+      "certeza": "maioria"
+    },
+    {
+      "pt": "sem forma e vazia",
+      "orig": "תֹהוּ וָבֹהוּ",
+      "translit": "tohu wabohu",
+      "lingua": "hebraico",
+      "strong": "H8414 + H922",
+      "significado": "Duas palavras que rimam: “deserto, caos” + “vazio”. Is 45:18 diz que Deus não criou a terra “tohu”: formou-a para ser habitada.",
+      "nvi": "sem forma e vazia",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "o Espírito pairava",
+      "orig": "רוּחַ מְרַחֶפֶת",
+      "translit": "ruach merachefet",
+      "lingua": "hebraico",
+      "strong": "H7307 + H7363",
+      "significado": "Ruach é **vento, sopro e espírito** (a mesma palavra). Rachaf é “pairar, adejar”; Dt 32:11 usa o verbo para a águia sobre os filhotes.",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "imagem",
+      "orig": "צֶלֶם",
+      "translit": "tselem",
+      "lingua": "hebraico",
+      "strong": "H6754",
+      "significado": "“Imagem, estátua, representação”. Vem junto de demut (H1823, “semelhança”). O sentido exato de “imagem de Deus” é discutido.",
+      "certeza": "maioria"
+    },
+    {
+      "pt": "descansou",
+      "orig": "שָׁבַת",
+      "translit": "shavat",
+      "lingua": "hebraico",
+      "strong": "H7673",
+      "significado": "“Cessar, parar”. Dá origem a **Shabat**. Deus para porque a obra está completa, não por cansaço.",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "homem / terra",
+      "orig": "אָדָם · אֲדָמָה",
+      "translit": "adam · adamah",
+      "lingua": "hebraico",
+      "strong": "H120 · H127",
+      "significado": "Jogo de palavras em 2:7: o **adam** vem da **adamah** (solo). Adam também significa “humanidade”, não só um nome próprio.",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "auxiliadora / alguém que o auxilie",
+      "orig": "עֵזֶר כְּנֶגְדּוֹ",
+      "translit": "ezer kenegdo",
+      "lingua": "hebraico",
+      "strong": "H5828 + H5048",
+      "significado": "Ezer é “ajuda, socorro”: a Bíblia usa a palavra para o próprio Deus (Sl 33:20; 121:1–2). Não indica inferioridade. Kenegdo: “diante dele, que corresponde”.",
+      "certeza": "consenso"
+    }
+  ],
+  "conexoes": [
+    {
+      "ref": "Jo 1:1–3",
+      "tipo": "eco",
+      "texto": "João também começa com “No princípio” e coloca o Verbo (Logos) na criação."
+    },
+    {
+      "ref": "Cl 1:16–17",
+      "tipo": "tema",
+      "texto": "Tudo foi criado por meio de Cristo e para ele."
+    },
+    {
+      "ref": "Hb 11:3",
+      "tipo": "paralelo",
+      "texto": "Pela fé entendemos que o universo foi formado pela palavra de Deus."
+    },
+    {
+      "ref": "Sl 8:3–6",
+      "tipo": "tema",
+      "texto": "O ser humano é pequeno, mas coroado de glória e honra."
+    },
+    {
+      "ref": "Is 45:18",
+      "tipo": "contraste",
+      "texto": "Deus não criou a terra “tohu”: formou-a para ser habitada."
+    },
+    {
+      "ref": "Êx 20:8–11",
+      "tipo": "tema",
+      "texto": "O sábado dos Dez Mandamentos se apoia em Gn 2:2–3."
+    },
+    {
+      "ref": "Mt 19:4–6",
+      "tipo": "cita",
+      "texto": "Jesus cita Gn 1:27 e 2:24 ao falar do casamento."
+    },
+    {
+      "ref": "1Co 15:45",
+      "tipo": "tema",
+      "texto": "Cristo é chamado de “último Adão”, em contraste com o primeiro."
+    },
+    {
+      "ref": "2Co 4:6",
+      "tipo": "eco",
+      "texto": "A luz de Gn 1:3 é usada como imagem da luz que Deus acende no coração."
+    },
+    {
+      "ref": "Ap 21–22",
+      "tipo": "eco",
+      "texto": "Nova criação: a árvore da vida de Gn 2:9 reaparece em Ap 22:2."
+    }
+  ],
+  "reflexao": [
+    "O que Gênesis 1 me mostra sobre **quem é Deus**? Escreva 3 palavras tiradas do próprio texto.",
+    "Deus chama a criação de “boa” sete vezes. O que na minha vida eu trato como “comum” ou “sem valor”, mas Ele chamou de bom?",
+    "Ser imagem de Deus (1:27) muda o valor que dou a mim mesma e às pessoas ao meu redor? Como?"
+  ],
+  "aplicacao": "Hoje, pare por 1 minuto no meio do dia, como o “shavat” de Deus, e agradeça por três coisas boas que viu. Anote abaixo.",
+  "memorizar": {
+    "ref": "Gênesis 1:27",
+    "por_que": "é a base do valor de toda pessoa."
+  },
+  "fontes": [
+    "Léxico Strong/BDB (Blue Letter Bible): H5828 conferido em 13/10/2026; demais números Strong a conferir antes de citar",
+    "Comparação com o Enuma Elish e “imagem”: J. H. Walton, The Lost World of Genesis One (2009)",
+    "Trechos da NVI: confira na sua Bíblia"
+  ]
+}

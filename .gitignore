@@ -24,3 +24,7 @@ Entregas/**/pauta.html
 
 # Torneios da skill /arena (arquivos de trabalho dos sub-agentes)
 .arena/
+
+# Cache do Python
+__pycache__/
+*.pyc

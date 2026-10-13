@@ -1,0 +1,5622 @@
+[
+ {
+  "dia": 1,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Gênesis 1–2",
+  "data_prevista": "2026-10-13"
+ },
+ {
+  "dia": 2,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Gênesis 3–4",
+  "data_prevista": "2026-10-14"
+ },
+ {
+  "dia": 3,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Gênesis 5–6",
+  "data_prevista": "2026-10-15"
+ },
+ {
+  "dia": 4,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Gênesis 7–8",
+  "data_prevista": "2026-10-16"
+ },
+ {
+  "dia": 5,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Gênesis 9–10",
+  "data_prevista": "2026-10-17"
+ },
+ {
+  "dia": 6,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Gênesis 11–12",
+  "data_prevista": "2026-10-19"
+ },
+ {
+  "dia": 7,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Gênesis 13–14",
+  "data_prevista": "2026-10-20"
+ },
+ {
+  "dia": 8,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Gênesis 15–16",
+  "data_prevista": "2026-10-21"
+ },
+ {
+  "dia": 9,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Gênesis 17–18",
+  "data_prevista": "2026-10-22"
+ },
+ {
+  "dia": 10,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Gênesis 19–20",
+  "data_prevista": "2026-10-23"
+ },
+ {
+  "dia": 11,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Gênesis 21–22",
+  "data_prevista": "2026-10-24"
+ },
+ {
+  "dia": 12,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Gênesis 23–24",
+  "data_prevista": "2026-10-26"
+ },
+ {
+  "dia": 13,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Gênesis 25–26",
+  "data_prevista": "2026-10-27"
+ },
+ {
+  "dia": 14,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Gênesis 27–28",
+  "data_prevista": "2026-10-28"
+ },
+ {
+  "dia": 15,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Gênesis 29–30",
+  "data_prevista": "2026-10-29"
+ },
+ {
+  "dia": 16,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Gênesis 31–32",
+  "data_prevista": "2026-10-30"
+ },
+ {
+  "dia": 17,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Gênesis 33–34",
+  "data_prevista": "2026-10-31"
+ },
+ {
+  "dia": 18,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Gênesis 35–36",
+  "data_prevista": "2026-11-02"
+ },
+ {
+  "dia": 19,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Gênesis 37–38",
+  "data_prevista": "2026-11-03"
+ },
+ {
+  "dia": 20,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Gênesis 39–40",
+  "data_prevista": "2026-11-04"
+ },
+ {
+  "dia": 21,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 41,
+  "ate": 42,
+  "passagem": "Gênesis 41–42",
+  "data_prevista": "2026-11-05"
+ },
+ {
+  "dia": 22,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 43,
+  "ate": 44,
+  "passagem": "Gênesis 43–44",
+  "data_prevista": "2026-11-06"
+ },
+ {
+  "dia": 23,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 45,
+  "ate": 46,
+  "passagem": "Gênesis 45–46",
+  "data_prevista": "2026-11-07"
+ },
+ {
+  "dia": 24,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 47,
+  "ate": 48,
+  "passagem": "Gênesis 47–48",
+  "data_prevista": "2026-11-09"
+ },
+ {
+  "dia": 25,
+  "sigla": "Gn",
+  "livro": "Gênesis",
+  "bloco": "lei",
+  "de": 49,
+  "ate": 50,
+  "passagem": "Gênesis 49–50",
+  "data_prevista": "2026-11-10"
+ },
+ {
+  "dia": 26,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Êxodo 1–2",
+  "data_prevista": "2026-11-11"
+ },
+ {
+  "dia": 27,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Êxodo 3–4",
+  "data_prevista": "2026-11-12"
+ },
+ {
+  "dia": 28,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Êxodo 5–6",
+  "data_prevista": "2026-11-13"
+ },
+ {
+  "dia": 29,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Êxodo 7–8",
+  "data_prevista": "2026-11-14"
+ },
+ {
+  "dia": 30,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Êxodo 9–10",
+  "data_prevista": "2026-11-16"
+ },
+ {
+  "dia": 31,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Êxodo 11–12",
+  "data_prevista": "2026-11-17"
+ },
+ {
+  "dia": 32,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Êxodo 13–14",
+  "data_prevista": "2026-11-18"
+ },
+ {
+  "dia": 33,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Êxodo 15–16",
+  "data_prevista": "2026-11-19"
+ },
+ {
+  "dia": 34,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Êxodo 17–18",
+  "data_prevista": "2026-11-20"
+ },
+ {
+  "dia": 35,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Êxodo 19–20",
+  "data_prevista": "2026-11-21"
+ },
+ {
+  "dia": 36,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Êxodo 21–22",
+  "data_prevista": "2026-11-23"
+ },
+ {
+  "dia": 37,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Êxodo 23–24",
+  "data_prevista": "2026-11-24"
+ },
+ {
+  "dia": 38,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Êxodo 25–26",
+  "data_prevista": "2026-11-25"
+ },
+ {
+  "dia": 39,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Êxodo 27–28",
+  "data_prevista": "2026-11-26"
+ },
+ {
+  "dia": 40,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Êxodo 29–30",
+  "data_prevista": "2026-11-27"
+ },
+ {
+  "dia": 41,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Êxodo 31–32",
+  "data_prevista": "2026-11-28"
+ },
+ {
+  "dia": 42,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Êxodo 33–34",
+  "data_prevista": "2026-11-30"
+ },
+ {
+  "dia": 43,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Êxodo 35–36",
+  "data_prevista": "2026-12-01"
+ },
+ {
+  "dia": 44,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Êxodo 37–38",
+  "data_prevista": "2026-12-02"
+ },
+ {
+  "dia": 45,
+  "sigla": "Êx",
+  "livro": "Êxodo",
+  "bloco": "lei",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Êxodo 39–40",
+  "data_prevista": "2026-12-03"
+ },
+ {
+  "dia": 46,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Levítico 1–2",
+  "data_prevista": "2026-12-04"
+ },
+ {
+  "dia": 47,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Levítico 3–4",
+  "data_prevista": "2026-12-05"
+ },
+ {
+  "dia": 48,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Levítico 5–6",
+  "data_prevista": "2026-12-07"
+ },
+ {
+  "dia": 49,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Levítico 7–8",
+  "data_prevista": "2026-12-08"
+ },
+ {
+  "dia": 50,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Levítico 9–10",
+  "data_prevista": "2026-12-09"
+ },
+ {
+  "dia": 51,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Levítico 11–12",
+  "data_prevista": "2026-12-10"
+ },
+ {
+  "dia": 52,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Levítico 13–14",
+  "data_prevista": "2026-12-11"
+ },
+ {
+  "dia": 53,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Levítico 15–16",
+  "data_prevista": "2026-12-12"
+ },
+ {
+  "dia": 54,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Levítico 17–18",
+  "data_prevista": "2026-12-14"
+ },
+ {
+  "dia": 55,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Levítico 19–20",
+  "data_prevista": "2026-12-15"
+ },
+ {
+  "dia": 56,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Levítico 21–22",
+  "data_prevista": "2026-12-16"
+ },
+ {
+  "dia": 57,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Levítico 23–24",
+  "data_prevista": "2026-12-17"
+ },
+ {
+  "dia": 58,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Levítico 25–26",
+  "data_prevista": "2026-12-18"
+ },
+ {
+  "dia": 59,
+  "sigla": "Lv",
+  "livro": "Levítico",
+  "bloco": "lei",
+  "de": 27,
+  "ate": 27,
+  "passagem": "Levítico 27",
+  "data_prevista": "2026-12-19"
+ },
+ {
+  "dia": 60,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Números 1–2",
+  "data_prevista": "2026-12-21"
+ },
+ {
+  "dia": 61,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Números 3–4",
+  "data_prevista": "2026-12-22"
+ },
+ {
+  "dia": 62,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Números 5–6",
+  "data_prevista": "2026-12-23"
+ },
+ {
+  "dia": 63,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Números 7–8",
+  "data_prevista": "2026-12-24"
+ },
+ {
+  "dia": 64,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Números 9–10",
+  "data_prevista": "2026-12-25"
+ },
+ {
+  "dia": 65,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Números 11–12",
+  "data_prevista": "2026-12-26"
+ },
+ {
+  "dia": 66,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Números 13–14",
+  "data_prevista": "2026-12-28"
+ },
+ {
+  "dia": 67,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Números 15–16",
+  "data_prevista": "2026-12-29"
+ },
+ {
+  "dia": 68,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Números 17–18",
+  "data_prevista": "2026-12-30"
+ },
+ {
+  "dia": 69,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Números 19–20",
+  "data_prevista": "2026-12-31"
+ },
+ {
+  "dia": 70,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Números 21–22",
+  "data_prevista": "2027-01-01"
+ },
+ {
+  "dia": 71,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Números 23–24",
+  "data_prevista": "2027-01-02"
+ },
+ {
+  "dia": 72,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Números 25–26",
+  "data_prevista": "2027-01-04"
+ },
+ {
+  "dia": 73,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Números 27–28",
+  "data_prevista": "2027-01-05"
+ },
+ {
+  "dia": 74,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Números 29–30",
+  "data_prevista": "2027-01-06"
+ },
+ {
+  "dia": 75,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Números 31–32",
+  "data_prevista": "2027-01-07"
+ },
+ {
+  "dia": 76,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Números 33–34",
+  "data_prevista": "2027-01-08"
+ },
+ {
+  "dia": 77,
+  "sigla": "Nm",
+  "livro": "Números",
+  "bloco": "lei",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Números 35–36",
+  "data_prevista": "2027-01-09"
+ },
+ {
+  "dia": 78,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Deuteronômio 1–2",
+  "data_prevista": "2027-01-11"
+ },
+ {
+  "dia": 79,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Deuteronômio 3–4",
+  "data_prevista": "2027-01-12"
+ },
+ {
+  "dia": 80,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Deuteronômio 5–6",
+  "data_prevista": "2027-01-13"
+ },
+ {
+  "dia": 81,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Deuteronômio 7–8",
+  "data_prevista": "2027-01-14"
+ },
+ {
+  "dia": 82,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Deuteronômio 9–10",
+  "data_prevista": "2027-01-15"
+ },
+ {
+  "dia": 83,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Deuteronômio 11–12",
+  "data_prevista": "2027-01-16"
+ },
+ {
+  "dia": 84,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Deuteronômio 13–14",
+  "data_prevista": "2027-01-18"
+ },
+ {
+  "dia": 85,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Deuteronômio 15–16",
+  "data_prevista": "2027-01-19"
+ },
+ {
+  "dia": 86,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Deuteronômio 17–18",
+  "data_prevista": "2027-01-20"
+ },
+ {
+  "dia": 87,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Deuteronômio 19–20",
+  "data_prevista": "2027-01-21"
+ },
+ {
+  "dia": 88,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Deuteronômio 21–22",
+  "data_prevista": "2027-01-22"
+ },
+ {
+  "dia": 89,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Deuteronômio 23–24",
+  "data_prevista": "2027-01-23"
+ },
+ {
+  "dia": 90,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Deuteronômio 25–26",
+  "data_prevista": "2027-01-25"
+ },
+ {
+  "dia": 91,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Deuteronômio 27–28",
+  "data_prevista": "2027-01-26"
+ },
+ {
+  "dia": 92,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Deuteronômio 29–30",
+  "data_prevista": "2027-01-27"
+ },
+ {
+  "dia": 93,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Deuteronômio 31–32",
+  "data_prevista": "2027-01-28"
+ },
+ {
+  "dia": 94,
+  "sigla": "Dt",
+  "livro": "Deuteronômio",
+  "bloco": "lei",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Deuteronômio 33–34",
+  "data_prevista": "2027-01-29"
+ },
+ {
+  "dia": 95,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Josué 1–2",
+  "data_prevista": "2027-01-30"
+ },
+ {
+  "dia": 96,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Josué 3–4",
+  "data_prevista": "2027-02-01"
+ },
+ {
+  "dia": 97,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Josué 5–6",
+  "data_prevista": "2027-02-02"
+ },
+ {
+  "dia": 98,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Josué 7–8",
+  "data_prevista": "2027-02-03"
+ },
+ {
+  "dia": 99,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Josué 9–10",
+  "data_prevista": "2027-02-04"
+ },
+ {
+  "dia": 100,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Josué 11–12",
+  "data_prevista": "2027-02-05"
+ },
+ {
+  "dia": 101,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Josué 13–14",
+  "data_prevista": "2027-02-06"
+ },
+ {
+  "dia": 102,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Josué 15–16",
+  "data_prevista": "2027-02-08"
+ },
+ {
+  "dia": 103,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Josué 17–18",
+  "data_prevista": "2027-02-09"
+ },
+ {
+  "dia": 104,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Josué 19–20",
+  "data_prevista": "2027-02-10"
+ },
+ {
+  "dia": 105,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Josué 21–22",
+  "data_prevista": "2027-02-11"
+ },
+ {
+  "dia": 106,
+  "sigla": "Js",
+  "livro": "Josué",
+  "bloco": "historicos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Josué 23–24",
+  "data_prevista": "2027-02-12"
+ },
+ {
+  "dia": 107,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Juízes 1–2",
+  "data_prevista": "2027-02-13"
+ },
+ {
+  "dia": 108,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Juízes 3–4",
+  "data_prevista": "2027-02-15"
+ },
+ {
+  "dia": 109,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Juízes 5–6",
+  "data_prevista": "2027-02-16"
+ },
+ {
+  "dia": 110,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Juízes 7–8",
+  "data_prevista": "2027-02-17"
+ },
+ {
+  "dia": 111,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Juízes 9–10",
+  "data_prevista": "2027-02-18"
+ },
+ {
+  "dia": 112,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Juízes 11–12",
+  "data_prevista": "2027-02-19"
+ },
+ {
+  "dia": 113,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Juízes 13–14",
+  "data_prevista": "2027-02-20"
+ },
+ {
+  "dia": 114,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Juízes 15–16",
+  "data_prevista": "2027-02-22"
+ },
+ {
+  "dia": 115,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Juízes 17–18",
+  "data_prevista": "2027-02-23"
+ },
+ {
+  "dia": 116,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Juízes 19–20",
+  "data_prevista": "2027-02-24"
+ },
+ {
+  "dia": 117,
+  "sigla": "Jz",
+  "livro": "Juízes",
+  "bloco": "historicos",
+  "de": 21,
+  "ate": 21,
+  "passagem": "Juízes 21",
+  "data_prevista": "2027-02-25"
+ },
+ {
+  "dia": 118,
+  "sigla": "Rt",
+  "livro": "Rute",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Rute 1–4",
+  "data_prevista": "2027-02-26"
+ },
+ {
+  "dia": 119,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "1 Samuel 1–2",
+  "data_prevista": "2027-02-27"
+ },
+ {
+  "dia": 120,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "1 Samuel 3–4",
+  "data_prevista": "2027-03-01"
+ },
+ {
+  "dia": 121,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "1 Samuel 5–6",
+  "data_prevista": "2027-03-02"
+ },
+ {
+  "dia": 122,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "1 Samuel 7–8",
+  "data_prevista": "2027-03-03"
+ },
+ {
+  "dia": 123,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "1 Samuel 9–10",
+  "data_prevista": "2027-03-04"
+ },
+ {
+  "dia": 124,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "1 Samuel 11–12",
+  "data_prevista": "2027-03-05"
+ },
+ {
+  "dia": 125,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "1 Samuel 13–14",
+  "data_prevista": "2027-03-06"
+ },
+ {
+  "dia": 126,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "1 Samuel 15–16",
+  "data_prevista": "2027-03-08"
+ },
+ {
+  "dia": 127,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "1 Samuel 17–18",
+  "data_prevista": "2027-03-09"
+ },
+ {
+  "dia": 128,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "1 Samuel 19–20",
+  "data_prevista": "2027-03-10"
+ },
+ {
+  "dia": 129,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "1 Samuel 21–22",
+  "data_prevista": "2027-03-11"
+ },
+ {
+  "dia": 130,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "1 Samuel 23–24",
+  "data_prevista": "2027-03-12"
+ },
+ {
+  "dia": 131,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 25,
+  "ate": 26,
+  "passagem": "1 Samuel 25–26",
+  "data_prevista": "2027-03-13"
+ },
+ {
+  "dia": 132,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 27,
+  "ate": 28,
+  "passagem": "1 Samuel 27–28",
+  "data_prevista": "2027-03-15"
+ },
+ {
+  "dia": 133,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 29,
+  "ate": 30,
+  "passagem": "1 Samuel 29–30",
+  "data_prevista": "2027-03-16"
+ },
+ {
+  "dia": 134,
+  "sigla": "1Sm",
+  "livro": "1 Samuel",
+  "bloco": "historicos",
+  "de": 31,
+  "ate": 31,
+  "passagem": "1 Samuel 31",
+  "data_prevista": "2027-03-17"
+ },
+ {
+  "dia": 135,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "2 Samuel 1–2",
+  "data_prevista": "2027-03-18"
+ },
+ {
+  "dia": 136,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "2 Samuel 3–4",
+  "data_prevista": "2027-03-19"
+ },
+ {
+  "dia": 137,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "2 Samuel 5–6",
+  "data_prevista": "2027-03-20"
+ },
+ {
+  "dia": 138,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "2 Samuel 7–8",
+  "data_prevista": "2027-03-22"
+ },
+ {
+  "dia": 139,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "2 Samuel 9–10",
+  "data_prevista": "2027-03-23"
+ },
+ {
+  "dia": 140,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "2 Samuel 11–12",
+  "data_prevista": "2027-03-24"
+ },
+ {
+  "dia": 141,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "2 Samuel 13–14",
+  "data_prevista": "2027-03-25"
+ },
+ {
+  "dia": 142,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "2 Samuel 15–16",
+  "data_prevista": "2027-03-26"
+ },
+ {
+  "dia": 143,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "2 Samuel 17–18",
+  "data_prevista": "2027-03-27"
+ },
+ {
+  "dia": 144,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "2 Samuel 19–20",
+  "data_prevista": "2027-03-29"
+ },
+ {
+  "dia": 145,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "2 Samuel 21–22",
+  "data_prevista": "2027-03-30"
+ },
+ {
+  "dia": 146,
+  "sigla": "2Sm",
+  "livro": "2 Samuel",
+  "bloco": "historicos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "2 Samuel 23–24",
+  "data_prevista": "2027-03-31"
+ },
+ {
+  "dia": 147,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "1 Reis 1–2",
+  "data_prevista": "2027-04-01"
+ },
+ {
+  "dia": 148,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "1 Reis 3–4",
+  "data_prevista": "2027-04-02"
+ },
+ {
+  "dia": 149,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "1 Reis 5–6",
+  "data_prevista": "2027-04-03"
+ },
+ {
+  "dia": 150,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "1 Reis 7–8",
+  "data_prevista": "2027-04-05"
+ },
+ {
+  "dia": 151,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "1 Reis 9–10",
+  "data_prevista": "2027-04-06"
+ },
+ {
+  "dia": 152,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "1 Reis 11–12",
+  "data_prevista": "2027-04-07"
+ },
+ {
+  "dia": 153,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "1 Reis 13–14",
+  "data_prevista": "2027-04-08"
+ },
+ {
+  "dia": 154,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "1 Reis 15–16",
+  "data_prevista": "2027-04-09"
+ },
+ {
+  "dia": 155,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "1 Reis 17–18",
+  "data_prevista": "2027-04-10"
+ },
+ {
+  "dia": 156,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "1 Reis 19–20",
+  "data_prevista": "2027-04-12"
+ },
+ {
+  "dia": 157,
+  "sigla": "1Rs",
+  "livro": "1 Reis",
+  "bloco": "historicos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "1 Reis 21–22",
+  "data_prevista": "2027-04-13"
+ },
+ {
+  "dia": 158,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "2 Reis 1–2",
+  "data_prevista": "2027-04-14"
+ },
+ {
+  "dia": 159,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "2 Reis 3–4",
+  "data_prevista": "2027-04-15"
+ },
+ {
+  "dia": 160,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "2 Reis 5–6",
+  "data_prevista": "2027-04-16"
+ },
+ {
+  "dia": 161,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "2 Reis 7–8",
+  "data_prevista": "2027-04-17"
+ },
+ {
+  "dia": 162,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "2 Reis 9–10",
+  "data_prevista": "2027-04-19"
+ },
+ {
+  "dia": 163,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "2 Reis 11–12",
+  "data_prevista": "2027-04-20"
+ },
+ {
+  "dia": 164,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "2 Reis 13–14",
+  "data_prevista": "2027-04-21"
+ },
+ {
+  "dia": 165,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "2 Reis 15–16",
+  "data_prevista": "2027-04-22"
+ },
+ {
+  "dia": 166,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "2 Reis 17–18",
+  "data_prevista": "2027-04-23"
+ },
+ {
+  "dia": 167,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "2 Reis 19–20",
+  "data_prevista": "2027-04-24"
+ },
+ {
+  "dia": 168,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "2 Reis 21–22",
+  "data_prevista": "2027-04-26"
+ },
+ {
+  "dia": 169,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "2 Reis 23–24",
+  "data_prevista": "2027-04-27"
+ },
+ {
+  "dia": 170,
+  "sigla": "2Rs",
+  "livro": "2 Reis",
+  "bloco": "historicos",
+  "de": 25,
+  "ate": 25,
+  "passagem": "2 Reis 25",
+  "data_prevista": "2027-04-28"
+ },
+ {
+  "dia": 171,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 3,
+  "passagem": "1 Crônicas 1–3",
+  "data_prevista": "2027-04-29"
+ },
+ {
+  "dia": 172,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 4,
+  "ate": 6,
+  "passagem": "1 Crônicas 4–6",
+  "data_prevista": "2027-04-30"
+ },
+ {
+  "dia": 173,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 9,
+  "passagem": "1 Crônicas 7–9",
+  "data_prevista": "2027-05-01"
+ },
+ {
+  "dia": 174,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 10,
+  "ate": 12,
+  "passagem": "1 Crônicas 10–12",
+  "data_prevista": "2027-05-03"
+ },
+ {
+  "dia": 175,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 15,
+  "passagem": "1 Crônicas 13–15",
+  "data_prevista": "2027-05-04"
+ },
+ {
+  "dia": 176,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 16,
+  "ate": 18,
+  "passagem": "1 Crônicas 16–18",
+  "data_prevista": "2027-05-05"
+ },
+ {
+  "dia": 177,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 21,
+  "passagem": "1 Crônicas 19–21",
+  "data_prevista": "2027-05-06"
+ },
+ {
+  "dia": 178,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 22,
+  "ate": 24,
+  "passagem": "1 Crônicas 22–24",
+  "data_prevista": "2027-05-07"
+ },
+ {
+  "dia": 179,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 25,
+  "ate": 27,
+  "passagem": "1 Crônicas 25–27",
+  "data_prevista": "2027-05-08"
+ },
+ {
+  "dia": 180,
+  "sigla": "1Cr",
+  "livro": "1 Crônicas",
+  "bloco": "historicos",
+  "de": 28,
+  "ate": 29,
+  "passagem": "1 Crônicas 28–29",
+  "data_prevista": "2027-05-10"
+ },
+ {
+  "dia": 181,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 3,
+  "passagem": "2 Crônicas 1–3",
+  "data_prevista": "2027-05-11"
+ },
+ {
+  "dia": 182,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 4,
+  "ate": 6,
+  "passagem": "2 Crônicas 4–6",
+  "data_prevista": "2027-05-12"
+ },
+ {
+  "dia": 183,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 9,
+  "passagem": "2 Crônicas 7–9",
+  "data_prevista": "2027-05-13"
+ },
+ {
+  "dia": 184,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 10,
+  "ate": 12,
+  "passagem": "2 Crônicas 10–12",
+  "data_prevista": "2027-05-14"
+ },
+ {
+  "dia": 185,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 15,
+  "passagem": "2 Crônicas 13–15",
+  "data_prevista": "2027-05-15"
+ },
+ {
+  "dia": 186,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 16,
+  "ate": 18,
+  "passagem": "2 Crônicas 16–18",
+  "data_prevista": "2027-05-17"
+ },
+ {
+  "dia": 187,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 19,
+  "ate": 21,
+  "passagem": "2 Crônicas 19–21",
+  "data_prevista": "2027-05-18"
+ },
+ {
+  "dia": 188,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 22,
+  "ate": 24,
+  "passagem": "2 Crônicas 22–24",
+  "data_prevista": "2027-05-19"
+ },
+ {
+  "dia": 189,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 25,
+  "ate": 27,
+  "passagem": "2 Crônicas 25–27",
+  "data_prevista": "2027-05-20"
+ },
+ {
+  "dia": 190,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 28,
+  "ate": 30,
+  "passagem": "2 Crônicas 28–30",
+  "data_prevista": "2027-05-21"
+ },
+ {
+  "dia": 191,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 31,
+  "ate": 33,
+  "passagem": "2 Crônicas 31–33",
+  "data_prevista": "2027-05-22"
+ },
+ {
+  "dia": 192,
+  "sigla": "2Cr",
+  "livro": "2 Crônicas",
+  "bloco": "historicos",
+  "de": 34,
+  "ate": 36,
+  "passagem": "2 Crônicas 34–36",
+  "data_prevista": "2027-05-24"
+ },
+ {
+  "dia": 193,
+  "sigla": "Ed",
+  "livro": "Esdras",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Esdras 1–2",
+  "data_prevista": "2027-05-25"
+ },
+ {
+  "dia": 194,
+  "sigla": "Ed",
+  "livro": "Esdras",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Esdras 3–4",
+  "data_prevista": "2027-05-26"
+ },
+ {
+  "dia": 195,
+  "sigla": "Ed",
+  "livro": "Esdras",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Esdras 5–6",
+  "data_prevista": "2027-05-27"
+ },
+ {
+  "dia": 196,
+  "sigla": "Ed",
+  "livro": "Esdras",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Esdras 7–8",
+  "data_prevista": "2027-05-28"
+ },
+ {
+  "dia": 197,
+  "sigla": "Ed",
+  "livro": "Esdras",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Esdras 9–10",
+  "data_prevista": "2027-05-29"
+ },
+ {
+  "dia": 198,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Neemias 1–2",
+  "data_prevista": "2027-05-31"
+ },
+ {
+  "dia": 199,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Neemias 3–4",
+  "data_prevista": "2027-06-01"
+ },
+ {
+  "dia": 200,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Neemias 5–6",
+  "data_prevista": "2027-06-02"
+ },
+ {
+  "dia": 201,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Neemias 7–8",
+  "data_prevista": "2027-06-03"
+ },
+ {
+  "dia": 202,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Neemias 9–10",
+  "data_prevista": "2027-06-04"
+ },
+ {
+  "dia": 203,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Neemias 11–12",
+  "data_prevista": "2027-06-05"
+ },
+ {
+  "dia": 204,
+  "sigla": "Ne",
+  "livro": "Neemias",
+  "bloco": "historicos",
+  "de": 13,
+  "ate": 13,
+  "passagem": "Neemias 13",
+  "data_prevista": "2027-06-07"
+ },
+ {
+  "dia": 205,
+  "sigla": "Et",
+  "livro": "Ester",
+  "bloco": "historicos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Ester 1–2",
+  "data_prevista": "2027-06-08"
+ },
+ {
+  "dia": 206,
+  "sigla": "Et",
+  "livro": "Ester",
+  "bloco": "historicos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Ester 3–4",
+  "data_prevista": "2027-06-09"
+ },
+ {
+  "dia": 207,
+  "sigla": "Et",
+  "livro": "Ester",
+  "bloco": "historicos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Ester 5–6",
+  "data_prevista": "2027-06-10"
+ },
+ {
+  "dia": 208,
+  "sigla": "Et",
+  "livro": "Ester",
+  "bloco": "historicos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Ester 7–8",
+  "data_prevista": "2027-06-11"
+ },
+ {
+  "dia": 209,
+  "sigla": "Et",
+  "livro": "Ester",
+  "bloco": "historicos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Ester 9–10",
+  "data_prevista": "2027-06-12"
+ },
+ {
+  "dia": 210,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Jó 1–2",
+  "data_prevista": "2027-06-14"
+ },
+ {
+  "dia": 211,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Jó 3–4",
+  "data_prevista": "2027-06-15"
+ },
+ {
+  "dia": 212,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Jó 5–6",
+  "data_prevista": "2027-06-16"
+ },
+ {
+  "dia": 213,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Jó 7–8",
+  "data_prevista": "2027-06-17"
+ },
+ {
+  "dia": 214,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Jó 9–10",
+  "data_prevista": "2027-06-18"
+ },
+ {
+  "dia": 215,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Jó 11–12",
+  "data_prevista": "2027-06-19"
+ },
+ {
+  "dia": 216,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Jó 13–14",
+  "data_prevista": "2027-06-21"
+ },
+ {
+  "dia": 217,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Jó 15–16",
+  "data_prevista": "2027-06-22"
+ },
+ {
+  "dia": 218,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Jó 17–18",
+  "data_prevista": "2027-06-23"
+ },
+ {
+  "dia": 219,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Jó 19–20",
+  "data_prevista": "2027-06-24"
+ },
+ {
+  "dia": 220,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Jó 21–22",
+  "data_prevista": "2027-06-25"
+ },
+ {
+  "dia": 221,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Jó 23–24",
+  "data_prevista": "2027-06-26"
+ },
+ {
+  "dia": 222,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Jó 25–26",
+  "data_prevista": "2027-06-28"
+ },
+ {
+  "dia": 223,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Jó 27–28",
+  "data_prevista": "2027-06-29"
+ },
+ {
+  "dia": 224,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Jó 29–30",
+  "data_prevista": "2027-06-30"
+ },
+ {
+  "dia": 225,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Jó 31–32",
+  "data_prevista": "2027-07-01"
+ },
+ {
+  "dia": 226,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Jó 33–34",
+  "data_prevista": "2027-07-02"
+ },
+ {
+  "dia": 227,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Jó 35–36",
+  "data_prevista": "2027-07-03"
+ },
+ {
+  "dia": 228,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Jó 37–38",
+  "data_prevista": "2027-07-05"
+ },
+ {
+  "dia": 229,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Jó 39–40",
+  "data_prevista": "2027-07-06"
+ },
+ {
+  "dia": 230,
+  "sigla": "Jó",
+  "livro": "Jó",
+  "bloco": "poeticos",
+  "de": 41,
+  "ate": 42,
+  "passagem": "Jó 41–42",
+  "data_prevista": "2027-07-07"
+ },
+ {
+  "dia": 231,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Salmos 1–2",
+  "data_prevista": "2027-07-08"
+ },
+ {
+  "dia": 232,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Salmos 3–4",
+  "data_prevista": "2027-07-09"
+ },
+ {
+  "dia": 233,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Salmos 5–6",
+  "data_prevista": "2027-07-10"
+ },
+ {
+  "dia": 234,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Salmos 7–8",
+  "data_prevista": "2027-07-12"
+ },
+ {
+  "dia": 235,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Salmos 9–10",
+  "data_prevista": "2027-07-13"
+ },
+ {
+  "dia": 236,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Salmos 11–12",
+  "data_prevista": "2027-07-14"
+ },
+ {
+  "dia": 237,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Salmos 13–14",
+  "data_prevista": "2027-07-15"
+ },
+ {
+  "dia": 238,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Salmos 15–16",
+  "data_prevista": "2027-07-16"
+ },
+ {
+  "dia": 239,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Salmos 17–18",
+  "data_prevista": "2027-07-17"
+ },
+ {
+  "dia": 240,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Salmos 19–20",
+  "data_prevista": "2027-07-19"
+ },
+ {
+  "dia": 241,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Salmos 21–22",
+  "data_prevista": "2027-07-20"
+ },
+ {
+  "dia": 242,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Salmos 23–24",
+  "data_prevista": "2027-07-21"
+ },
+ {
+  "dia": 243,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Salmos 25–26",
+  "data_prevista": "2027-07-22"
+ },
+ {
+  "dia": 244,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Salmos 27–28",
+  "data_prevista": "2027-07-23"
+ },
+ {
+  "dia": 245,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Salmos 29–30",
+  "data_prevista": "2027-07-24"
+ },
+ {
+  "dia": 246,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Salmos 31–32",
+  "data_prevista": "2027-07-26"
+ },
+ {
+  "dia": 247,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Salmos 33–34",
+  "data_prevista": "2027-07-27"
+ },
+ {
+  "dia": 248,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Salmos 35–36",
+  "data_prevista": "2027-07-28"
+ },
+ {
+  "dia": 249,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Salmos 37–38",
+  "data_prevista": "2027-07-29"
+ },
+ {
+  "dia": 250,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Salmos 39–40",
+  "data_prevista": "2027-07-30"
+ },
+ {
+  "dia": 251,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 41,
+  "ate": 42,
+  "passagem": "Salmos 41–42",
+  "data_prevista": "2027-07-31"
+ },
+ {
+  "dia": 252,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 43,
+  "ate": 44,
+  "passagem": "Salmos 43–44",
+  "data_prevista": "2027-08-02"
+ },
+ {
+  "dia": 253,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 45,
+  "ate": 46,
+  "passagem": "Salmos 45–46",
+  "data_prevista": "2027-08-03"
+ },
+ {
+  "dia": 254,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 47,
+  "ate": 48,
+  "passagem": "Salmos 47–48",
+  "data_prevista": "2027-08-04"
+ },
+ {
+  "dia": 255,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 49,
+  "ate": 50,
+  "passagem": "Salmos 49–50",
+  "data_prevista": "2027-08-05"
+ },
+ {
+  "dia": 256,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 51,
+  "ate": 52,
+  "passagem": "Salmos 51–52",
+  "data_prevista": "2027-08-06"
+ },
+ {
+  "dia": 257,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 53,
+  "ate": 54,
+  "passagem": "Salmos 53–54",
+  "data_prevista": "2027-08-07"
+ },
+ {
+  "dia": 258,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 55,
+  "ate": 56,
+  "passagem": "Salmos 55–56",
+  "data_prevista": "2027-08-09"
+ },
+ {
+  "dia": 259,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 57,
+  "ate": 58,
+  "passagem": "Salmos 57–58",
+  "data_prevista": "2027-08-10"
+ },
+ {
+  "dia": 260,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 59,
+  "ate": 60,
+  "passagem": "Salmos 59–60",
+  "data_prevista": "2027-08-11"
+ },
+ {
+  "dia": 261,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 61,
+  "ate": 62,
+  "passagem": "Salmos 61–62",
+  "data_prevista": "2027-08-12"
+ },
+ {
+  "dia": 262,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 63,
+  "ate": 64,
+  "passagem": "Salmos 63–64",
+  "data_prevista": "2027-08-13"
+ },
+ {
+  "dia": 263,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 65,
+  "ate": 66,
+  "passagem": "Salmos 65–66",
+  "data_prevista": "2027-08-14"
+ },
+ {
+  "dia": 264,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 67,
+  "ate": 68,
+  "passagem": "Salmos 67–68",
+  "data_prevista": "2027-08-16"
+ },
+ {
+  "dia": 265,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 69,
+  "ate": 70,
+  "passagem": "Salmos 69–70",
+  "data_prevista": "2027-08-17"
+ },
+ {
+  "dia": 266,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 71,
+  "ate": 72,
+  "passagem": "Salmos 71–72",
+  "data_prevista": "2027-08-18"
+ },
+ {
+  "dia": 267,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 73,
+  "ate": 74,
+  "passagem": "Salmos 73–74",
+  "data_prevista": "2027-08-19"
+ },
+ {
+  "dia": 268,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 75,
+  "ate": 76,
+  "passagem": "Salmos 75–76",
+  "data_prevista": "2027-08-20"
+ },
+ {
+  "dia": 269,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 77,
+  "ate": 78,
+  "passagem": "Salmos 77–78",
+  "data_prevista": "2027-08-21"
+ },
+ {
+  "dia": 270,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 79,
+  "ate": 80,
+  "passagem": "Salmos 79–80",
+  "data_prevista": "2027-08-23"
+ },
+ {
+  "dia": 271,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 81,
+  "ate": 82,
+  "passagem": "Salmos 81–82",
+  "data_prevista": "2027-08-24"
+ },
+ {
+  "dia": 272,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 83,
+  "ate": 84,
+  "passagem": "Salmos 83–84",
+  "data_prevista": "2027-08-25"
+ },
+ {
+  "dia": 273,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 85,
+  "ate": 86,
+  "passagem": "Salmos 85–86",
+  "data_prevista": "2027-08-26"
+ },
+ {
+  "dia": 274,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 87,
+  "ate": 88,
+  "passagem": "Salmos 87–88",
+  "data_prevista": "2027-08-27"
+ },
+ {
+  "dia": 275,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 89,
+  "ate": 90,
+  "passagem": "Salmos 89–90",
+  "data_prevista": "2027-08-28"
+ },
+ {
+  "dia": 276,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 91,
+  "ate": 92,
+  "passagem": "Salmos 91–92",
+  "data_prevista": "2027-08-30"
+ },
+ {
+  "dia": 277,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 93,
+  "ate": 94,
+  "passagem": "Salmos 93–94",
+  "data_prevista": "2027-08-31"
+ },
+ {
+  "dia": 278,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 95,
+  "ate": 96,
+  "passagem": "Salmos 95–96",
+  "data_prevista": "2027-09-01"
+ },
+ {
+  "dia": 279,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 97,
+  "ate": 98,
+  "passagem": "Salmos 97–98",
+  "data_prevista": "2027-09-02"
+ },
+ {
+  "dia": 280,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 99,
+  "ate": 100,
+  "passagem": "Salmos 99–100",
+  "data_prevista": "2027-09-03"
+ },
+ {
+  "dia": 281,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 101,
+  "ate": 102,
+  "passagem": "Salmos 101–102",
+  "data_prevista": "2027-09-04"
+ },
+ {
+  "dia": 282,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 103,
+  "ate": 104,
+  "passagem": "Salmos 103–104",
+  "data_prevista": "2027-09-06"
+ },
+ {
+  "dia": 283,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 105,
+  "ate": 106,
+  "passagem": "Salmos 105–106",
+  "data_prevista": "2027-09-07"
+ },
+ {
+  "dia": 284,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 107,
+  "ate": 108,
+  "passagem": "Salmos 107–108",
+  "data_prevista": "2027-09-08"
+ },
+ {
+  "dia": 285,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 109,
+  "ate": 110,
+  "passagem": "Salmos 109–110",
+  "data_prevista": "2027-09-09"
+ },
+ {
+  "dia": 286,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 111,
+  "ate": 112,
+  "passagem": "Salmos 111–112",
+  "data_prevista": "2027-09-10"
+ },
+ {
+  "dia": 287,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 113,
+  "ate": 114,
+  "passagem": "Salmos 113–114",
+  "data_prevista": "2027-09-11"
+ },
+ {
+  "dia": 288,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 115,
+  "ate": 116,
+  "passagem": "Salmos 115–116",
+  "data_prevista": "2027-09-13"
+ },
+ {
+  "dia": 289,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 117,
+  "ate": 118,
+  "passagem": "Salmos 117–118",
+  "data_prevista": "2027-09-14"
+ },
+ {
+  "dia": 290,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 119,
+  "ate": 120,
+  "passagem": "Salmos 119–120",
+  "data_prevista": "2027-09-15"
+ },
+ {
+  "dia": 291,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 121,
+  "ate": 122,
+  "passagem": "Salmos 121–122",
+  "data_prevista": "2027-09-16"
+ },
+ {
+  "dia": 292,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 123,
+  "ate": 124,
+  "passagem": "Salmos 123–124",
+  "data_prevista": "2027-09-17"
+ },
+ {
+  "dia": 293,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 125,
+  "ate": 126,
+  "passagem": "Salmos 125–126",
+  "data_prevista": "2027-09-18"
+ },
+ {
+  "dia": 294,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 127,
+  "ate": 128,
+  "passagem": "Salmos 127–128",
+  "data_prevista": "2027-09-20"
+ },
+ {
+  "dia": 295,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 129,
+  "ate": 130,
+  "passagem": "Salmos 129–130",
+  "data_prevista": "2027-09-21"
+ },
+ {
+  "dia": 296,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 131,
+  "ate": 132,
+  "passagem": "Salmos 131–132",
+  "data_prevista": "2027-09-22"
+ },
+ {
+  "dia": 297,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 133,
+  "ate": 134,
+  "passagem": "Salmos 133–134",
+  "data_prevista": "2027-09-23"
+ },
+ {
+  "dia": 298,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 135,
+  "ate": 136,
+  "passagem": "Salmos 135–136",
+  "data_prevista": "2027-09-24"
+ },
+ {
+  "dia": 299,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 137,
+  "ate": 138,
+  "passagem": "Salmos 137–138",
+  "data_prevista": "2027-09-25"
+ },
+ {
+  "dia": 300,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 139,
+  "ate": 140,
+  "passagem": "Salmos 139–140",
+  "data_prevista": "2027-09-27"
+ },
+ {
+  "dia": 301,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 141,
+  "ate": 142,
+  "passagem": "Salmos 141–142",
+  "data_prevista": "2027-09-28"
+ },
+ {
+  "dia": 302,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 143,
+  "ate": 144,
+  "passagem": "Salmos 143–144",
+  "data_prevista": "2027-09-29"
+ },
+ {
+  "dia": 303,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 145,
+  "ate": 146,
+  "passagem": "Salmos 145–146",
+  "data_prevista": "2027-09-30"
+ },
+ {
+  "dia": 304,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 147,
+  "ate": 148,
+  "passagem": "Salmos 147–148",
+  "data_prevista": "2027-10-01"
+ },
+ {
+  "dia": 305,
+  "sigla": "Sl",
+  "livro": "Salmos",
+  "bloco": "poeticos",
+  "de": 149,
+  "ate": 150,
+  "passagem": "Salmos 149–150",
+  "data_prevista": "2027-10-02"
+ },
+ {
+  "dia": 306,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Provérbios 1–2",
+  "data_prevista": "2027-10-04"
+ },
+ {
+  "dia": 307,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Provérbios 3–4",
+  "data_prevista": "2027-10-05"
+ },
+ {
+  "dia": 308,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Provérbios 5–6",
+  "data_prevista": "2027-10-06"
+ },
+ {
+  "dia": 309,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Provérbios 7–8",
+  "data_prevista": "2027-10-07"
+ },
+ {
+  "dia": 310,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Provérbios 9–10",
+  "data_prevista": "2027-10-08"
+ },
+ {
+  "dia": 311,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Provérbios 11–12",
+  "data_prevista": "2027-10-09"
+ },
+ {
+  "dia": 312,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Provérbios 13–14",
+  "data_prevista": "2027-10-11"
+ },
+ {
+  "dia": 313,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Provérbios 15–16",
+  "data_prevista": "2027-10-12"
+ },
+ {
+  "dia": 314,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Provérbios 17–18",
+  "data_prevista": "2027-10-13"
+ },
+ {
+  "dia": 315,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Provérbios 19–20",
+  "data_prevista": "2027-10-14"
+ },
+ {
+  "dia": 316,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Provérbios 21–22",
+  "data_prevista": "2027-10-15"
+ },
+ {
+  "dia": 317,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Provérbios 23–24",
+  "data_prevista": "2027-10-16"
+ },
+ {
+  "dia": 318,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Provérbios 25–26",
+  "data_prevista": "2027-10-18"
+ },
+ {
+  "dia": 319,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Provérbios 27–28",
+  "data_prevista": "2027-10-19"
+ },
+ {
+  "dia": 320,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Provérbios 29–30",
+  "data_prevista": "2027-10-20"
+ },
+ {
+  "dia": 321,
+  "sigla": "Pv",
+  "livro": "Provérbios",
+  "bloco": "poeticos",
+  "de": 31,
+  "ate": 31,
+  "passagem": "Provérbios 31",
+  "data_prevista": "2027-10-21"
+ },
+ {
+  "dia": 322,
+  "sigla": "Ec",
+  "livro": "Eclesiastes",
+  "bloco": "poeticos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Eclesiastes 1–2",
+  "data_prevista": "2027-10-22"
+ },
+ {
+  "dia": 323,
+  "sigla": "Ec",
+  "livro": "Eclesiastes",
+  "bloco": "poeticos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Eclesiastes 3–4",
+  "data_prevista": "2027-10-23"
+ },
+ {
+  "dia": 324,
+  "sigla": "Ec",
+  "livro": "Eclesiastes",
+  "bloco": "poeticos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Eclesiastes 5–6",
+  "data_prevista": "2027-10-25"
+ },
+ {
+  "dia": 325,
+  "sigla": "Ec",
+  "livro": "Eclesiastes",
+  "bloco": "poeticos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Eclesiastes 7–8",
+  "data_prevista": "2027-10-26"
+ },
+ {
+  "dia": 326,
+  "sigla": "Ec",
+  "livro": "Eclesiastes",
+  "bloco": "poeticos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Eclesiastes 9–10",
+  "data_prevista": "2027-10-27"
+ },
+ {
+  "dia": 327,
+  "sigla": "Ec",
+  "livro": "Eclesiastes",
+  "bloco": "poeticos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Eclesiastes 11–12",
+  "data_prevista": "2027-10-28"
+ },
+ {
+  "dia": 328,
+  "sigla": "Ct",
+  "livro": "Cântico dos Cânticos",
+  "bloco": "poeticos",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Cântico dos Cânticos 1–4",
+  "data_prevista": "2027-10-29"
+ },
+ {
+  "dia": 329,
+  "sigla": "Ct",
+  "livro": "Cântico dos Cânticos",
+  "bloco": "poeticos",
+  "de": 5,
+  "ate": 8,
+  "passagem": "Cântico dos Cânticos 5–8",
+  "data_prevista": "2027-10-30"
+ },
+ {
+  "dia": 330,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Isaías 1–2",
+  "data_prevista": "2027-11-01"
+ },
+ {
+  "dia": 331,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Isaías 3–4",
+  "data_prevista": "2027-11-02"
+ },
+ {
+  "dia": 332,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Isaías 5–6",
+  "data_prevista": "2027-11-03"
+ },
+ {
+  "dia": 333,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Isaías 7–8",
+  "data_prevista": "2027-11-04"
+ },
+ {
+  "dia": 334,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Isaías 9–10",
+  "data_prevista": "2027-11-05"
+ },
+ {
+  "dia": 335,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Isaías 11–12",
+  "data_prevista": "2027-11-06"
+ },
+ {
+  "dia": 336,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Isaías 13–14",
+  "data_prevista": "2027-11-08"
+ },
+ {
+  "dia": 337,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Isaías 15–16",
+  "data_prevista": "2027-11-09"
+ },
+ {
+  "dia": 338,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Isaías 17–18",
+  "data_prevista": "2027-11-10"
+ },
+ {
+  "dia": 339,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Isaías 19–20",
+  "data_prevista": "2027-11-11"
+ },
+ {
+  "dia": 340,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Isaías 21–22",
+  "data_prevista": "2027-11-12"
+ },
+ {
+  "dia": 341,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Isaías 23–24",
+  "data_prevista": "2027-11-13"
+ },
+ {
+  "dia": 342,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Isaías 25–26",
+  "data_prevista": "2027-11-15"
+ },
+ {
+  "dia": 343,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Isaías 27–28",
+  "data_prevista": "2027-11-16"
+ },
+ {
+  "dia": 344,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Isaías 29–30",
+  "data_prevista": "2027-11-17"
+ },
+ {
+  "dia": 345,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Isaías 31–32",
+  "data_prevista": "2027-11-18"
+ },
+ {
+  "dia": 346,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Isaías 33–34",
+  "data_prevista": "2027-11-19"
+ },
+ {
+  "dia": 347,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Isaías 35–36",
+  "data_prevista": "2027-11-20"
+ },
+ {
+  "dia": 348,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Isaías 37–38",
+  "data_prevista": "2027-11-22"
+ },
+ {
+  "dia": 349,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Isaías 39–40",
+  "data_prevista": "2027-11-23"
+ },
+ {
+  "dia": 350,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 41,
+  "ate": 42,
+  "passagem": "Isaías 41–42",
+  "data_prevista": "2027-11-24"
+ },
+ {
+  "dia": 351,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 43,
+  "ate": 44,
+  "passagem": "Isaías 43–44",
+  "data_prevista": "2027-11-25"
+ },
+ {
+  "dia": 352,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 45,
+  "ate": 46,
+  "passagem": "Isaías 45–46",
+  "data_prevista": "2027-11-26"
+ },
+ {
+  "dia": 353,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 47,
+  "ate": 48,
+  "passagem": "Isaías 47–48",
+  "data_prevista": "2027-11-27"
+ },
+ {
+  "dia": 354,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 49,
+  "ate": 50,
+  "passagem": "Isaías 49–50",
+  "data_prevista": "2027-11-29"
+ },
+ {
+  "dia": 355,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 51,
+  "ate": 52,
+  "passagem": "Isaías 51–52",
+  "data_prevista": "2027-11-30"
+ },
+ {
+  "dia": 356,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 53,
+  "ate": 54,
+  "passagem": "Isaías 53–54",
+  "data_prevista": "2027-12-01"
+ },
+ {
+  "dia": 357,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 55,
+  "ate": 56,
+  "passagem": "Isaías 55–56",
+  "data_prevista": "2027-12-02"
+ },
+ {
+  "dia": 358,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 57,
+  "ate": 58,
+  "passagem": "Isaías 57–58",
+  "data_prevista": "2027-12-03"
+ },
+ {
+  "dia": 359,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 59,
+  "ate": 60,
+  "passagem": "Isaías 59–60",
+  "data_prevista": "2027-12-04"
+ },
+ {
+  "dia": 360,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 61,
+  "ate": 62,
+  "passagem": "Isaías 61–62",
+  "data_prevista": "2027-12-06"
+ },
+ {
+  "dia": 361,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 63,
+  "ate": 64,
+  "passagem": "Isaías 63–64",
+  "data_prevista": "2027-12-07"
+ },
+ {
+  "dia": 362,
+  "sigla": "Is",
+  "livro": "Isaías",
+  "bloco": "profetas",
+  "de": 65,
+  "ate": 66,
+  "passagem": "Isaías 65–66",
+  "data_prevista": "2027-12-08"
+ },
+ {
+  "dia": 363,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Jeremias 1–2",
+  "data_prevista": "2027-12-09"
+ },
+ {
+  "dia": 364,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Jeremias 3–4",
+  "data_prevista": "2027-12-10"
+ },
+ {
+  "dia": 365,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Jeremias 5–6",
+  "data_prevista": "2027-12-11"
+ },
+ {
+  "dia": 366,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Jeremias 7–8",
+  "data_prevista": "2027-12-13"
+ },
+ {
+  "dia": 367,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Jeremias 9–10",
+  "data_prevista": "2027-12-14"
+ },
+ {
+  "dia": 368,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Jeremias 11–12",
+  "data_prevista": "2027-12-15"
+ },
+ {
+  "dia": 369,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Jeremias 13–14",
+  "data_prevista": "2027-12-16"
+ },
+ {
+  "dia": 370,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Jeremias 15–16",
+  "data_prevista": "2027-12-17"
+ },
+ {
+  "dia": 371,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Jeremias 17–18",
+  "data_prevista": "2027-12-18"
+ },
+ {
+  "dia": 372,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Jeremias 19–20",
+  "data_prevista": "2027-12-20"
+ },
+ {
+  "dia": 373,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Jeremias 21–22",
+  "data_prevista": "2027-12-21"
+ },
+ {
+  "dia": 374,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Jeremias 23–24",
+  "data_prevista": "2027-12-22"
+ },
+ {
+  "dia": 375,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Jeremias 25–26",
+  "data_prevista": "2027-12-23"
+ },
+ {
+  "dia": 376,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Jeremias 27–28",
+  "data_prevista": "2027-12-24"
+ },
+ {
+  "dia": 377,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Jeremias 29–30",
+  "data_prevista": "2027-12-25"
+ },
+ {
+  "dia": 378,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Jeremias 31–32",
+  "data_prevista": "2027-12-27"
+ },
+ {
+  "dia": 379,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Jeremias 33–34",
+  "data_prevista": "2027-12-28"
+ },
+ {
+  "dia": 380,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Jeremias 35–36",
+  "data_prevista": "2027-12-29"
+ },
+ {
+  "dia": 381,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Jeremias 37–38",
+  "data_prevista": "2027-12-30"
+ },
+ {
+  "dia": 382,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Jeremias 39–40",
+  "data_prevista": "2027-12-31"
+ },
+ {
+  "dia": 383,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 41,
+  "ate": 42,
+  "passagem": "Jeremias 41–42",
+  "data_prevista": "2028-01-01"
+ },
+ {
+  "dia": 384,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 43,
+  "ate": 44,
+  "passagem": "Jeremias 43–44",
+  "data_prevista": "2028-01-03"
+ },
+ {
+  "dia": 385,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 45,
+  "ate": 46,
+  "passagem": "Jeremias 45–46",
+  "data_prevista": "2028-01-04"
+ },
+ {
+  "dia": 386,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 47,
+  "ate": 48,
+  "passagem": "Jeremias 47–48",
+  "data_prevista": "2028-01-05"
+ },
+ {
+  "dia": 387,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 49,
+  "ate": 50,
+  "passagem": "Jeremias 49–50",
+  "data_prevista": "2028-01-06"
+ },
+ {
+  "dia": 388,
+  "sigla": "Jr",
+  "livro": "Jeremias",
+  "bloco": "profetas",
+  "de": 51,
+  "ate": 52,
+  "passagem": "Jeremias 51–52",
+  "data_prevista": "2028-01-07"
+ },
+ {
+  "dia": 389,
+  "sigla": "Lm",
+  "livro": "Lamentações",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 5,
+  "passagem": "Lamentações 1–5",
+  "data_prevista": "2028-01-08"
+ },
+ {
+  "dia": 390,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Ezequiel 1–2",
+  "data_prevista": "2028-01-10"
+ },
+ {
+  "dia": 391,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Ezequiel 3–4",
+  "data_prevista": "2028-01-11"
+ },
+ {
+  "dia": 392,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Ezequiel 5–6",
+  "data_prevista": "2028-01-12"
+ },
+ {
+  "dia": 393,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Ezequiel 7–8",
+  "data_prevista": "2028-01-13"
+ },
+ {
+  "dia": 394,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Ezequiel 9–10",
+  "data_prevista": "2028-01-14"
+ },
+ {
+  "dia": 395,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Ezequiel 11–12",
+  "data_prevista": "2028-01-15"
+ },
+ {
+  "dia": 396,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Ezequiel 13–14",
+  "data_prevista": "2028-01-17"
+ },
+ {
+  "dia": 397,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Ezequiel 15–16",
+  "data_prevista": "2028-01-18"
+ },
+ {
+  "dia": 398,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Ezequiel 17–18",
+  "data_prevista": "2028-01-19"
+ },
+ {
+  "dia": 399,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Ezequiel 19–20",
+  "data_prevista": "2028-01-20"
+ },
+ {
+  "dia": 400,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Ezequiel 21–22",
+  "data_prevista": "2028-01-21"
+ },
+ {
+  "dia": 401,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Ezequiel 23–24",
+  "data_prevista": "2028-01-22"
+ },
+ {
+  "dia": 402,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Ezequiel 25–26",
+  "data_prevista": "2028-01-24"
+ },
+ {
+  "dia": 403,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Ezequiel 27–28",
+  "data_prevista": "2028-01-25"
+ },
+ {
+  "dia": 404,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 29,
+  "ate": 30,
+  "passagem": "Ezequiel 29–30",
+  "data_prevista": "2028-01-26"
+ },
+ {
+  "dia": 405,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 31,
+  "ate": 32,
+  "passagem": "Ezequiel 31–32",
+  "data_prevista": "2028-01-27"
+ },
+ {
+  "dia": 406,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 33,
+  "ate": 34,
+  "passagem": "Ezequiel 33–34",
+  "data_prevista": "2028-01-28"
+ },
+ {
+  "dia": 407,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 35,
+  "ate": 36,
+  "passagem": "Ezequiel 35–36",
+  "data_prevista": "2028-01-29"
+ },
+ {
+  "dia": 408,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 37,
+  "ate": 38,
+  "passagem": "Ezequiel 37–38",
+  "data_prevista": "2028-01-31"
+ },
+ {
+  "dia": 409,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 39,
+  "ate": 40,
+  "passagem": "Ezequiel 39–40",
+  "data_prevista": "2028-02-01"
+ },
+ {
+  "dia": 410,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 41,
+  "ate": 42,
+  "passagem": "Ezequiel 41–42",
+  "data_prevista": "2028-02-02"
+ },
+ {
+  "dia": 411,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 43,
+  "ate": 44,
+  "passagem": "Ezequiel 43–44",
+  "data_prevista": "2028-02-03"
+ },
+ {
+  "dia": 412,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 45,
+  "ate": 46,
+  "passagem": "Ezequiel 45–46",
+  "data_prevista": "2028-02-04"
+ },
+ {
+  "dia": 413,
+  "sigla": "Ez",
+  "livro": "Ezequiel",
+  "bloco": "profetas",
+  "de": 47,
+  "ate": 48,
+  "passagem": "Ezequiel 47–48",
+  "data_prevista": "2028-02-05"
+ },
+ {
+  "dia": 414,
+  "sigla": "Dn",
+  "livro": "Daniel",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Daniel 1–2",
+  "data_prevista": "2028-02-07"
+ },
+ {
+  "dia": 415,
+  "sigla": "Dn",
+  "livro": "Daniel",
+  "bloco": "profetas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Daniel 3–4",
+  "data_prevista": "2028-02-08"
+ },
+ {
+  "dia": 416,
+  "sigla": "Dn",
+  "livro": "Daniel",
+  "bloco": "profetas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Daniel 5–6",
+  "data_prevista": "2028-02-09"
+ },
+ {
+  "dia": 417,
+  "sigla": "Dn",
+  "livro": "Daniel",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Daniel 7–8",
+  "data_prevista": "2028-02-10"
+ },
+ {
+  "dia": 418,
+  "sigla": "Dn",
+  "livro": "Daniel",
+  "bloco": "profetas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Daniel 9–10",
+  "data_prevista": "2028-02-11"
+ },
+ {
+  "dia": 419,
+  "sigla": "Dn",
+  "livro": "Daniel",
+  "bloco": "profetas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Daniel 11–12",
+  "data_prevista": "2028-02-12"
+ },
+ {
+  "dia": 420,
+  "sigla": "Os",
+  "livro": "Oseias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Oseias 1–3",
+  "data_prevista": "2028-02-14"
+ },
+ {
+  "dia": 421,
+  "sigla": "Os",
+  "livro": "Oseias",
+  "bloco": "profetas",
+  "de": 4,
+  "ate": 6,
+  "passagem": "Oseias 4–6",
+  "data_prevista": "2028-02-15"
+ },
+ {
+  "dia": 422,
+  "sigla": "Os",
+  "livro": "Oseias",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 9,
+  "passagem": "Oseias 7–9",
+  "data_prevista": "2028-02-16"
+ },
+ {
+  "dia": 423,
+  "sigla": "Os",
+  "livro": "Oseias",
+  "bloco": "profetas",
+  "de": 10,
+  "ate": 12,
+  "passagem": "Oseias 10–12",
+  "data_prevista": "2028-02-17"
+ },
+ {
+  "dia": 424,
+  "sigla": "Os",
+  "livro": "Oseias",
+  "bloco": "profetas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Oseias 13–14",
+  "data_prevista": "2028-02-18"
+ },
+ {
+  "dia": 425,
+  "sigla": "Jl",
+  "livro": "Joel",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Joel 1–3",
+  "data_prevista": "2028-02-19"
+ },
+ {
+  "dia": 426,
+  "sigla": "Am",
+  "livro": "Amós",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Amós 1–3",
+  "data_prevista": "2028-02-21"
+ },
+ {
+  "dia": 427,
+  "sigla": "Am",
+  "livro": "Amós",
+  "bloco": "profetas",
+  "de": 4,
+  "ate": 6,
+  "passagem": "Amós 4–6",
+  "data_prevista": "2028-02-22"
+ },
+ {
+  "dia": 428,
+  "sigla": "Am",
+  "livro": "Amós",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 9,
+  "passagem": "Amós 7–9",
+  "data_prevista": "2028-02-23"
+ },
+ {
+  "dia": 429,
+  "sigla": "Ob",
+  "livro": "Obadias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 1,
+  "passagem": "Obadias 1",
+  "data_prevista": "2028-02-24"
+ },
+ {
+  "dia": 430,
+  "sigla": "Jn",
+  "livro": "Jonas",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Jonas 1–4",
+  "data_prevista": "2028-02-25"
+ },
+ {
+  "dia": 431,
+  "sigla": "Mq",
+  "livro": "Miqueias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Miqueias 1–4",
+  "data_prevista": "2028-02-26"
+ },
+ {
+  "dia": 432,
+  "sigla": "Mq",
+  "livro": "Miqueias",
+  "bloco": "profetas",
+  "de": 5,
+  "ate": 7,
+  "passagem": "Miqueias 5–7",
+  "data_prevista": "2028-02-28"
+ },
+ {
+  "dia": 433,
+  "sigla": "Na",
+  "livro": "Naum",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Naum 1–3",
+  "data_prevista": "2028-02-29"
+ },
+ {
+  "dia": 434,
+  "sigla": "Hc",
+  "livro": "Habacuque",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Habacuque 1–3",
+  "data_prevista": "2028-03-01"
+ },
+ {
+  "dia": 435,
+  "sigla": "Sf",
+  "livro": "Sofonias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Sofonias 1–3",
+  "data_prevista": "2028-03-02"
+ },
+ {
+  "dia": 436,
+  "sigla": "Ag",
+  "livro": "Ageu",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Ageu 1–2",
+  "data_prevista": "2028-03-03"
+ },
+ {
+  "dia": 437,
+  "sigla": "Zc",
+  "livro": "Zacarias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Zacarias 1–3",
+  "data_prevista": "2028-03-04"
+ },
+ {
+  "dia": 438,
+  "sigla": "Zc",
+  "livro": "Zacarias",
+  "bloco": "profetas",
+  "de": 4,
+  "ate": 6,
+  "passagem": "Zacarias 4–6",
+  "data_prevista": "2028-03-06"
+ },
+ {
+  "dia": 439,
+  "sigla": "Zc",
+  "livro": "Zacarias",
+  "bloco": "profetas",
+  "de": 7,
+  "ate": 9,
+  "passagem": "Zacarias 7–9",
+  "data_prevista": "2028-03-07"
+ },
+ {
+  "dia": 440,
+  "sigla": "Zc",
+  "livro": "Zacarias",
+  "bloco": "profetas",
+  "de": 10,
+  "ate": 12,
+  "passagem": "Zacarias 10–12",
+  "data_prevista": "2028-03-08"
+ },
+ {
+  "dia": 441,
+  "sigla": "Zc",
+  "livro": "Zacarias",
+  "bloco": "profetas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Zacarias 13–14",
+  "data_prevista": "2028-03-09"
+ },
+ {
+  "dia": 442,
+  "sigla": "Ml",
+  "livro": "Malaquias",
+  "bloco": "profetas",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Malaquias 1–4",
+  "data_prevista": "2028-03-10"
+ },
+ {
+  "dia": 443,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Mateus 1–2",
+  "data_prevista": "2028-03-11"
+ },
+ {
+  "dia": 444,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Mateus 3–4",
+  "data_prevista": "2028-03-13"
+ },
+ {
+  "dia": 445,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Mateus 5–6",
+  "data_prevista": "2028-03-14"
+ },
+ {
+  "dia": 446,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Mateus 7–8",
+  "data_prevista": "2028-03-15"
+ },
+ {
+  "dia": 447,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Mateus 9–10",
+  "data_prevista": "2028-03-16"
+ },
+ {
+  "dia": 448,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Mateus 11–12",
+  "data_prevista": "2028-03-17"
+ },
+ {
+  "dia": 449,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Mateus 13–14",
+  "data_prevista": "2028-03-18"
+ },
+ {
+  "dia": 450,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Mateus 15–16",
+  "data_prevista": "2028-03-20"
+ },
+ {
+  "dia": 451,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Mateus 17–18",
+  "data_prevista": "2028-03-21"
+ },
+ {
+  "dia": 452,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Mateus 19–20",
+  "data_prevista": "2028-03-22"
+ },
+ {
+  "dia": 453,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Mateus 21–22",
+  "data_prevista": "2028-03-23"
+ },
+ {
+  "dia": 454,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Mateus 23–24",
+  "data_prevista": "2028-03-24"
+ },
+ {
+  "dia": 455,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Mateus 25–26",
+  "data_prevista": "2028-03-25"
+ },
+ {
+  "dia": 456,
+  "sigla": "Mt",
+  "livro": "Mateus",
+  "bloco": "evangelhos",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Mateus 27–28",
+  "data_prevista": "2028-03-27"
+ },
+ {
+  "dia": 457,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Marcos 1–2",
+  "data_prevista": "2028-03-28"
+ },
+ {
+  "dia": 458,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Marcos 3–4",
+  "data_prevista": "2028-03-29"
+ },
+ {
+  "dia": 459,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Marcos 5–6",
+  "data_prevista": "2028-03-30"
+ },
+ {
+  "dia": 460,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Marcos 7–8",
+  "data_prevista": "2028-03-31"
+ },
+ {
+  "dia": 461,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Marcos 9–10",
+  "data_prevista": "2028-04-01"
+ },
+ {
+  "dia": 462,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Marcos 11–12",
+  "data_prevista": "2028-04-03"
+ },
+ {
+  "dia": 463,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Marcos 13–14",
+  "data_prevista": "2028-04-04"
+ },
+ {
+  "dia": 464,
+  "sigla": "Mc",
+  "livro": "Marcos",
+  "bloco": "evangelhos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Marcos 15–16",
+  "data_prevista": "2028-04-05"
+ },
+ {
+  "dia": 465,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Lucas 1–2",
+  "data_prevista": "2028-04-06"
+ },
+ {
+  "dia": 466,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Lucas 3–4",
+  "data_prevista": "2028-04-07"
+ },
+ {
+  "dia": 467,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Lucas 5–6",
+  "data_prevista": "2028-04-08"
+ },
+ {
+  "dia": 468,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Lucas 7–8",
+  "data_prevista": "2028-04-10"
+ },
+ {
+  "dia": 469,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Lucas 9–10",
+  "data_prevista": "2028-04-11"
+ },
+ {
+  "dia": 470,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Lucas 11–12",
+  "data_prevista": "2028-04-12"
+ },
+ {
+  "dia": 471,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Lucas 13–14",
+  "data_prevista": "2028-04-13"
+ },
+ {
+  "dia": 472,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Lucas 15–16",
+  "data_prevista": "2028-04-14"
+ },
+ {
+  "dia": 473,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Lucas 17–18",
+  "data_prevista": "2028-04-15"
+ },
+ {
+  "dia": 474,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Lucas 19–20",
+  "data_prevista": "2028-04-17"
+ },
+ {
+  "dia": 475,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Lucas 21–22",
+  "data_prevista": "2028-04-18"
+ },
+ {
+  "dia": 476,
+  "sigla": "Lc",
+  "livro": "Lucas",
+  "bloco": "evangelhos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Lucas 23–24",
+  "data_prevista": "2028-04-19"
+ },
+ {
+  "dia": 477,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "João 1–2",
+  "data_prevista": "2028-04-20"
+ },
+ {
+  "dia": 478,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "João 3–4",
+  "data_prevista": "2028-04-21"
+ },
+ {
+  "dia": 479,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "João 5–6",
+  "data_prevista": "2028-04-22"
+ },
+ {
+  "dia": 480,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "João 7–8",
+  "data_prevista": "2028-04-24"
+ },
+ {
+  "dia": 481,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "João 9–10",
+  "data_prevista": "2028-04-25"
+ },
+ {
+  "dia": 482,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "João 11–12",
+  "data_prevista": "2028-04-26"
+ },
+ {
+  "dia": 483,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "João 13–14",
+  "data_prevista": "2028-04-27"
+ },
+ {
+  "dia": 484,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "João 15–16",
+  "data_prevista": "2028-04-28"
+ },
+ {
+  "dia": 485,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "João 17–18",
+  "data_prevista": "2028-04-29"
+ },
+ {
+  "dia": 486,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "João 19–20",
+  "data_prevista": "2028-05-01"
+ },
+ {
+  "dia": 487,
+  "sigla": "Jo",
+  "livro": "João",
+  "bloco": "evangelhos",
+  "de": 21,
+  "ate": 21,
+  "passagem": "João 21",
+  "data_prevista": "2028-05-02"
+ },
+ {
+  "dia": 488,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Atos 1–2",
+  "data_prevista": "2028-05-03"
+ },
+ {
+  "dia": 489,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Atos 3–4",
+  "data_prevista": "2028-05-04"
+ },
+ {
+  "dia": 490,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Atos 5–6",
+  "data_prevista": "2028-05-05"
+ },
+ {
+  "dia": 491,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Atos 7–8",
+  "data_prevista": "2028-05-06"
+ },
+ {
+  "dia": 492,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Atos 9–10",
+  "data_prevista": "2028-05-08"
+ },
+ {
+  "dia": 493,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Atos 11–12",
+  "data_prevista": "2028-05-09"
+ },
+ {
+  "dia": 494,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Atos 13–14",
+  "data_prevista": "2028-05-10"
+ },
+ {
+  "dia": 495,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Atos 15–16",
+  "data_prevista": "2028-05-11"
+ },
+ {
+  "dia": 496,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Atos 17–18",
+  "data_prevista": "2028-05-12"
+ },
+ {
+  "dia": 497,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Atos 19–20",
+  "data_prevista": "2028-05-13"
+ },
+ {
+  "dia": 498,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Atos 21–22",
+  "data_prevista": "2028-05-15"
+ },
+ {
+  "dia": 499,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 23,
+  "ate": 24,
+  "passagem": "Atos 23–24",
+  "data_prevista": "2028-05-16"
+ },
+ {
+  "dia": 500,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 25,
+  "ate": 26,
+  "passagem": "Atos 25–26",
+  "data_prevista": "2028-05-17"
+ },
+ {
+  "dia": 501,
+  "sigla": "At",
+  "livro": "Atos",
+  "bloco": "atos",
+  "de": 27,
+  "ate": 28,
+  "passagem": "Atos 27–28",
+  "data_prevista": "2028-05-18"
+ },
+ {
+  "dia": 502,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Romanos 1–2",
+  "data_prevista": "2028-05-19"
+ },
+ {
+  "dia": 503,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Romanos 3–4",
+  "data_prevista": "2028-05-20"
+ },
+ {
+  "dia": 504,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Romanos 5–6",
+  "data_prevista": "2028-05-22"
+ },
+ {
+  "dia": 505,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Romanos 7–8",
+  "data_prevista": "2028-05-23"
+ },
+ {
+  "dia": 506,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Romanos 9–10",
+  "data_prevista": "2028-05-24"
+ },
+ {
+  "dia": 507,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Romanos 11–12",
+  "data_prevista": "2028-05-25"
+ },
+ {
+  "dia": 508,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Romanos 13–14",
+  "data_prevista": "2028-05-26"
+ },
+ {
+  "dia": 509,
+  "sigla": "Rm",
+  "livro": "Romanos",
+  "bloco": "paulinas",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Romanos 15–16",
+  "data_prevista": "2028-05-27"
+ },
+ {
+  "dia": 510,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "1 Coríntios 1–2",
+  "data_prevista": "2028-05-29"
+ },
+ {
+  "dia": 511,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "1 Coríntios 3–4",
+  "data_prevista": "2028-05-30"
+ },
+ {
+  "dia": 512,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "1 Coríntios 5–6",
+  "data_prevista": "2028-05-31"
+ },
+ {
+  "dia": 513,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "1 Coríntios 7–8",
+  "data_prevista": "2028-06-01"
+ },
+ {
+  "dia": 514,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "1 Coríntios 9–10",
+  "data_prevista": "2028-06-02"
+ },
+ {
+  "dia": 515,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "1 Coríntios 11–12",
+  "data_prevista": "2028-06-03"
+ },
+ {
+  "dia": 516,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 13,
+  "ate": 14,
+  "passagem": "1 Coríntios 13–14",
+  "data_prevista": "2028-06-05"
+ },
+ {
+  "dia": 517,
+  "sigla": "1Co",
+  "livro": "1 Coríntios",
+  "bloco": "paulinas",
+  "de": 15,
+  "ate": 16,
+  "passagem": "1 Coríntios 15–16",
+  "data_prevista": "2028-06-06"
+ },
+ {
+  "dia": 518,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 2,
+  "passagem": "2 Coríntios 1–2",
+  "data_prevista": "2028-06-07"
+ },
+ {
+  "dia": 519,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 3,
+  "ate": 4,
+  "passagem": "2 Coríntios 3–4",
+  "data_prevista": "2028-06-08"
+ },
+ {
+  "dia": 520,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 5,
+  "ate": 6,
+  "passagem": "2 Coríntios 5–6",
+  "data_prevista": "2028-06-09"
+ },
+ {
+  "dia": 521,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 7,
+  "ate": 8,
+  "passagem": "2 Coríntios 7–8",
+  "data_prevista": "2028-06-10"
+ },
+ {
+  "dia": 522,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 9,
+  "ate": 10,
+  "passagem": "2 Coríntios 9–10",
+  "data_prevista": "2028-06-12"
+ },
+ {
+  "dia": 523,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 11,
+  "ate": 12,
+  "passagem": "2 Coríntios 11–12",
+  "data_prevista": "2028-06-13"
+ },
+ {
+  "dia": 524,
+  "sigla": "2Co",
+  "livro": "2 Coríntios",
+  "bloco": "paulinas",
+  "de": 13,
+  "ate": 13,
+  "passagem": "2 Coríntios 13",
+  "data_prevista": "2028-06-14"
+ },
+ {
+  "dia": 525,
+  "sigla": "Gl",
+  "livro": "Gálatas",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Gálatas 1–3",
+  "data_prevista": "2028-06-15"
+ },
+ {
+  "dia": 526,
+  "sigla": "Gl",
+  "livro": "Gálatas",
+  "bloco": "paulinas",
+  "de": 4,
+  "ate": 6,
+  "passagem": "Gálatas 4–6",
+  "data_prevista": "2028-06-16"
+ },
+ {
+  "dia": 527,
+  "sigla": "Ef",
+  "livro": "Efésios",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Efésios 1–3",
+  "data_prevista": "2028-06-17"
+ },
+ {
+  "dia": 528,
+  "sigla": "Ef",
+  "livro": "Efésios",
+  "bloco": "paulinas",
+  "de": 4,
+  "ate": 6,
+  "passagem": "Efésios 4–6",
+  "data_prevista": "2028-06-19"
+ },
+ {
+  "dia": 529,
+  "sigla": "Fp",
+  "livro": "Filipenses",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Filipenses 1–4",
+  "data_prevista": "2028-06-20"
+ },
+ {
+  "dia": 530,
+  "sigla": "Cl",
+  "livro": "Colossenses",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 4,
+  "passagem": "Colossenses 1–4",
+  "data_prevista": "2028-06-21"
+ },
+ {
+  "dia": 531,
+  "sigla": "1Ts",
+  "livro": "1 Tessalonicenses",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 5,
+  "passagem": "1 Tessalonicenses 1–5",
+  "data_prevista": "2028-06-22"
+ },
+ {
+  "dia": 532,
+  "sigla": "2Ts",
+  "livro": "2 Tessalonicenses",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "2 Tessalonicenses 1–3",
+  "data_prevista": "2028-06-23"
+ },
+ {
+  "dia": 533,
+  "sigla": "1Tm",
+  "livro": "1 Timóteo",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "1 Timóteo 1–3",
+  "data_prevista": "2028-06-24"
+ },
+ {
+  "dia": 534,
+  "sigla": "1Tm",
+  "livro": "1 Timóteo",
+  "bloco": "paulinas",
+  "de": 4,
+  "ate": 6,
+  "passagem": "1 Timóteo 4–6",
+  "data_prevista": "2028-06-26"
+ },
+ {
+  "dia": 535,
+  "sigla": "2Tm",
+  "livro": "2 Timóteo",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 4,
+  "passagem": "2 Timóteo 1–4",
+  "data_prevista": "2028-06-27"
+ },
+ {
+  "dia": 536,
+  "sigla": "Tt",
+  "livro": "Tito",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 3,
+  "passagem": "Tito 1–3",
+  "data_prevista": "2028-06-28"
+ },
+ {
+  "dia": 537,
+  "sigla": "Fm",
+  "livro": "Filemom",
+  "bloco": "paulinas",
+  "de": 1,
+  "ate": 1,
+  "passagem": "Filemom 1",
+  "data_prevista": "2028-06-29"
+ },
+ {
+  "dia": 538,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Hebreus 1–2",
+  "data_prevista": "2028-06-30"
+ },
+ {
+  "dia": 539,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Hebreus 3–4",
+  "data_prevista": "2028-07-01"
+ },
+ {
+  "dia": 540,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Hebreus 5–6",
+  "data_prevista": "2028-07-03"
+ },
+ {
+  "dia": 541,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Hebreus 7–8",
+  "data_prevista": "2028-07-04"
+ },
+ {
+  "dia": 542,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Hebreus 9–10",
+  "data_prevista": "2028-07-05"
+ },
+ {
+  "dia": 543,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Hebreus 11–12",
+  "data_prevista": "2028-07-06"
+ },
+ {
+  "dia": 544,
+  "sigla": "Hb",
+  "livro": "Hebreus",
+  "bloco": "gerais",
+  "de": 13,
+  "ate": 13,
+  "passagem": "Hebreus 13",
+  "data_prevista": "2028-07-07"
+ },
+ {
+  "dia": 545,
+  "sigla": "Tg",
+  "livro": "Tiago",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 5,
+  "passagem": "Tiago 1–5",
+  "data_prevista": "2028-07-08"
+ },
+ {
+  "dia": 546,
+  "sigla": "1Pe",
+  "livro": "1 Pedro",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 5,
+  "passagem": "1 Pedro 1–5",
+  "data_prevista": "2028-07-10"
+ },
+ {
+  "dia": 547,
+  "sigla": "2Pe",
+  "livro": "2 Pedro",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 3,
+  "passagem": "2 Pedro 1–3",
+  "data_prevista": "2028-07-11"
+ },
+ {
+  "dia": 548,
+  "sigla": "1Jo",
+  "livro": "1 João",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 5,
+  "passagem": "1 João 1–5",
+  "data_prevista": "2028-07-12"
+ },
+ {
+  "dia": 549,
+  "sigla": "2Jo",
+  "livro": "2 João",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 1,
+  "passagem": "2 João 1",
+  "data_prevista": "2028-07-13"
+ },
+ {
+  "dia": 550,
+  "sigla": "3Jo",
+  "livro": "3 João",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 1,
+  "passagem": "3 João 1",
+  "data_prevista": "2028-07-14"
+ },
+ {
+  "dia": 551,
+  "sigla": "Jd",
+  "livro": "Judas",
+  "bloco": "gerais",
+  "de": 1,
+  "ate": 1,
+  "passagem": "Judas 1",
+  "data_prevista": "2028-07-15"
+ },
+ {
+  "dia": 552,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 1,
+  "ate": 2,
+  "passagem": "Apocalipse 1–2",
+  "data_prevista": "2028-07-17"
+ },
+ {
+  "dia": 553,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 3,
+  "ate": 4,
+  "passagem": "Apocalipse 3–4",
+  "data_prevista": "2028-07-18"
+ },
+ {
+  "dia": 554,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 5,
+  "ate": 6,
+  "passagem": "Apocalipse 5–6",
+  "data_prevista": "2028-07-19"
+ },
+ {
+  "dia": 555,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 7,
+  "ate": 8,
+  "passagem": "Apocalipse 7–8",
+  "data_prevista": "2028-07-20"
+ },
+ {
+  "dia": 556,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 9,
+  "ate": 10,
+  "passagem": "Apocalipse 9–10",
+  "data_prevista": "2028-07-21"
+ },
+ {
+  "dia": 557,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 11,
+  "ate": 12,
+  "passagem": "Apocalipse 11–12",
+  "data_prevista": "2028-07-22"
+ },
+ {
+  "dia": 558,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 13,
+  "ate": 14,
+  "passagem": "Apocalipse 13–14",
+  "data_prevista": "2028-07-24"
+ },
+ {
+  "dia": 559,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 15,
+  "ate": 16,
+  "passagem": "Apocalipse 15–16",
+  "data_prevista": "2028-07-25"
+ },
+ {
+  "dia": 560,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 17,
+  "ate": 18,
+  "passagem": "Apocalipse 17–18",
+  "data_prevista": "2028-07-26"
+ },
+ {
+  "dia": 561,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 19,
+  "ate": 20,
+  "passagem": "Apocalipse 19–20",
+  "data_prevista": "2028-07-27"
+ },
+ {
+  "dia": 562,
+  "sigla": "Ap",
+  "livro": "Apocalipse",
+  "bloco": "apocalipse",
+  "de": 21,
+  "ate": 22,
+  "passagem": "Apocalipse 21–22",
+  "data_prevista": "2028-07-28"
+ }
+]
