@@ -1,21 +1,59 @@
-# Pinturas das páginas de pausa
+# Pinturas das páginas de pausa (estilo Pixar + humor feminino)
 
-Estilo escolhido pela Gê (2026-10-14): **ilustração fofa desenhada à mão**, contorno marrom fino, aquarela e lápis de cor suaves, papel creme com bastante espaço vazio, personagens expressivos, com uma frase manuscrita (a frase entra pelo planner, **não** na imagem).
+Decisão da Gê (2026-10-14): estilo **Pixar (3D animado, olhos grandes, luz quente)** misturado ao traço suave da ilustração de gratidão, com **sátiras no contexto feminino** (mãe, trabalha fora, empresária, sozinha, culpada). Jesus é bem-humorado e manso; a graça vem da vida real da mulher, **nunca contra Jesus nem contra a Bíblia**.
 
-As imagens desta pasta são **prévias de baixa resolução (~200 px)**, só para ver o estilo e o encaixe. Para imprimir, baixe as versões em alta no Canva (links abaixo), salve com o **mesmo nome** (`banco.jpg` etc.) sobre estas e rode `python .claude/skills/estudo-biblico-diario/scripts/planner.py --pdf`. Mínimo recomendado: 2550 × 2000 px.
+**Os balões de fala e a legenda rosa são escritos pelo planner** (a IA erra português), então a imagem deve vir **sem texto**, com a mulher à esquerda, Jesus à direita e o terço de cima limpo.
 
-| Arquivo | Frase | Texto | Canva |
+As imagens desta pasta são **prévias de baixa resolução (~200 px)**: o gerador só devolve miniatura aqui. Para imprimir, baixe a versão em alta no Canva (link abaixo) ou gere a cena na sua ferramenta com o prompt, salve como `<cena>.jpg` (≥ 2550 × 2000 px) nesta pasta e rode `python .claude/skills/estudo-biblico-diario/scripts/planner.py --pdf`.
+
+| Cena | Texto bíblico | Balões | Canva |
 |---|---|---|---|
-| `banco` | Senta aqui um pouquinho. | Mt 11:28–30 | https://www.canva.com/M/MAHX81jYVzk |
-| `carrega` | Eu te carrego. | Is 46:4 | https://www.canva.com/M/MAHX87PE6I0 |
-| `porta` | Eu bato bem baixinho. | Ap 3:20 | https://www.canva.com/M/MAHX8-eEREQ |
-| `marta` | Marta, Marta… | Lc 10:38–42 | https://www.canva.com/M/MAHX89PMCck |
-| `buque` | Eu guardei o buquê pra você. | Lc 12:27 | https://www.canva.com/M/MAHX8-ehJi8 |
+| `banheiro` | Mateus 6:6 | **ela:** Senhor, só 5 minutinhos de silêncio! / **jesus:** Pode falar. Eu espero. Eu não tenho pressa. | https://www.canva.com/M/MAHX8_eJmf8 |
+| `agenda` | Lucas 10:41–42 | **ela:** Eu vou te encaixar na agenda, prometo! / **jesus:** Eu não quero ser um item da lista. Eu quero você. | a gerar |
+| `presenca` | Romanos 8:1 | **ela:** Faz três dias que eu não leio a Bíblia… de novo. / **jesus:** Eu não tenho lista de presença, filha. | https://www.canva.com/M/MAHX8xb2jDM |
+| `controle` | 1 Pedro 5:7 | **jesus:** Posso segurar alguma coisa pra você? / **ela:** Não precisa, eu dou conta! (as pernas tremendo) | https://www.canva.com/M/MAHX87JNRGU |
+| `descanso` | Salmo 127:2 | **ela:** Senhor, abençoa o meu negócio! / **jesus:** Posso abençoar o seu sono também? | a gerar |
+| `bagunca` | Lucas 10:38–42 | **ela:** Desculpa a bagunça, eu não esperava visita! / **jesus:** Eu não vim pela casa. Eu vim por você. | a gerar |
+| `comparacao` | Salmo 139:14 | **ela:** Todo mundo parece dar conta, menos eu. / **jesus:** Você está vendo o palco. Eu vejo os bastidores de todo mundo. | a gerar |
+| `cozinha` | 1 Tessalonicenses 5:17 | **ela:** Eu não tenho tempo de orar direito… / **jesus:** Pode orar assim mesmo. Eu escuto até o barulho da faca. | a gerar |
+| `gratidao` | Salmo 136:1 | **ela:** Até aqui, e por tudo o que há de vir, obrigada, Jesus. | a gerar |
 
-## Prompt-base (mantém os personagens iguais em todas as cenas)
+## Prompts (copie e cole; o bloco de personagens é igual em todos para manter a coerência)
 
-> Charming hand-drawn storybook illustration, warm and tender: clean dark-brown ink outlines with soft watercolor and colored-pencil fills, subtle paper grain, plain warm cream background with generous empty space, cute expressive characters with large friendly eyes and rosy cheeks, slightly cartoon proportions. Jesus: smiling kindly, shoulder-length wavy brown hair, short brown beard, cream linen tunic with a rust-red sash across one shoulder, brown leather sandals, soft golden halo behind his head. The woman: young modern woman with long black hair, white t-shirt, blue jeans, white sneakers. Scene: … Absolutely no text, no letters, no watermark.
+### banheiro
 
-Cena pendente: **Mt 14:27, na chuva** (Jesus segura um guarda-chuva sobre ela, ele mesmo um pouco molhado, ela com mochila de criança e bolsa de trabalho). Faltou crédito no gerador.
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: inside a small home bathroom with the door closed, she stands with eyes shut and hands clasped in prayer, a laundry basket and a rubber duck nearby, toys on the floor; Jesus leans casually against the sink with arms crossed, smiling patiently.
 
-Observações: não consegui enviar a imagem de referência da Gê ao Canva (upload bloqueado neste ambiente); o estilo foi descrito em texto. As ilustrações são representações artísticas; ninguém sabe como Jesus ou as mulheres da Bíblia eram. Conferir direitos de uso das imagens geradas antes de distribuir o planner.
+### agenda
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: she holds a huge overflowing planner full of colorful sticky notes, a phone and a coffee, looking frazzled; Jesus holds up a tiny sticky note that says nothing (blank), smiling warmly at her.
+
+### presenca
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: she sits on the sofa late at night hugging a pillow, looking guilty, with a closed Bible on the table; Jesus sits beside her holding a blank attendance clipboard upside down and smiling gently.
+
+### controle
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: she is balancing an absurd tower of things in her arms (laundry basket, laptop, a pot, a child's backpack, a calendar), her knees trembling but forcing a big smile; Jesus offers his open hands to take something, smiling.
+
+### descanso
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: she works at a laptop at a home desk at night, surrounded by papers, empty coffee cups and a glowing screen, dark circles under her eyes; Jesus stands beside her holding a fluffy pillow and a blanket, smiling kindly.
+
+### bagunca
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: a messy living room with toys, laundry and dishes everywhere, she stands embarrassed at the door with messy hair, Jesus has just entered, sitting happily on the cluttered sofa moving a toy aside, smiling.
+
+### comparacao
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: she scrolls on her phone with a sad face, the phone screen glowing with tiny perfect pictures (no readable text), sitting on a couch; Jesus sits behind her over the couch shoulder looking at the phone with a gentle smile and a raised eyebrow.
+
+### cozinha
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: a warm home kitchen, she chops carrots with an apron and a headscarf, smiling; Jesus stands beside her wearing a small apron over his tunic, holding a wooden spoon and tasting the soup, smiling.
+
+### gratidao
+
+> Pixar-style 3D animated movie character illustration, warm cinematic golden lighting, big expressive brown eyes, soft painterly background. THE WOMAN (same character in every scene): Brazilian woman in her early 30s, tan skin, big brown eyes, dark brown hair in a messy bun, beige knit cardigan over a cream t-shirt, small gold necklace. JESUS (same character in every scene): kind smiling eyes, shoulder-length wavy brown hair, short beard, cream linen tunic with a rust-red sash across one shoulder, brown sandals, very soft golden halo, gentle humorous expression. Composition: the woman on the LEFT, Jesus on the RIGHT, the top third of the image is plain soft cream wall or sky with nothing on it (reserved for speech bubbles). No text, no letters, no watermark. SCENE: calm and serene, she sits cross-legged on a sunny harbor quay at golden hour, eyes closed, smiling peacefully, oversized cream sweater and mustard pants, sneakers; Jesus is a soft gentle presence sitting a little behind her, smiling kindly. Soft anime-like painted sky and sea with distant city (this one is the quiet gratitude scene).
+
+As ilustrações são representações artísticas; ninguém sabe como Jesus ou as mulheres da Bíblia eram. Confira os direitos de uso das imagens geradas antes de distribuir o planner. Não foi possível enviar a imagem de referência da Gê ao Canva (upload bloqueado neste ambiente); o estilo foi descrito em texto.

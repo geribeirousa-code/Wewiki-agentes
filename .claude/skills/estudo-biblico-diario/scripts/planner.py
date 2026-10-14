@@ -200,14 +200,19 @@ def pausa(n, chave, imagem=None):
         arte = f'<img src="{e(imagem)}" alt="">'
     else:
         arte = f'<div class="falta">Pintura a inserir: {e(chave)}<br><small>veja imagens/LEIA-ME.md</small></div>'
+    bol = c["bolhas"]
+    html_b = []
+    for k, (quem, txt) in enumerate(bol):
+        pos = "u" if len(bol) == 1 else ("l" if quem == "ela" else "r")
+        topo = f' style="top:{.22 + k * .66:.2f}in"' if len(bol) > 1 else ""   # 1º a falar fica mais alto: a leitura segue a ordem do diálogo
+        html_b.append(f'<div class="bal {quem} {pos}"{topo}>{fmt(txt)}</div>')
     return pg(f"""
-<div class="arte">{arte}<div class="frase">{e(c["frase"])}</div></div>
+<div class="arte">{arte}{"".join(html_b)}<div class="pincel"><span>{fmt(c["legenda"])}</span></div></div>
 <div class="ptxt">
   <small>UMA PAUSA PARA VOCÊ · {e(c["ref"]).upper()}</small>
-  <h2 class="scr">{e(c["titulo"])}</h2>
   <p>{fmt(c["texto"])}</p>
   <p class="or">{fmt(c["oracao"])}</p>
-  <div class="conv"><b>Converse com Ele</b>{"".join('<div class="ln"></div>' for _ in range(5))}</div>
+  <div class="conv"><b>Converse com Ele</b>{"".join('<div class="ln"></div>' for _ in range(4))}</div>
 </div>""", n, "pausa")
 
 
@@ -425,7 +430,7 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 /* pausa */
 .pg.pausa { padding: 0 }
 .pausa .arte { width: 8.5in; height: 6.67in; position: relative; overflow: hidden } .pausa .arte svg, .pausa .arte img { width: 100%; height: 100%; display: block; object-fit: cover }
-.pausa .arte { background: #F8EEDD } .pausa .frase { position: absolute; top: .14in; left: 0; right: 0; text-align: center; font-family: 'Parisienne', cursive; font-size: 31pt; color: #8A5A33; line-height: 1.1; z-index: 2 } .pausa .falta { position: absolute; inset: .3in; border: 2px dashed #D9C9A8; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #9AA8A4; font-size: 11pt }
+.pausa .arte { background: #F8EEDD } .pausa .frase-old { position: absolute; top: .14in; left: 0; right: 0; text-align: center; font-family: 'Parisienne', cursive; font-size: 31pt; color: #8A5A33; line-height: 1.1; z-index: 2 } .pausa .falta { position: absolute; inset: .3in; border: 2px dashed #D9C9A8; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #9AA8A4; font-size: 11pt }
 .pausa .arte::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: .5in; background: linear-gradient(to bottom, rgba(255,253,248,0), #FFFDF8) }
 .ptxt { padding: .15in 1in 0 1in; text-align: center }
 .ptxt small { font-size: 7pt; letter-spacing: .2em; font-weight: 700; color: #9AA8A4; display: block }
@@ -442,11 +447,20 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .hab td { padding: 5px 4px; text-align: center; border-bottom: 1px dotted #E5DCC8 } .hab td:first-child { text-align: left }
 .celebra { margin-top: 4px } .celebra p { font-size: 9pt; margin-top: 6px } .celebra u { display: inline-block; width: 4.2in; border-bottom: 1px solid #DDD3EC; text-decoration: none; height: 12px }
 .semculpa { text-align: center; font-family: 'Parisienne', cursive; font-size: 17pt; color: #B0716A; margin-top: 12px }
+
+.bal { position: absolute; background: #FFFDF8; border: 2.6px solid #5B3A29; border-radius: 30px; padding: 9px 18px 10px; font: 400 16.5pt/1.2 'Patrick Hand', 'Comic Sans MS', cursive; color: #3B2A20; text-align: center; z-index: 3; box-shadow: 1px 2px 0 #0000001A }
+.bal.ela { border-color: #2F7C73 } .bal.jesus { border-color: #B0553A }
+.bal.l { left: .35in; top: .22in; width: 3.7in } .bal.r { right: .35in; top: .55in; width: 3.5in } .bal.u { left: 1.2in; right: 1.2in; top: .3in }
+.bal::after { content: ''; position: absolute; bottom: -17px; width: 22px; height: 22px; background: #FFFDF8; border-right: 2.6px solid; border-bottom: 2.6px solid; border-color: inherit; transform: skewX(-24deg) rotate(45deg) }
+.bal.l::after { left: 34% } .bal.r::after { right: 30% } .bal.u::after { left: 55% }
+.pincel { position: absolute; left: .25in; right: .6in; bottom: .38in; z-index: 3 }
+.pincel span { display: inline-block; background: #E4688F; color: #fff; font: italic 500 13.5pt 'Lora', serif; padding: 9px 30px 9px 22px; clip-path: polygon(0 12%, 3% 0, 97% 6%, 100% 38%, 98% 100%, 4% 94%, 1% 66%); box-shadow: 0 2px 0 #0000001A }
+.ptxt p { margin-top: 6px }
 """
 
 FONTES = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?'
           'family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:wght@600;700;800'
-          '&family=Parisienne&display=swap" rel="stylesheet">')
+          '&family=Parisienne&family=Patrick+Hand&display=swap" rel="stylesheet">')
 
 
 def montar():
@@ -454,9 +468,8 @@ def montar():
     s1 = json.loads((PASTA_PLANNER / "semanas" / "SEMANA-01.json").read_text(encoding="utf-8"))
     d1 = json.loads(next((B.PASTA / "estudos").glob("DIA-001-*.json")).read_text(encoding="utf-8"))
     paginas = [capa(1), boas_vindas(2), sumario(3, sems, 4), semana_esq(4, s1, sems[0]), semana_dir(5, s1, sems[0]),
-               pagina_dia(6, d1, s1), revisao(7, s1), pausa(8, "banco", IMAGENS.get("banco")),
-               pausa(9, "carrega", IMAGENS.get("carrega")), pausa(10, "porta", IMAGENS.get("porta")),
-               pausa(11, "marta", IMAGENS.get("marta")), pausa(12, "buque", IMAGENS.get("buque"))]
+               pagina_dia(6, d1, s1), revisao(7, s1), pausa(8, "banheiro", IMAGENS.get("banheiro")),
+               pausa(9, "controle", IMAGENS.get("controle")), pausa(10, "presenca", IMAGENS.get("presenca"))]
     return (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Estudo Bíblia em Profundidade (protótipo)</title>'
             f'{FONTES}<style>{CSS}</style></head><body>{"".join(paginas)}</body></html>')
 
