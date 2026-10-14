@@ -106,7 +106,13 @@ Campos novos no `DIA-*.json`: `naquele_tempo{quando, comum, curiosidade}`, `mapa
 
 Cada semana (`SEMANA-NN.json`) ganhou `mulheres[]` (chips), `conexoes[]` (6) e `glossario[]` ("palavras difíceis").
 
-Status: **protótipo de 6 páginas** (capa, boas-vindas, sumário, semana 1 em 2 páginas, dia 1). Falta produzir as 94 semanas e dividir em volumes para encadernar.
+### Estética v3 e páginas de pausa (2026-10-14)
+
+Flores **delicadas e coloridas** (dálias, peônias, margaridas finas, delfínios, samambaias: `flora.py`, `capa_delicada`, `cacho`), cantos florais com cartão central moldurado, sem pesar a página.
+**Páginas de pausa** entre os estudos (`cenas.py`, `planner.pausa`): Jesus e a mulher ocupada, sozinha ou culpada por não buscar a Deus "como deveria" (mesa com cadeira vazia, poço, Marta e Maria, buquê, porta). Cada pausa liga a um texto bíblico, tem reflexão curta e oração, e linhas "Converse com Ele". Tom: acolher, nunca cobrar. **Revisão da semana** (`planner.revisao`): barras coloridas, tabela de constância (Seg–Sáb) e o aviso "recomece sem culpa".
+As cenas vetoriais são **provisórias**. Para usar pinturas, salve em `Bíblia/planner/imagens/<cena>.jpg|png` (≥ 2550×2000 px); prompts e estilo em `Bíblia/planner/imagens/LEIA-ME.md`. O gerador do Canva (`mcp__Canva__generate-image`) funciona, mas aqui só devolve miniatura; o arquivo em alta sai do Canva (link "Open generated image").
+
+Status: **protótipo de 12 páginas** (6 anteriores + revisão da semana + 5 pausas); antes era de 6 (capa, boas-vindas, sumário, semana 1 em 2 páginas, dia 1). Falta produzir as 94 semanas e dividir em volumes para encadernar.
 
 ## Limites honestos
 

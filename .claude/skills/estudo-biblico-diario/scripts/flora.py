@@ -129,3 +129,128 @@ def capa_svg(w=816, h=1056, semente=7):
                  f'<line x1="0" x2="{w}" y1="{yy:.1f}" y2="{yy:.1f}" stroke="#F1C9C3" stroke-width="2.5"/>')
     o.append('</svg>')
     return "".join(o)
+
+
+# ===========================================================================
+# Estilo DELICADO (v2): samambaias, delfínios, dálias e peônias em camadas, margaridas finas.
+# Mais fino e mais colorido que o recorte plano; usado na capa, nas pausas e nas faixas.
+# ===========================================================================
+FLORES = {   # nome: camadas de fora para dentro
+    "peonia":   ["#F7C9D3", "#F3B3C1", "#EC9BAE", "#E3849B", "#F4D58A"],
+    "dalia":    ["#BFE0E4", "#93C9D2", "#6BB3C0", "#4A98A8", "#F0C75A"],
+    "pessego":  ["#FAD9BF", "#F6C2A0", "#EFAA84", "#E4926A", "#F2D98B"],
+    "lilas":    ["#DCD2F0", "#C6B7E6", "#AF9CDA", "#9783CC", "#F2D98B"],
+    "dourada":  ["#FBE7A6", "#F7D87A", "#F1C651", "#E9B338", "#C98A2B"],
+}
+AZUIS = ["#B7CBEA", "#93AEDD", "#7896CF", "#5F7FC0"]
+VERDES = ["#9DBBA8", "#86AA98", "#B7D0BF", "#7C9F8C"]
+
+
+def _dir(x, y, ang, s, corpo):
+    return f'<g transform="translate({x:.1f},{y:.1f}) rotate({ang:.1f}) scale({s:.3f})">{corpo}</g>'
+
+
+def samambaia(x, y, comp, ang, cor="#9DBBA8", cor2="#86AA98", n=15):
+    folhetos = []
+    for i in range(n):
+        t = (i + 1) / (n + 1)
+        px, py = comp * t, -math.sin(t * 2.4) * comp * .05
+        ln = comp * .20 * (1 - t * .82)
+        w = ln * .26
+        for lado in (-1, 1):
+            a = lado * (62 - t * 18)
+            c = cor if i % 2 == 0 else cor2
+            folhetos.append(f'<g transform="translate({px:.1f},{py:.1f}) rotate({a:.1f})"><path d="M0,0 Q{ln * .5:.1f},{-w:.1f} {ln:.1f},0 Q{ln * .5:.1f},{w:.1f} 0,0Z" fill="{c}"/></g>')
+    haste = f'<path d="M0,0 Q{comp * .5:.1f},{-comp * .06:.1f} {comp:.1f},{comp * .02:.1f}" fill="none" stroke="#6F9784" stroke-width="{max(1.2, comp / 90):.1f}" stroke-linecap="round"/>'
+    return _dir(x, y, ang, 1, haste + "".join(folhetos))
+
+
+def delfinio(x, y, alt, ang, cores=AZUIS, folha="#86AA98"):
+    r = random.Random(int(x * 7 + y * 13))
+    o = [f'<path d="M0,0 L0,{-alt:.1f}" stroke="#86AA98" stroke-width="2.4" stroke-linecap="round"/>']
+    for k in range(7):                                  # folhas da base
+        a = -80 + k * 27
+        o.append(f'<g transform="rotate({a})"><path d="M0,0 Q{alt * .05:.1f},{-alt * .17:.1f} 0,{-alt * .3:.1f} Q{-alt * .05:.1f},{-alt * .17:.1f} 0,0Z" fill="{folha}" opacity=".9"/></g>')
+    n = 26
+    for i in range(n):
+        t = .34 + .66 * i / n
+        yy = -alt * t
+        rr = (1.0 - (i / n) * .6) * alt * .052
+        lado = 1 if i % 2 == 0 else -1
+        xx = lado * rr * .8 + r.uniform(-1, 1)
+        o.append(f'<circle cx="{xx:.1f}" cy="{yy:.1f}" r="{rr:.1f}" fill="{r.choice(cores)}"/>'
+                 f'<circle cx="{xx + rr * .15:.1f}" cy="{yy - rr * .2:.1f}" r="{rr * .35:.1f}" fill="#fff" opacity=".35"/>')
+    return _dir(x, y, ang, 1, "".join(o))
+
+
+def flor_camadas(x, y, raio, ang, tipo="peonia", pontuda=True):
+    cs = FLORES[tipo]
+    aneis = [(14, 1.0, 0), (12, .80, 13), (10, .60, 7), (8, .42, 20), (6, .26, 5)]
+    o = []
+    for k, (n, esc, rot) in enumerate(aneis):
+        for i in range(n):
+            a = i * 360 / n + rot
+            if pontuda:
+                p = f'M0,0 C{-9 * esc:.1f},{-12 * esc:.1f} {-9 * esc:.1f},{-30 * esc:.1f} 0,{-38 * esc:.1f} C{9 * esc:.1f},{-30 * esc:.1f} {9 * esc:.1f},{-12 * esc:.1f} 0,0Z'
+            else:
+                p = f'M0,0 C{-13 * esc:.1f},{-8 * esc:.1f} {-13 * esc:.1f},{-32 * esc:.1f} 0,{-34 * esc:.1f} C{13 * esc:.1f},{-32 * esc:.1f} {13 * esc:.1f},{-8 * esc:.1f} 0,0Z'
+            o.append(f'<path d="{p}" transform="rotate({a:.1f})" fill="{cs[k]}" stroke="#fff" stroke-width=".7" stroke-opacity=".55"/>')
+    o.append(f'<circle r="{4.2}" fill="{cs[4]}"/><circle r="9" fill="none" stroke="{cs[4]}" stroke-width="1.2" stroke-dasharray="1.2 3" opacity=".8"/>')
+    return _dir(x, y, ang, raio / 38, "".join(o))
+
+
+def margarida_fina(x, y, raio, ang, petala="#FFFFFF", miolo="#F1C651", n=17):
+    p = "".join(f'<ellipse cx="0" cy="-22" rx="3.6" ry="17" fill="{petala}" stroke="#E6DDD0" stroke-width=".6" transform="rotate({i * 360 / n:.1f})"/>' for i in range(n))
+    return _dir(x, y, ang, raio / 38, p + f'<circle r="9" fill="{miolo}"/><circle r="9" fill="none" stroke="#E0A93A" stroke-width="1" stroke-dasharray="1 2.6"/>')
+
+
+def ramo_fino(x, y, comp, ang, cor="#9DBBA8", cor2="#7C9F8C", folhas=9):
+    o = [f'<path d="M0,0 Q{comp * .5:.1f},{-comp * .12:.1f} {comp:.1f},{-comp * .02:.1f}" fill="none" stroke="#7C9F8C" stroke-width="1.6" stroke-linecap="round"/>']
+    for i in range(folhas):
+        t = (i + 1) / (folhas + 1)
+        px, py = comp * t, -math.sin(t * 2.0) * comp * .08
+        ln = comp * .13 * (1 - t * .5)
+        a = (-48 if i % 2 else 48)
+        o.append(f'<g transform="translate({px:.1f},{py:.1f}) rotate({a})"><path d="M0,0 Q{ln * .5:.1f},{-ln * .34:.1f} {ln:.1f},0 Q{ln * .5:.1f},{ln * .34:.1f} 0,0Z" fill="{cor if i % 2 else cor2}"/></g>')
+    return _dir(x, y, ang, 1, "".join(o))
+
+
+def cacho(cx, cy, escala, semente, flores=("peonia", "dalia", "dourada", "lilas"), fundo=True, leque=(-150, -30)):
+    """Buquê delicado ancorado em (cx, cy): samambaias e delfínios ao fundo, flores em camadas na frente."""
+    r = random.Random(semente)
+    o = []
+    a0, a1 = leque
+    if fundo:
+        for _ in range(5):
+            o.append(samambaia(cx, cy, r.uniform(110, 170) * escala, r.uniform(a0, a1), r.choice(VERDES), r.choice(VERDES)))
+        for _ in range(3):
+            o.append(delfinio(cx + r.uniform(-30, 30) * escala, cy, r.uniform(110, 160) * escala, r.uniform(a0 + 70, a1 - 70) + 90, AZUIS))
+        for _ in range(3):
+            o.append(ramo_fino(cx, cy, r.uniform(90, 140) * escala, r.uniform(a0, a1), r.choice(VERDES), r.choice(VERDES)))
+    for i in range(5):
+        ang = math.radians(r.uniform(a0, a1))
+        d = r.uniform(15, 95) * escala
+        o.append(flor_camadas(cx + math.cos(ang) * d, cy + math.sin(ang) * d, r.uniform(36, 58) * escala, r.uniform(0, 30),
+                              r.choice(flores), True))
+    for i in range(3):
+        ang = math.radians(r.uniform(a0, a1))
+        d = r.uniform(40, 120) * escala
+        o.append(margarida_fina(cx + math.cos(ang) * d, cy + math.sin(ang) * d, r.uniform(18, 26) * escala, r.uniform(0, 40)))
+    return "".join(o)
+
+
+def capa_delicada(w=816, h=1056, semente=11):
+    """Capa: cantos florais delicados e colorido, com cartão central moldurado (o título entra por HTML)."""
+    o = [f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" xmlns="http://www.w3.org/2000/svg">',
+         f'<rect width="{w}" height="{h}" fill="#FCF9F2"/>']
+    # cantos
+    o.append(cacho(34, 34, 1.7, semente + 1, ("peonia", "dalia", "dourada"), True, (14, 76)))
+    o.append(cacho(w - 34, 30, 1.55, semente + 2, ("lilas", "peonia", "dourada"), True, (104, 166)))
+    o.append(cacho(30, h - 34, 1.6, semente + 3, ("pessego", "dalia", "lilas"), True, (-76, -14)))
+    o.append(cacho(w - 34, h - 30, 1.8, semente + 4, ("dalia", "peonia", "pessego"), True, (-166, -104)))
+    # cartão central
+    x, y, cw, ch = 138, 296, 540, 470
+    o.append(f'<rect x="{x}" y="{y}" width="{cw}" height="{ch}" fill="#FFFEFB" stroke="#D9C9A8" stroke-width="1.4"/>'
+             f'<rect x="{x + 7}" y="{y + 7}" width="{cw - 14}" height="{ch - 14}" fill="none" stroke="#E7DCC4" stroke-width=".8"/>')
+    o.append('</svg>')
+    return "".join(o)
