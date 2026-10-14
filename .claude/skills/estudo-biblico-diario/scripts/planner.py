@@ -204,7 +204,12 @@ def pausa(n, chave, imagem=None):
     html_b = []
     for k, (quem, txt) in enumerate(bol):
         pos = "u" if len(bol) == 1 else ("l" if quem == "ela" else "r")
-        topo = f' style="top:{.22 + k * .66:.2f}in"' if len(bol) > 1 else ""   # 1º a falar fica mais alto: a leitura segue a ordem do diálogo
+        # ela (esq.) e Jesus (dir.) ficam no alto, sem cobrir rostos; se Jesus fala primeiro, ela desce um pouco para a leitura seguir o diálogo
+        topo = ""
+        if len(bol) > 1 and bol[0][0] == "jesus":
+            topo = f' style="top:{.12 if quem == "jesus" else .75:.2f}in"'
+        elif len(bol) > 1:
+            topo = ' style="top:.12in"'
         html_b.append(f'<div class="bal {quem} {pos}"{topo}>{fmt(txt)}</div>')
     return pg(f"""
 <div class="arte">{arte}{"".join(html_b)}<div class="pincel"><span>{fmt(c["legenda"])}</span></div></div>
@@ -212,7 +217,7 @@ def pausa(n, chave, imagem=None):
   <small>UMA PAUSA PARA VOCÊ · {e(c["ref"]).upper()}</small>
   <p>{fmt(c["texto"])}</p>
   <p class="or">{fmt(c["oracao"])}</p>
-  <div class="conv"><b>Converse com Ele</b>{"".join('<div class="ln"></div>' for _ in range(4))}</div>
+  <div class="conv"><b>Converse com Ele</b>{"".join('<div class="ln"></div>' for _ in range(8))}</div>
 </div>""", n, "pausa")
 
 
@@ -429,7 +434,7 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .capa-bg svg { width: 8.5in; height: 11in }
 /* pausa */
 .pg.pausa { padding: 0 }
-.pausa .arte { width: 8.5in; height: 6.67in; position: relative; overflow: hidden } .pausa .arte svg, .pausa .arte img { width: 100%; height: 100%; display: block; object-fit: cover }
+.pausa .arte { width: 8.5in; height: 5.67in; position: relative; overflow: hidden } .pausa .arte svg, .pausa .arte img { width: 100%; height: 100%; display: block; object-fit: cover }
 .pausa .arte { background: #F8EEDD } .pausa .frase-old { position: absolute; top: .14in; left: 0; right: 0; text-align: center; font-family: 'Parisienne', cursive; font-size: 31pt; color: #8A5A33; line-height: 1.1; z-index: 2 } .pausa .falta { position: absolute; inset: .3in; border: 2px dashed #D9C9A8; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #9AA8A4; font-size: 11pt }
 .pausa .arte::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: .5in; background: linear-gradient(to bottom, rgba(255,253,248,0), #FFFDF8) }
 .ptxt { padding: .15in 1in 0 1in; text-align: center }
@@ -448,9 +453,9 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .celebra { margin-top: 4px } .celebra p { font-size: 9pt; margin-top: 6px } .celebra u { display: inline-block; width: 4.2in; border-bottom: 1px solid #DDD3EC; text-decoration: none; height: 12px }
 .semculpa { text-align: center; font-family: 'Parisienne', cursive; font-size: 17pt; color: #B0716A; margin-top: 12px }
 
-.bal { position: absolute; background: #FFFDF8; border: 2.6px solid #5B3A29; border-radius: 30px; padding: 9px 18px 10px; font: 400 16.5pt/1.2 'Patrick Hand', 'Comic Sans MS', cursive; color: #3B2A20; text-align: center; z-index: 3; box-shadow: 1px 2px 0 #0000001A }
+.bal { position: absolute; background: #FFFDF8; border: 2.6px solid #5B3A29; border-radius: 30px; padding: 6px 16px 8px; font: 400 15pt/1.18 'Patrick Hand', 'Comic Sans MS', cursive; color: #3B2A20; text-align: center; z-index: 3; box-shadow: 1px 2px 0 #0000001A }
 .bal.ela { border-color: #2F7C73 } .bal.jesus { border-color: #B0553A }
-.bal.l { left: .35in; top: .22in; width: 3.7in } .bal.r { right: .35in; top: .55in; width: 3.5in } .bal.u { left: 1.2in; right: 1.2in; top: .3in }
+.bal.l { left: .3in; top: .12in; width: 3.7in } .bal.r { right: .3in; top: .12in; width: 3.5in } .bal.u { left: 1.2in; right: 1.2in; top: .3in }
 .bal::after { content: ''; position: absolute; bottom: -17px; width: 22px; height: 22px; background: #FFFDF8; border-right: 2.6px solid; border-bottom: 2.6px solid; border-color: inherit; transform: skewX(-24deg) rotate(45deg) }
 .bal.l::after { left: 34% } .bal.r::after { right: 30% } .bal.u::after { left: 55% }
 .pincel { position: absolute; left: .25in; right: .6in; bottom: .38in; z-index: 3 }
