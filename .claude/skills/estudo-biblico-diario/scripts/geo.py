@@ -36,6 +36,9 @@ MARES = {
     "Mar Mediterrâneo": (30.5, 36.0), "Mar Vermelho": (36.5, 25.5), "Golfo Pérsico": (50.5, 27.2),
     "Mar Negro": (34.0, 43.0), "Mar Cáspio": (51.0, 41.5), "Mar Egeu": (25.3, 38.9), "Mar Mediterrâneo ": (15.0, 34.2), "Mar Mediterrâneo  ": (33.9, 32.1), "Mar Mediterrâneo   ": (30.0, 33.3),
 }
+IMPERIO_PERSA = [(24.5, 31.3), (26, 36), (26.5, 40.2), (29, 41), (36, 41.8), (41.5, 41.3), (44, 41.2), (48, 40), (52.5, 37), (56, 37.8),
+                 (61, 37.2), (66, 37.5), (71, 34), (70.5, 28), (66.5, 25.2), (61, 25.2), (57, 27), (54, 26.8), (50.5, 29.5), (48, 29.9),
+                 (43, 31), (39, 30.2), (36, 29.5), (34.9, 29.5), (33.3, 28), (32.8, 24), (32.6, 22.3), (24.5, 22.3)]   # esquemático
 REFERENCIAS = ["Jerusalém", "Babilônia", "Mênfis", "Roma", "Nínive", "Damasco", "Atenas", "Éfeso", "Antioquia da Síria"]
 
 AGUA, TERRA_COR, BORDA = "#D8F0FF", "#FFF7DC", "#E9CF8C"
@@ -64,6 +67,11 @@ def _suave(pts, f):
     for a, b in zip(p[1:-1], p[2:]):
         d += f" Q{a[0]:.1f},{a[1]:.1f} {(a[0] + b[0]) / 2:.1f},{(a[1] + b[1]) / 2:.1f}"
     return d + f" L{p[-1][0]:.1f},{p[-1][1]:.1f}"
+
+
+def lugares_numerados(mapa, bbox_ok=None):
+    """Ordem dos pinos numerados (mesma do desenho): nomes em mapa['lugares'] que existem na gazeta."""
+    return [n for n in mapa.get("lugares", []) if n in LUGARES]
 
 
 def _bbox_auto(nomes, pad=0.22, minimo=(3.6, 2.6)):
@@ -117,13 +125,19 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None
          f'<defs><clipPath id="rec{uid}"><rect width="{largura}" height="{H}" rx="14"/></clipPath>'
          f'<marker id="seta{uid}" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
          f'<path d="M0,0L10,5L0,10z" fill="{forte}"/></marker></defs>',
-         f'<g clip-path="url(#rec{uid})"><rect width="{largura}" height="{H}" fill="{AGUA}"/>']
+         f'<pattern id="ond{uid}" width="34" height="14" patternUnits="userSpaceOnUse"><path d="M0,8 q8.5,-6 17,0 t17,0" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".55"/></pattern>',
+         f'<g clip-path="url(#rec{uid})"><rect width="{largura}" height="{H}" fill="{AGUA}"/><rect width="{largura}" height="{H}" fill="url(#ond{uid})"/>']
     for r in TERRA["aneis"]:
         o.append(f'<path d="{_caminho(r, f)}" fill="{TERRA_COR}" stroke="{BORDA}" stroke-width="1.1" stroke-linejoin="round"/>')
     for r in TERRA["lagos"]:
         o.append(f'<path d="{_caminho(r, f)}" fill="{AGUA}" stroke="{BORDA}" stroke-width="1"/>')
     for nome, (pts, _) in LAGOS.items():
         o.append(f'<path d="{_caminho(pts, f)}" fill="{AGUA}" stroke="#8CCBEF" stroke-width="1"/>')
+    if mapa.get("imperio"):   # preenchimento só sobre a terra (clip), contorno tracejado por cima
+        terra_d = " ".join(_caminho(r, f) for r in TERRA["aneis"])
+        o.append(f'<clipPath id="terra{uid}"><path d="{terra_d}"/></clipPath>'
+                 f'<path d="{_caminho(IMPERIO_PERSA, f)}" fill="{cor}" fill-opacity=".16" clip-path="url(#terra{uid})"/>'
+                 f'<path d="{_caminho(IMPERIO_PERSA, f)}" fill="none" stroke="{forte}" stroke-width="2.2" stroke-dasharray="10 6" stroke-linejoin="round"/>')
     destaque = set(mapa.get("rios_destaque", []))
     for nome, (pts, _) in RIOS.items():
         forte_rio = nome in destaque
@@ -144,7 +158,7 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None
         x0 = x if anc == "start" else x - w / 2
         caixas.append((x0, y - tam, x0 + w, y + 3))
     ja_mar = set()
-    for nome, (lon, lat) in MARES.items():
+    for nome, (lon, lat) in ({} if mapa.get("sem_nomes") else MARES).items():
         if dentro(lon, lat) and nome.strip() not in ja_mar:
             x, y = f(lon, lat)
             meia = len(nome.strip()) * 9.5 * 0.56 / 2 + 8
@@ -153,12 +167,12 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None
             ja_mar.add(nome.strip())
             reserva(x, y, nome.strip(), 9.5, "middle")
             o.append(txt(x, y, nome.strip(), 9.5, "#6BA8CC", 700, "font-style:italic;letter-spacing:1px", "middle"))
-    for nome, (_, (lon, lat)) in RIOS.items():
+    for nome, (_, (lon, lat)) in ({} if mapa.get("sem_nomes") else RIOS).items():
         if dentro(lon, lat) and f(lon, lat)[0] + 90 < largura:
             x, y = f(lon, lat)
             reserva(x + 6, y, f"Rio {nome}", 8.5)
             o.append(txt(x + 6, y, f"Rio {nome}" if nome != "Jordão" else "Rio Jordão", 8.5, "#1496A8" if nome in destaque else "#5FA6C4", 700, "font-style:italic"))
-    for nome, (_, (lon, lat)) in LAGOS.items():
+    for nome, (_, (lon, lat)) in ({} if mapa.get("sem_nomes") else LAGOS).items():
         if dentro(lon, lat) and f(lon, lat)[0] + 90 < largura:
             x, y = f(lon, lat)
             reserva(x + 7, y, nome, 8)
@@ -190,12 +204,17 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None
         marcados.append(n)
         x, y = f(lon, lat)
         inc = len(LUGARES[n]) > 2
-        caixas.append((x - 7, y - 7, x + 7, y + 7))
+        caixas.append((x - 11, y - 11, x + 11, y + 11))
         tracejado = ' stroke-dasharray="2.5 2"' if inc else ""
         preench = "#fff" if inc else cor
-        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6.2" fill="{preench}" stroke="{forte}" '
-                 f'stroke-width="2.2"{tracejado}/>')
-        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2" fill="{forte}"/>')
+        if mapa.get("numerar"):
+            num = marcados.index(n) + 1
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="9.5" fill="{forte}" stroke="#fff" stroke-width="2"{tracejado}/>'
+                     f'<text x="{x:.1f}" y="{y + 3.6:.1f}" text-anchor="middle" style="{FONTE_TXT};font-size:10px;font-weight:900" fill="#fff">{num}</text>')
+        else:
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6.2" fill="{preench}" stroke="{forte}" '
+                     f'stroke-width="2.2"{tracejado}/>')
+            o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2" fill="{forte}"/>')
     # referências (cinza) — só se não colidirem
     refs = []
     for n in REFERENCIAS:
@@ -225,9 +244,10 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None
             rotulos.append(txt(x - 10, y + 4, n, tam, corpo, peso, "", "end"))
             return True
         return False
-    for n in marcados:
-        colocar(n, 10.5, B.TINTA, 800, True) or colocar(n, 8.5, B.TINTA, 800, True)
-    for n in refs:
+    if not mapa.get("sem_nomes"):
+        for n in marcados:
+            colocar(n, 10.5, B.TINTA, 800, True) or colocar(n, 8.5, B.TINTA, 800, True)
+    for n in ([] if (mapa.get("sem_nomes") or mapa.get("numerar")) else refs):
         x, y = f(*LUGARES[n][:2])
         if _colide((x - 4, y - 4, x + 4, y + 4), caixas):
             continue

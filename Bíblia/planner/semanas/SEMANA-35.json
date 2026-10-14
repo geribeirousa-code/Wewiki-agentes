@@ -1,0 +1,246 @@
+{
+  "numero": 35,
+  "paleta": "rosa",
+  "bloco": "historicos",
+  "titulo": "Uma rainha entre dois mundos",
+  "passagem": "Ester 1 – Jó 2",
+  "visao_geral": "**Ester** é a história de uma jovem judia que vira rainha da Pérsia (~479 a.C.) e, sem o nome de Deus aparecer uma só vez, arrisca a vida para salvar o seu povo. Nesta semana você lê o livro todo, de ponta a ponta: o banquete, a rainha que diz não, o segredo de Ester, o plano de Hamã e a virada. No sexto dia você começa **Jó**, outro livro sobre sofrimento.",
+  "ficha": [
+    [
+      "Livro",
+      "Hebraico: **Meguilat Ester** (“o rolo de Ester”)",
+      "consenso"
+    ],
+    [
+      "Autor",
+      "Desconhecido. Há propostas (Mordecai, um escriba judeu), nenhuma certa.",
+      "debate"
+    ],
+    [
+      "Quando",
+      "Escrito depois de ~465 a.C.; a história se passa em ~483–473 a.C.",
+      "maioria"
+    ],
+    [
+      "Para quem",
+      "Judeus que viviam fora de Judá, sob domínio persa",
+      "maioria"
+    ]
+  ],
+  "cenario": "Em 538 a.C. o rei persa Ciro permitiu que judeus voltassem a Jerusalém, mas **muitos ficaram** pelo império. Ester conta a vida deles: sem templo, sem profetas na história e sem o nome de Deus no texto. A festa de **Purim**, que o livro explica, existe até hoje.",
+  "mapa": {
+    "regiao": "bbox",
+    "bbox": [
+      24,
+      19,
+      70,
+      43.5
+    ],
+    "lugares": [
+      "Susa",
+      "Babilônia",
+      "Jerusalém",
+      "Persépolis"
+    ],
+    "imperio": true,
+    "numerar": true,
+    "rios_destaque": [
+      "Tigre",
+      "Eufrates"
+    ],
+    "textos": [
+      {
+        "texto": "Império Persa",
+        "lon": 50.5,
+        "lat": 35.6
+      },
+      {
+        "texto": "Cuxe",
+        "lon": 31.5,
+        "lat": 22.8
+      },
+      {
+        "texto": "Índia",
+        "lon": 66,
+        "lat": 31
+      }
+    ],
+    "legenda": "O império de Xerxes, da Índia a Cuxe (Et 1:1). Contorno aproximado, mapa esquemático."
+  },
+  "mapa_legenda_pinos": {
+    "Susa": "Et 1:2 · capital de inverno; palco do livro",
+    "Babilônia": "Et 2:6 · cidade do exílio",
+    "Jerusalém": "Et 2:6 · cidade de origem do povo",
+    "Persépolis": "não citada · capital cerimonial"
+  },
+  "linha_do_tempo": {
+    "titulo": "Onde Ester entra na história",
+    "itens": [
+      {
+        "rotulo": "586",
+        "texto": "Queda de Jerusalém"
+      },
+      {
+        "rotulo": "538",
+        "texto": "Ciro: volta permitida"
+      },
+      {
+        "rotulo": "516",
+        "texto": "Templo refeito"
+      },
+      {
+        "rotulo": "486",
+        "texto": "Xerxes I reina"
+      },
+      {
+        "rotulo": "479",
+        "texto": "Ester vira rainha",
+        "destaque": true
+      },
+      {
+        "rotulo": "458",
+        "texto": "Esdras volta"
+      },
+      {
+        "rotulo": "445",
+        "texto": "Neemias"
+      }
+    ],
+    "nota": "Datas a.C., arredondadas. Todas aproximadas."
+  },
+  "plano": [
+    {
+      "ref": "Ester 1–2",
+      "caps": [
+        "Et 1",
+        "Et 2"
+      ],
+      "nota": "A rainha que disse não e a moça levada"
+    },
+    {
+      "ref": "Ester 3–4",
+      "caps": [
+        "Et 3",
+        "Et 4"
+      ],
+      "nota": "O plano de Hamã e “para um momento como este”"
+    },
+    {
+      "ref": "Ester 5–6",
+      "caps": [
+        "Et 5",
+        "Et 6"
+      ],
+      "nota": "Dois banquetes e uma noite sem sono"
+    },
+    {
+      "ref": "Ester 7–8",
+      "caps": [
+        "Et 7",
+        "Et 8"
+      ],
+      "nota": "A virada"
+    },
+    {
+      "ref": "Ester 9–10",
+      "caps": [
+        "Et 9",
+        "Et 10"
+      ],
+      "nota": "Purim"
+    },
+    {
+      "ref": "Jó 1–2",
+      "caps": [
+        "Jó 1",
+        "Jó 2"
+      ],
+      "nota": "Um homem que perde tudo"
+    }
+  ],
+  "palavras": [
+    {
+      "pt": "Assuero (Xerxes)",
+      "orig": "אֲחַשְׁוֵרוֹשׁ",
+      "translit": "ahashverosh",
+      "strong": "H325",
+      "texto": "título persa do rei"
+    },
+    {
+      "pt": "decreto, lei real",
+      "orig": "דָּת",
+      "translit": "dat",
+      "strong": "H1881",
+      "texto": "palavra persa; peso de lei"
+    },
+    {
+      "pt": "Hadassa",
+      "orig": "הֲדַסָּה",
+      "translit": "hadassa",
+      "strong": "H1919 (a conferir)",
+      "texto": "“murta”, nome hebraico de Ester"
+    },
+    {
+      "pt": "Purim",
+      "orig": "פּוּרִים",
+      "translit": "purim",
+      "strong": "H6332 (a conferir)",
+      "texto": "“sortes”; origem do nome da festa (Et 3:7; 9:26)"
+    }
+  ],
+  "mulheres": [
+    {
+      "nome": "Vasti",
+      "ref": "Et 1"
+    },
+    {
+      "nome": "Ester",
+      "ref": "Et 2–10"
+    },
+    {
+      "nome": "Zeres",
+      "ref": "Et 5:10, 14; 6:13"
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Purim",
+      "texto": "festa judaica que lembra o livro de Ester"
+    },
+    {
+      "termo": "Eunuco",
+      "texto": "servidor da corte, em geral castrado, que cuidava do harém"
+    },
+    {
+      "termo": "Exílio",
+      "texto": "quando o povo foi levado à força para fora da terra de Israel"
+    }
+  ],
+  "conexoes": [
+    {
+      "ref": "Dn 6:8",
+      "texto": "A lei dos persas que não se revoga, como em Et 1:19."
+    },
+    {
+      "ref": "Ne 1:1",
+      "texto": "Neemias também serve na corte persa, em Susa."
+    },
+    {
+      "ref": "Rm 8:28",
+      "texto": "Deus age até quando não é nomeado."
+    },
+    {
+      "ref": "1Sm 15",
+      "texto": "Hamã é “agagita” (3:1), lembrando o rei Agague de Amaleque; Mordecai é filho de Quis, como o pai de Saul."
+    },
+    {
+      "ref": "Gn 50:20",
+      "texto": "“Vocês planejaram o mal, mas Deus o transformou em bem.”"
+    },
+    {
+      "ref": "Mt 5:14",
+      "texto": "“Vocês são a luz do mundo”: Ester não pode se esconder."
+    }
+  ],
+  "bencao": "Que nesta semana você enxergue a mão de Deus também onde o nome dele não aparece. Que a sua coragem nasça da certeza de que você está onde está “para um momento como este”."
+}

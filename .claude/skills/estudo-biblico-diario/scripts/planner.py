@@ -17,6 +17,7 @@ import biblia as B
 import flora
 import mulheres
 import cenas
+import geo
 from geo import mapa_svg
 from pdf import exportar_pdf
 
@@ -275,7 +276,7 @@ def semana_dir(n, s, w):
 <h2 class="h" style="color:{ink}">Palavras difíceis</h2>
 <p class="glos">{glos}</p>
 <div class="bencao" style="background:{ink}"><small>BÊNÇÃO DA SEMANA</small><h3 class="scr">Bênção</h3><p>{fmt(s["bencao"])}</p></div>
-<div class="notas2"><b style="color:{ink}">Anotações da semana</b>{"".join('<div class="ln"></div>' for _ in range(2))}</div>
+<div class="notas2"><b style="color:{ink}">Anotações da semana</b><div class="ln"></div></div>
 """, n, "semana-dir")
 
 
@@ -442,7 +443,7 @@ h1, h2, h3, p, ul, ol { margin: 0; padding: 0 }
 .sem span { font-size: 6.2pt; letter-spacing: .16em; font-weight: 700 } .sem b { font-size: 24pt; font-weight: 500; line-height: 1 }
 h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font-size: 7pt; color: #7B8A87; margin-left: 6px; font-weight: 600; letter-spacing: .04em }
 .vg { font-size: 9.3pt; line-height: 1.55 }
-.dois { display: grid; grid-template-columns: 2.35in 1fr; gap: 16px }
+.dois { display: grid; grid-template-columns: 2.35in 1fr; gap: 16px; margin-top: 8px }
 .ficha2 { border-collapse: collapse; font-size: 8pt } .ficha2 th { text-align: left; vertical-align: top; padding: 3px 8px 3px 0; font-family: 'Nunito Sans', sans-serif; font-size: 7pt; letter-spacing: .08em; text-transform: uppercase }
 .ficha2 td { padding: 3px 0; border-bottom: 1px dotted #D8D2C0 }
 .cen { font-size: 8.8pt }
@@ -465,10 +466,10 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .pw b { font-size: 9.4pt; font-weight: 600 } .pw small { font-size: 6.4pt; color: #6B7B78 } .pw em { display: block; font-size: 7.8pt; line-height: 1.25; color: #4D5E5B }
 .ccs { display: grid; gap: 7px } .cc { border-left: 4px solid; background: #FFFBF4; border-radius: 4px 14px 14px 4px; padding: 6px 10px; font-size: 8.4pt } .cc b { display: block; font-size: 9.6pt; font-weight: 600 }
 .bencao { margin-top: 10px; border-radius: 20px; color: #fff; padding: 11px 20px 13px; text-align: left }
-.bencao small { font-size: 6.4pt; letter-spacing: .2em; font-weight: 700; opacity: .9 } .bencao h3 { font-size: 26pt; line-height: 1.05 } .bencao p { font-size: 9.2pt; line-height: 1.5; margin-top: 3px }
+.bencao small { font-size: 6.4pt; letter-spacing: .2em; font-weight: 700; color: #fff; opacity: .92 } .bencao h3 { font-size: 26pt; line-height: 1.05 } .bencao p { font-size: 9.2pt; line-height: 1.5; margin-top: 3px }
 .notas2 { margin-top: 10px; font-size: 9pt } .ln { border-bottom: 1px solid #E1DACB; height: 22px }
 /* dia */
-.perg { margin-top: 6px; border: 1.8px dashed; border-radius: 16px; background: #FFF6D6; padding: 5px 14px 7px }
+.perg { margin-top: 4px; border: 1.8px dashed; border-radius: 16px; background: #FFF6D6; padding: 5px 14px 7px }
 .perg .scr { font-size: 15pt; color: #A06F0A; line-height: 1.1 } .perg p { font-size: 9.8pt; font-weight: 600; line-height: 1.35 }
 .est2 { border-collapse: collapse; font-size: 8.2pt; width: 100% } .est2 td { padding: 2px 4px; border-bottom: 1px dotted #D8D2C0; vertical-align: top } .est2 .rf { font: 800 7.6pt 'Nunito Sans', sans-serif; white-space: nowrap; width: .62in }
 .pws2 { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 14px }
@@ -479,7 +480,7 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .fim2 { display: grid; grid-template-columns: 1.35fr 1fr; gap: 14px; margin-top: -6px } .fim2 ol { padding-left: 16px; font-size: 8.6pt; font-weight: 500 } .fim2 .ln { height: 19px }
 .ap { border-radius: 16px; padding: 9px 14px; font-size: 8.8pt; margin-top: 14px; line-height: 1.4 } .ap b { display: block; font-size: 10pt; margin-bottom: 2px }
 .fecha { position: absolute; left: .85in; right: .5in; bottom: .45in; font: 700 7.8pt 'Nunito Sans', sans-serif; color: #5A6B68; display: flex; gap: 6px; align-items: center }
-.verso .fecha { left: .5in; right: .85in }
+
 
 /* dia v2 */
 .et { font: 800 6pt 'Nunito Sans', sans-serif; font-style: normal; letter-spacing: .12em; color: #fff; border-radius: 99px; padding: 1px 7px; margin-right: 6px; vertical-align: 2px }
@@ -493,7 +494,7 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .pw3 .hb { width: .9in; height: .74in; font-size: 17pt }
 .pw3 .tx { flex: 1; font-size: 7.8pt; line-height: 1.3 } .pw3 .tx p { margin: 1px 0 0 } .pw3 .l1 b { font-size: 10pt; font-weight: 600 } .pw3 .l1 small { font-size: 6.2pt; color: #6B7B78 }
 .pw3 i { font: 800 5.9pt 'Nunito Sans', sans-serif; font-style: normal; letter-spacing: .1em; margin-right: 4px }
-.mulher { display: flex; gap: 12px; border-radius: 22px; padding: 8px 16px 8px 10px; margin-top: 8px; align-items: flex-start }
+.mulher { display: flex; gap: 12px; border-radius: 22px; padding: 6px 16px 6px 10px; margin-top: 6px; align-items: flex-start }
 .mulher .fig { flex: none; width: 1.15in } .mulher .fig svg { width: 100%; height: auto; display: block }
 .mulher .mt { flex: 1; font-size: 8.2pt; line-height: 1.38 } .mulher small { font-size: 6.4pt; letter-spacing: .14em; font-weight: 800; display: block }
 .mulher h3 { font-size: 15pt; font-weight: 500; line-height: 1.15 } .mulher h3 em { font: 600 7.4pt 'Nunito Sans', sans-serif; color: #6B7B78; font-style: normal; margin-left: 4px }
@@ -557,6 +558,29 @@ h1.tit-p { font-size: 40pt; color: #2F6F68; line-height: 1.1; margin: 2px 0 4px 
 .carta { background: #FFF6F1; border: 1.6px dashed #E9B7AC; border-radius: 18px; padding: 8px 18px 10px; margin-top: 6px } .carta b.scr { font-size: 22pt; color: #B0716A; font-weight: 400 } .carta .ln { height: 25px; border-color: #F0D8D0 }
 .assina { font-size: 9pt; margin-top: 10px; color: #6B7B78 } .assina u { display: inline-block; width: 2.2in; border-bottom: 1px solid #CFC9B8; text-decoration: none } .assina u.d { width: 1in }
 .faixa-t h1 small { font: 700 9pt 'Nunito Sans', sans-serif; color: #6B7B78; letter-spacing: .1em; margin-left: 8px }
+
+.capa-banda.c3 .t1 { margin-top: .6in; display: flex; align-items: baseline; justify-content: center; gap: 12px }
+.capa-banda.c3 .t1 .scr { font-size: 52pt; line-height: 1; transform: translateY(4px) } .capa-banda.c3 .t1 .cap { font-size: 50pt; letter-spacing: .16em; font-weight: 500; line-height: 1 }
+.capa-banda.c3 .t2 { font-size: 10.4pt; letter-spacing: .2em; margin-top: 10px; font-weight: 600 } .capa-banda.c3 .t3 { font-style: italic; font-size: 10.4pt; margin-top: 12px; color: #3F6A66; line-height: 1.5 }
+.bar { font: 800 8pt 'Nunito Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: #fff; padding: 3px 12px; border-radius: 5px; margin: 8px 0 4px } .bar span { font-weight: 600; letter-spacing: .04em; text-transform: none; opacity: .9; margin-left: 8px }
+.progr { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 5px 2px 0; font-size: 7.4pt } .progr b { margin-right: 6px; color: #2E3B3A } .seg { display: inline-flex; gap: 1.5px; vertical-align: -1px } .seg i { width: 5.5px; height: 9px; border: 1px solid #E88FA0; border-radius: 1.5px; background: #fff } .seg i.on { background: #E88FA0 }
+.capsl { display: inline-flex; gap: 2px; vertical-align: -2px } .capsl i { font: 700 6.3pt 'Nunito Sans', sans-serif; font-style: normal; min-width: 13px; height: 13px; text-align: center; line-height: 12px; border: 1.2px solid #9DBBA8; border-radius: 3px; color: #6B7B78 } .capsl i.hoje { background: #FFE48A; border-color: #E9B949; color: #6B5200 }
+.meta { border: 2px solid; border-radius: 16px; margin: 5px 0 2px; padding: 0 0 4px; overflow: hidden } .mt1 { font: 800 8pt 'Nunito Sans', sans-serif; letter-spacing: .16em; color: #fff; padding: 3px 14px } .mt1 span { font-weight: 600; letter-spacing: .02em; text-transform: none; margin-left: 8px; opacity: .92 }
+.chks { display: flex; gap: 26px; padding: 7px 14px 2px; flex-wrap: wrap } .chkcap { display: flex; align-items: center; gap: 6px } .chkcap b { font-size: 12pt; font-weight: 600 } .ckg { width: 17px; height: 17px; border: 2.2px solid; border-radius: 5px; background: #fff } .parte { font: 700 7.6pt 'Nunito Sans', sans-serif; color: #5A6B68; display: inline-flex; align-items: center; gap: 3px; margin-left: 4px } .parte .ck { width: 11px; height: 11px }
+.ler { padding: 0 14px; font-size: 8pt; color: #5A6B68; font-style: italic }
+.linhaA { grid-template-columns: 1fr 1.75in } .tempo .bar { margin-top: 2px }
+.mapa-l svg { width: 100%; height: auto; display: block } .mapa-l .ch { font-size: 6.8pt; color: #5A6B68; margin-top: 2px; line-height: 1.3 } .mapa-l .ch b { color: #A5435F }
+.notas3 { list-style: none; display: grid; gap: 3.5px } .notas3 li { display: flex; gap: 8px; align-items: flex-start; font-size: 7.6pt; line-height: 1.28; padding: 2px 0; border-bottom: 1px dotted #E0DACB }
+.notas3 .vs { flex: none; min-width: .52in; text-align: center; color: #fff; font: 800 7pt 'Nunito Sans', sans-serif; border-radius: 99px; padding: 1px 4px; margin-top: 1px }
+.tg { font: 800 5.6pt 'Nunito Sans', sans-serif; font-style: normal; letter-spacing: .08em; border-radius: 99px; padding: 0 6px; margin-right: 4px; vertical-align: 1px }
+.hb2 { font-family: 'SBL Hebrew', 'Times New Roman', 'DejaVu Serif', serif; font-size: 12pt; color: #7A5A00; margin: 0 3px 0 5px; vertical-align: -1px } .st { font: 700 6.4pt 'Nunito Sans', sans-serif; color: #7A5A00; letter-spacing: 0; display: inline }
+.mulher .ab { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin: 2px 0 3px; font-size: 7.5pt; line-height: 1.3 } .mulher .ab span { background: #fff9; border-radius: 10px; padding: 3px 8px } .mulher .ab i { font: 800 5.8pt 'Nunito Sans', sans-serif; font-style: normal; border-radius: 99px; padding: 0 6px; margin-right: 4px; display: inline-block }
+.mulher .fig { width: .95in } .mulher .fig svg { width: 100%; height: auto }
+.fim-ok { margin-left: auto; color: #fff; font: 800 8pt 'Nunito Sans', sans-serif; border-radius: 99px; padding: 3px 14px }
+.mapa-g { display: grid; grid-template-columns: 1fr; gap: 4px } .mapa-g svg { width: 100%; height: auto; display: block }
+.chave { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px; font-size: 7.7pt } .chave li { display: flex; gap: 6px; align-items: center } .chave b { flex: none; width: 17px; height: 17px; border-radius: 50%; color: #fff; text-align: center; font: 800 8pt/17px 'Nunito Sans', sans-serif } .chave u { text-decoration: none; font-weight: 700 }
+.plano3 { list-style: none; display: grid; gap: 4px; margin-top: 4px } .plano3 li { display: flex; align-items: center; gap: 10px } .dn { font: 800 7.4pt 'Nunito Sans', sans-serif; color: #fff; border-radius: 99px; padding: 2px 10px; flex: none; letter-spacing: .06em } .pl { flex: 1 } .pl b { font-size: 10.2pt; font-weight: 600; display: block } .pl em { font-size: 8.2pt; color: #5E6F6C }
+.pl-sub { font-size: 8.6pt; margin: 0 0 2px; color: #5A6B68 } .semprog .cx { border-color: currentColor; color: #C25673; margin: 0 1px } .semprog { margin-top: 10px; font-size: 8pt; display: flex; align-items: center; gap: 3px; flex-wrap: wrap } .semprog em { margin-left: 6px; color: #6B7B78 }
 """
 
 FONTES = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?'
@@ -564,18 +588,190 @@ FONTES = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link href
           '&family=Parisienne&family=Patrick+Hand&display=swap" rel="stylesheet">')
 
 
+
+
+# ===========================================================================
+# v3 (2026-10-14): a LEITURA DA BÍBLIA é a meta; o resto é apoio. Estética floral plana (v1).
+# ===========================================================================
+TIPOS_NOTA = {   # tipo: (rótulo, cor de fundo, cor do texto)
+    "lugar": ("LUGAR", "#CFE0EE", "#2F5F8F"), "costume": ("COSTUME", "#F7D3DC", "#A5435F"),
+    "palavra": ("NO ORIGINAL", "#F6E3A6", "#7A5A00"), "curiosidade": ("CURIOSIDADE", "#D4E9C9", "#3F6B2A"),
+    "tempo": ("ÉPOCA", "#E3DAF0", "#5B4691"), "personagem": ("PESSOA", "#F9D8B8", "#9A5320"),
+}
+
+
+def monograma(nome, cor="#E88FA0", tam=96):
+    ini = e(nome[0].upper())
+    petalas = "".join(f'<ellipse cx="0" cy="-26" rx="9" ry="16" fill="#fff" opacity=".55" transform="rotate({a})"/>' for a in range(0, 360, 45))
+    return (f'<svg width="{tam}" height="{tam}" viewBox="-50 -50 100 100"><circle r="48" fill="{cor}"/>{petalas}'
+            f'<circle r="26" fill="#FFFDF8"/><text y="12" text-anchor="middle" style="font-family:Lora,Georgia,serif;font-size:34px;font-weight:600" fill="{B.escurecer(cor, .35)}">{ini}</text></svg>')
+
+
+def faixa_progresso(d, total=562):
+    n = d["dia"]
+    seg = "".join(f'<i class="{"on" if k < round(n / total * 28) else ""}"></i>' for k in range(28))
+    livro = B.LIVRO[d["sigla"]]
+    caps = "".join(f'<i class="c{" hoje" if c in d["capitulos"] else ""}">{c}</i>' for c in range(1, livro["caps"] + 1)) if livro["caps"] <= 30 else \
+        f'<small>{livro["nome"]} tem {livro["caps"]} capítulos</small>'
+    return (f'<div class="progr"><div><b>Dia {n} de {total}</b><span class="seg">{seg}</span></div>'
+            f'<div><b>{e(livro["nome"])}</b><span class="capsl">{caps}</span></div></div>')
+
+
+def dia_leitura(n, d, s):
+    ink, tint, forte = ACENTO[s["paleta"]]
+    cr = d["contexto_rapido"]
+    chk = "".join(
+        f'<div class="chkcap"><span class="ckg" style="border-color:{ink}"></span><b>{e(c["rotulo"])}</b>'
+        + "".join(f'<span class="parte"><span class="ck" style="border-color:{ink}"></span>{e(p)}</span>' for p in c["partes"]) + '</div>'
+        for c in d["checklist"])
+    mapa = ""
+    if d.get("mapa"):
+        mm = dict(d["mapa"], sem_nomes=True)
+        nomes = geo.lugares_numerados(mm)
+        chave = " · ".join(f"<b>{i}</b> {e(nm)}" for i, nm in enumerate(nomes, 1))
+        mapa = (f'<div class="mapa-l">{mapa_svg(mm, ink, 300, agua="#DCEBF2", terra="#FBF3E1", borda="#E5D3A8", aspecto=0.95)}<p class="ch">{chave}</p></div>')
+    notas = []
+    for x in d["notas"]:
+        rot, bg, fg = TIPOS_NOTA[x["tipo"]]
+        orig = ""
+        if x.get("orig"):
+            o = x["orig"]
+            orig = f'<span class="hb2" dir="rtl">{e(o["orig"])}</span><small class="st">{e(o["translit"])} · {e(o["strong"])}</small>'
+        notas.append(
+            f'<li><span class="vs" style="background:{ink}">{e(x["ref"])}</span><div><i class="tg" style="background:{bg};color:{fg}">{rot}</i>'
+            f'<b>{fmt(x["titulo"])}.</b> {fmt(x["texto"])} {orig} {pilula(x["certeza"]) if x.get("certeza") not in (None, "texto") else ""}</div></li>')
+    m = d["mulher"]
+    return pg(f"""
+<header class="faixa-d" style="background:{tint}">
+  <div><small style="color:{ink}">SEMANA {s["numero"]} · DIA {d["dia"]} · {e(B.BLOCO[d["bloco"]][1]).upper()}</small>
+    <h1 style="color:{ink}">{e(d["passagem"])}</h1><p>{fmt(d["titulo"])}</p></div>
+  <div class="sem" style="color:{ink};border-color:{ink}"><span>DIA</span><b>{d["dia"]}</b></div>
+</header>
+{faixa_progresso(d)}
+<div class="meta" style="border-color:{ink}"><div class="mt1" style="background:{ink}">HOJE EU VOU LER <span>na minha Bíblia. O resto da página é só apoio.</span></div><div class="chks">{chk}</div>
+  </div>
+<div class="linhaA">
+  <div class="tempo">
+    <div class="bar" style="background:{ink}">Antes de ler</div>
+    <div class="bl"><b style="color:{ink}">Quando?</b> {fmt(cr["quando"]["texto"])} {pilula(cr["quando"]["certeza"])}</div>
+    <div class="bl"><b style="color:{ink}">O que era comum.</b> {fmt(cr["comum"]["texto"])} {pilula(cr["comum"]["certeza"])}</div>
+    <div class="cur"><b>✦ Curiosidade</b> {fmt(cr["curiosidade"])}</div>
+  </div>
+  {mapa}
+</div>
+<div class="perg"><span class="scr">Para carregar hoje</span><p>{fmt(d["carregar"])}</p></div>
+<div class="bar" style="background:{ink}">Enquanto você lê <span>versículo a versículo</span></div>
+<ul class="notas3">{"".join(notas)}</ul>
+<div class="mulher" style="background:{tint}">
+  <div class="fig">{monograma(m["nome"], ink)}</div>
+  <div class="mt">
+    <small style="color:{ink}">UMA MULHER NA HISTÓRIA · {e(m["ref"]).upper()}</small>
+    <h3 style="color:{ink}">{e(m["titulo"])}</h3>
+    <p class="cz">“{fmt(m["cartaz"])}”</p>
+    <div class="ab"><span><i style="background:#CFE5D4">Um olhar</i>{fmt(m["lado_a"])}</span><span><i style="background:#F7CFD6">Outro olhar</i>{fmt(m["lado_b"])}</span></div>
+    <p>{fmt(m["reflexao"])}</p>
+    <p class="ph"><b style="color:{ink}">Para o meu dia:</b> {fmt(m["para_hoje"])}</p>
+  </div>
+</div>
+<div class="fecha"><span class="ck" style="border-color:{ink}"></span>Orei <span class="ck" style="border-color:{ink}"></span>Li o texto <span class="ck" style="border-color:{ink}"></span>Li as notas <span class="ck" style="border-color:{ink}"></span>Pintei o mapa da Bíblia
+  <span class="fim-ok" style="background:{ink}">✓ Dia {d["dia"]} concluído</span></div>
+""", n, "dia")
+
+
+def semana_esq3(n, s):
+    ink, tint, forte = ACENTO[s["paleta"]]
+    ficha = "".join(f'<tr><th style="color:{ink}">{e(r[0])}</th><td>{fmt(r[1])} {pilula(r[2])}</td></tr>' for r in s["ficha"])
+    mp = s["mapa"]
+    nomes = geo.lugares_numerados(mp)
+    chave = "".join(f'<li><b style="background:{forte}">{i}</b><span><u>{e(nm)}</u> {fmt(s["mapa_legenda_pinos"].get(nm, ""))}</span></li>' for i, nm in enumerate(nomes, 1))
+    mapa = mapa_svg(mp, ink, 700, agua="#DCEBF2", terra="#FBF3E1", borda="#E5D3A8", aspecto=0.5)
+    tl = s["linha_do_tempo"]
+    itens = "".join(f'<li class="{"d" if i.get("destaque") else ""}" style="--c:{ink}"><b>{e(i["rotulo"])}</b><span>{fmt(i["texto"])}</span></li>' for i in tl["itens"])
+    return pg(f"""
+<header class="faixa-s" style="background:{tint}">
+  <div><small style="color:{ink}">{e(B.BLOCO[s["bloco"]][1]).upper()} · {e(s["passagem"]).upper()}</small><h1 style="color:{ink}">{e(s["titulo"])}</h1></div>
+  <div class="sem" style="color:{ink};border-color:{ink}"><span>SEMANA</span><b>{s["numero"]}</b></div>
+</header>
+<div class="bar" style="background:{ink}">Visão geral</div>
+<p class="vg">{fmt(s["visao_geral"])}</p>
+<div class="dois"><table class="ficha2">{ficha}</table><p class="cen">{fmt(s["cenario"])}</p></div>
+<div class="bar" style="background:{ink}">O mapa da semana <span>esquemático, fora de escala</span></div>
+<div class="mapa-g">{mapa}<ol class="chave">{chave}</ol><p class="leg">{fmt(mp["legenda"])}</p></div>
+<div class="bar" style="background:{ink}">{e(tl["titulo"])}</div>
+<ol class="tl">{itens}</ol><p class="nt">{fmt(tl["nota"])}</p>
+""", n, "semana-esq")
+
+
+def semana_dir3(n, s):
+    ink, tint, forte = ACENTO[s["paleta"]]
+    plano = "".join(
+        f'<li><div class="dn" style="background:{ink}">DIA {i}</div><div class="pl"><b>{e(p["ref"])}</b><em>{e(p["nota"])}</em></div>'
+        + "".join(f'<span class="parte"><span class="ck" style="border-color:{ink}"></span>{e(c)}</span>' for c in p["caps"]) + '</li>'
+        for i, p in enumerate(s["plano"], 1))
+    palavras = "".join(
+        f'<div class="pw"><div class="hb" dir="rtl" style="background:{tint};color:{forte}">{e(p["orig"])}</div>'
+        f'<div><b>{e(p["translit"])}</b> <small>{e(p["strong"])}</small><em>“{e(p["pt"])}” · {fmt(p["texto"])}</em></div></div>' for p in s["palavras"])
+    chips = "".join(f'<div class="chip" style="border-color:{ink}">{monograma(m["nome"], ink, 30)}<div><b>{e(m["nome"])}</b><br><small>{e(m["ref"])}</small></div></div>' for m in s["mulheres"])
+    con = "".join(f'<li><b style="color:{ink}">{e(c["ref"])}</b> {fmt(c["texto"])}</li>' for c in s["conexoes"])
+    glos = "".join(f'<b>{e(g["termo"])}:</b> {e(g["texto"])}. ' for g in s["glossario"])
+    return pg(f"""
+<div class="plano" style="border-color:{ink};background:#FFFBF4">
+  <div class="top-i">{emblema(40, tint, forte)}</div>
+  <h2 class="scr" style="color:{ink}">Meu plano de leitura</h2>
+  <p class="pl-sub">Marque cada capítulo quando terminar. <b>A leitura é a meta da semana.</b></p>
+  <ul class="plano3">{plano}</ul>
+  <div class="semprog"><b>Capítulos desta semana</b> <span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span><span class="cx"></span> <em>12 de 12 = semana completa ★</em></div>
+</div>
+<div class="bar" style="background:{ink}">Mulheres desta semana</div>
+<div class="chips">{chips}</div>
+<div class="bar" style="background:{ink}">Palavras da semana, no original</div>
+<div class="pws">{palavras}</div>
+<div class="bar" style="background:{ink}">Conexões da semana</div>
+<ul class="con2">{con}</ul>
+<div class="bar" style="background:{ink}">Palavras difíceis</div>
+<p class="glos">{glos}</p>
+<div class="bencao" style="background:{ink}"><small>BÊNÇÃO DA SEMANA</small><h3 class="scr">Bênção</h3><p>{fmt(s["bencao"])}</p></div>
+<div class="notas2"><b style="color:{ink}">Anotações da semana</b><div class="ln"></div></div>
+""", n, "semana-dir")
+
+
+def capa3(n):
+    return pg(f"""
+<div class="capa-bg">{flora.capa_svg(816, 1056, 7)}</div>
+<div class="capa-banda c3">
+  <div class="emb">{emblema(70, "#F4C3BB", "#FFF")}</div>
+  <div class="t1"><span class="scr">Mesa pra</span><span class="cap">DOIS</span></div>
+  <div class="t2">{e(SUBTITULO).upper()}</div>
+  <div class="t3">94 semanas lendo a Bíblia inteira,<br>com contexto, cultura e texto original como apoio</div>
+</div>""", n, "capa")
+
+
+def mapa_biblia_paginas():
+    import gerar_mapa as G
+    return G.paginas(B.ler_progresso(), B.ler_plano())
+
+
+def pausa_n(n, chave, imagem=None):
+    return pausa(n, chave, imagem)
+
+
+
+
 def montar():
     sems = semanas_do_plano()
-    s1 = json.loads((PASTA_PLANNER / "semanas" / "SEMANA-01.json").read_text(encoding="utf-8"))
-    d1 = json.loads(next((B.PASTA / "estudos").glob("DIA-001-*.json")).read_text(encoding="utf-8"))
-    paginas = [capa(1), boas_vindas(2), plano_geral(3, sems), semanas_vista(4, sems, 1, 47), semanas_vista(5, sems, 48, 94),
-               meu_porque(6), sumario(7, sems, 8),
-               semana_esq(8, s1, sems[0]), semana_dir(9, s1, sems[0]), pagina_dia(10, d1, s1),
-               revisao(16, s1), pausa(17, "banheiro", IMAGENS.get("banheiro")),
-               pausa(18, "agenda", IMAGENS.get("agenda")), pausa(19, "controle", IMAGENS.get("controle")),
-               pausa(20, "presenca", IMAGENS.get("presenca"))]
+    s35 = json.loads((PASTA_PLANNER / "semanas" / "SEMANA-35.json").read_text(encoding="utf-8"))
+    d205 = json.loads(next((B.PASTA / "estudos").glob("DIA-205-*.json")).read_text(encoding="utf-8"))
+    css_mapa, html_mapa = mapa_biblia_paginas()
+    ordem = ["banheiro", "agenda", "presenca", "controle", "comparacao", "cozinha", "gratidao"]
+    paginas = [capa3(1), boas_vindas(2), plano_geral(3, sems), semanas_vista(4, sems, 1, 47), semanas_vista(5, sems, 48, 94),
+               meu_porque(6), "@@MAPA@@", sumario(9, sems, 10),
+               semana_esq3(10, s35), semana_dir3(11, s35), dia_leitura(12, d205, s35),
+               revisao(13, s35)]
+    for k, ch in enumerate(ordem):
+        paginas.append(pausa(14 + k, ch, IMAGENS.get(ch)))
+    corpo = "".join(paginas).replace("@@MAPA@@", html_mapa)
     return (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>{NOME} (protótipo)</title>'
-            f'{FONTES}<style>{CSS}</style></head><body>{"".join(paginas)}</body></html>')
+            f'{FONTES}<style>{css_mapa}</style><style>{CSS}</style></head><body>{corpo}</body></html>')
 
 
 if __name__ == "__main__":

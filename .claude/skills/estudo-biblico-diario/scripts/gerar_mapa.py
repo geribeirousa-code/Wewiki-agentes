@@ -210,6 +210,17 @@ small { color: %(suave)s; font-size: 6.2pt; display: block; font-weight: 600 }
            caixa=CAIXA, m=round(PASSO - CAIXA, 3), esp=ESPACO_X)
 
 
+def paginas(p, plano):
+    """Só as 2 folhas (sem <html>), para embutir no planner. Devolve (css_escopado, html)."""
+    import re
+    html, _ = montar(p, plano)
+    corpo = html[html.index('<body>') + 6: html.index('</body>')]
+    css = CSS
+    css = re.sub(r'(^|\})(\s*)(\.[^{}@]+)\{', lambda m: m.group(1) + m.group(2) + ', '.join('.mapaB ' + x.strip() for x in m.group(3).split(',')) + '{', css)
+    css = css.replace('.mapaB html', 'html')
+    return css, f'<div class="mapaB">{corpo}</div>'
+
+
 def montar(p, plano):
     paineis = alocar()
     # 8 painéis por folha dupla: [capa] + conteúdo; sobra vira anotações
