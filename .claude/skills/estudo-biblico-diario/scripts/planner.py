@@ -15,10 +15,12 @@ from pathlib import Path
 
 import biblia as B
 import flora
+import mulheres
 from geo import mapa_svg
 from pdf import exportar_pdf
 
 PASTA_PLANNER = B.PASTA / "planner"
+MAX_PALAVRAS_DIA = 3   # a página do dia é uma folha só: 3 palavras no original, bem ligadas ao texto
 
 # cor de destaque por paleta: (tinta do título, fundo suave, forte)
 ACENTO = {
@@ -108,6 +110,8 @@ def boas_vindas(n):
 <h1 class="scr gr">Esta jornada é de</h1>
 <div class="linha-nome"></div>
 <div class="datas2"><span>Comecei em ______ / ______ / ______</span><span>Termino em ______ / ______ / ______</span></div>
+<h2 class="sub">Como ler a Bíblia sem medo</h2>
+<div class="tres"><div><b>1 · Observar</b>O que o texto diz? Leia devagar e procure palavras repetidas, nomes e lugares.</div><div><b>2 · Entender</b>O que quis dizer para quem ouviu primeiro? Época, cultura e palavras no original ajudam.</div><div><b>3 · Aplicar</b>O que muda na minha casa, no meu trabalho, no meu coração?</div></div>
 <h2 class="sub">Como usar este planner</h2>
 <ol class="passos">{lista}</ol>
 <div class="hora2"><b>Minha hora de estudo</b>
@@ -162,48 +166,80 @@ def semana_dir(n, s, w):
         f'<div class="pw"><div class="hb" dir="rtl" style="background:{tint};color:{forte}">{e(p["orig"])}</div>'
         f'<div><b>{e(p["translit"])}</b> <small>{e(p["strong"])}</small><em>“{e(p["pt"])}” · {fmt(p["texto"])}</em></div></div>'
         for p in s["palavras"])
-    cultura = "".join(f'<div class="cc" style="border-color:{ink}"><b style="color:{ink}">{e(c["titulo"])}</b>{fmt(c["texto"])} {pilula(c["certeza"])}</div>' for c in s["cultura"])
+    chips = "".join(f'<div class="chip" style="border-color:{ink}">{mulheres.figura(m["nome"].replace("A esposa de Noé", "Sara"), 26)}'
+                    f'<div><b>{e(m["nome"])}</b><br><small>{e(m["ref"])}</small></div></div>' for m in s["mulheres"])
+    con = "".join(f'<li><b style="color:{ink}">{e(c["ref"])}</b> {fmt(c["texto"])}</li>' for c in s["conexoes"])
+    glos = "".join(f'<b>{e(g["termo"])}:</b> {e(g["texto"])}. ' for g in s["glossario"])
     return pg(f"""
 <div class="plano" style="border-color:{ink};background:#FFFBF4">
   <div class="top-i">{emblema(40, tint, forte)}</div>
   <h2 class="scr" style="color:{ink}">Plano de leitura</h2>
   <ul>{plano}</ul>
 </div>
+<h2 class="h" style="color:{ink}">Mulheres desta semana</h2>
+<div class="chips">{chips}</div>
 <h2 class="h" style="color:{ink}">Palavras da semana, no original</h2>
 <div class="pws">{palavras}</div>
-<h2 class="h" style="color:{ink}">O mundo daquele tempo</h2>
-<div class="ccs">{cultura}</div>
+<h2 class="h" style="color:{ink}">Conexões da semana</h2>
+<ul class="con2">{con}</ul>
+<h2 class="h" style="color:{ink}">Palavras difíceis</h2>
+<p class="glos">{glos}</p>
 <div class="bencao" style="background:{ink}"><small>BÊNÇÃO DA SEMANA</small><h3 class="scr">Bênção</h3><p>{fmt(s["bencao"])}</p></div>
-<div class="notas2"><b style="color:{ink}">Anotações da semana</b>{"".join('<div class="ln"></div>' for _ in range(7))}</div>
+<div class="notas2"><b style="color:{ink}">Anotações da semana</b>{"".join('<div class="ln"></div>' for _ in range(2))}</div>
 """, n, "semana-dir")
 
 
 def pagina_dia(n, d, s):
     ink, tint, forte = ACENTO[s["paleta"]]
-    est = "".join(f'<tr><td class="rf" style="color:{ink}">{e(r["ref"])}</td><td><b>{fmt(r["titulo"])}.</b> {fmt(r["observe"])}</td></tr>' for r in d["leitura"].get("estrutura_planner", d["leitura"]["estrutura"]))
+    nt = d["naquele_tempo"]
+    obs = "".join(f"<li>{fmt(x)}</li>" for x in d["observar"])
+    veja = " · ".join(e(x) for x in d.get("veja_tambem", []))
     cards = []
-    for w in d["original"][:6]:
+    for w in d.get("original_planner", d["original"])[:MAX_PALAVRAS_DIA]:
         heb = w["lingua"].startswith(("hebr", "aram"))
         cards.append(
-            f'<div class="pw2"><div class="hb {"g" if not heb else ""}" dir="{"rtl" if heb else "ltr"}" style="background:{tint};color:{forte}">{e(w["orig"])}</div>'
-            f'<div><b>{e(w["translit"])}</b> <small>{e(w["strong"])}</small><div class="pt2">“{fmt(w["pt"])}”</div>{fmt(w["significado"])} {pilula(w.get("certeza", "consenso"))}</div></div>')
-    con = "".join(f'<li><i style="background:{CORES_TIPO.get(c["tipo"], "#eee")}">{TIPOS.get(c["tipo"], c["tipo"])}</i><b>{e(c["ref"])}</b> {fmt(c["texto"])}</li>' for c in d["conexoes"][:6])
-    refl = "".join(f'<li>{fmt(q)}<div class="ln"></div><div class="ln"></div></li>' for q in d["reflexao"][:2])
+            f'<div class="pw3"><div class="hb {"g" if not heb else ""}" dir="{"rtl" if heb else "ltr"}" style="background:{tint};color:{forte}">{e(w["orig"])}</div>'
+            f'<div class="tx"><div class="l1"><b>{e(w["translit"])}</b> <span class="pt2">“{fmt(w["pt"])}”</span> <small>{e(w["strong"])}</small> {pilula(w.get("certeza", "consenso"))}</div>'
+            f'<p>{fmt(w["significado"])}</p>'
+            f'<p class="no"><i style="color:{ink}">NO TEXTO</i> {fmt(w["no_texto"])}</p>'
+            f'<p class="mu"><i style="color:{ink}">O QUE MUDA</i> {fmt(w["muda"])}</p></div></div>')
+    mapa = ""
+    if d.get("mapa"):
+        mapa = (f'<div class="mapa-l">{mapa_svg(d["mapa"], ink, 300, agua="#DCEBF2", terra="#FBF3E1", borda="#E5D3A8", aspecto=1.0)}'
+                f'<p>{fmt(d["mapa"]["legenda"])}</p></div>')
+    m = d["mulher"]
+    fig = mulheres.figura(m["nome"], 128, m.get("figura"))
     return pg(f"""
 <header class="faixa-d" style="background:{tint}">
   <div><small style="color:{ink}">SEMANA {s["numero"]} · DIA {d["dia"]} · {e(B.BLOCO[d["bloco"]][1]).upper()}</small>
     <h1 style="color:{ink}">{e(d["passagem"])}</h1><p>{fmt(d["titulo"])}</p></div>
   <div class="sem" style="color:{ink};border-color:{ink}"><span>DIA</span><b>{d["dia"]}</b></div>
 </header>
-<div class="perg" style="border-color:#E9B949"><span class="scr">Para carregar hoje</span><p>{fmt(d["pergunta_guia"])}</p></div>
-<h2 class="h" style="color:{ink}">Leitura guiada <small>leia o texto na sua Bíblia</small></h2>
-<table class="est2">{est}</table>
-<h2 class="h" style="color:{ink}">No original <small>o que a tradução esconde</small></h2>
-<div class="pws2">{"".join(cards)}</div>
-<h2 class="h" style="color:{ink}">Conexões</h2>
-<ul class="con2">{con}</ul>
-<div class="fim2"><div><h2 class="h" style="color:{ink}">Penso e respondo</h2><ol>{refl}</ol></div>
-  <div class="ap" style="background:{tint}"><b style="color:{ink}">Aplicação de hoje</b>{fmt(d["aplicacao"])}</div></div>
+<div class="linhaA">
+  <div class="tempo">
+    <h2 class="h" style="color:{ink}"><i class="et" style="background:{ink}">ENTENDER</i> Naquele tempo</h2>
+    <div class="bl"><b style="color:{ink}">Quando?</b> {fmt(nt["quando"]["texto"])} {pilula(nt["quando"]["certeza"])}</div>
+    <div class="bl"><b style="color:{ink}">O que era comum</b> {fmt(nt["comum"]["texto"])} {pilula(nt["comum"]["certeza"])}</div>
+    <div class="cur"><b>✦ Curiosidade</b> {fmt(nt["curiosidade"])}</div>
+  </div>
+  {mapa}
+</div>
+<div class="perg"><span class="scr">Para carregar hoje</span><p>{fmt(d["pergunta_guia"])}</p></div>
+<h2 class="h" style="color:{ink}"><i class="et" style="background:{ink}">OBSERVAR</i> Leia na sua Bíblia e procure</h2>
+<ul class="obs3">{obs}</ul><p class="vt"><b style="color:{ink}">Veja também:</b> {veja}</p>
+<h2 class="h" style="color:{ink}"><i class="et" style="background:{ink}">ENTENDER</i> No original, ligado ao texto</h2>
+<div class="pws3">{"".join(cards)}</div>
+<div class="mulher" style="background:{tint}">
+  <div class="fig">{fig}</div>
+  <div class="mt">
+    <small style="color:{ink}"><i class="et" style="background:{ink}">APLICAR</i> UMA MULHER NA HISTÓRIA</small>
+    <h3 style="color:{ink}">{e(m["titulo"])} <em>{e(m["ref"])}</em></h3>
+    <p class="cz">“{fmt(m["cartaz"])}”</p>
+    <p>{fmt(m["reflexao"])}</p>
+    <p class="ph"><b style="color:{ink}">Para o meu dia:</b> {fmt(m["para_hoje"])}</p>
+    <div class="ln"></div>
+  </div>
+</div>
 <div class="fecha"><span class="ck" style="border-color:{ink}"></span>Orei <span class="ck" style="border-color:{ink}"></span>Li <span class="ck" style="border-color:{ink}"></span>Estudei <span class="ck" style="border-color:{ink}"></span>Resumi
   <span class="ck" style="border-color:{ink}"></span>Pintei o mapa</div>
 """, n, "dia")
@@ -264,13 +300,13 @@ h1, h2, h3, p, ul, ol { margin: 0; padding: 0 }
 /* semana */
 .faixa-s, .faixa-d { margin: -.5in -.5in 0 -.85in; padding: .5in .5in .22in .85in; display: flex; justify-content: space-between; align-items: center; gap: 12px }
 .verso .faixa-s, .verso .faixa-d { margin: -.5in -.85in 0 -.5in; padding: .5in .85in .22in .5in }
-.faixa-s { height: 1.6in } .faixa-d { height: 1.25in }
+.faixa-s { height: 1.6in } .faixa-d { height: 1.02in }
 .faixa-s small, .faixa-d small { font-size: 7pt; letter-spacing: .16em; font-weight: 700; display: block }
 .faixa-s h1 { font-size: 30pt; font-weight: 500; line-height: 1.1; margin-top: 4px }
-.faixa-d h1 { font-size: 25pt; font-weight: 500; line-height: 1.1 } .faixa-d p { font-size: 10pt; font-style: italic; margin-top: 2px }
+.faixa-d h1 { font-size: 23pt; font-weight: 500; line-height: 1.1 } .faixa-d p { font-size: 10pt; font-style: italic; margin-top: 2px }
 .sem { flex: none; width: .86in; height: .86in; border: 1.6px solid; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFDF8 }
 .sem span { font-size: 6.2pt; letter-spacing: .16em; font-weight: 700 } .sem b { font-size: 24pt; font-weight: 500; line-height: 1 }
-h2.h { font-size: 14pt; font-weight: 500; margin: 14px 0 5px } h2.h small { font-size: 7pt; color: #7B8A87; margin-left: 6px; font-weight: 600; letter-spacing: .04em }
+h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font-size: 7pt; color: #7B8A87; margin-left: 6px; font-weight: 600; letter-spacing: .04em }
 .vg { font-size: 9.3pt; line-height: 1.55 }
 .dois { display: grid; grid-template-columns: 2.35in 1fr; gap: 16px }
 .ficha2 { border-collapse: collapse; font-size: 8pt } .ficha2 th { text-align: left; vertical-align: top; padding: 3px 8px 3px 0; font-family: 'Nunito Sans', sans-serif; font-size: 7pt; letter-spacing: .08em; text-transform: uppercase }
@@ -294,12 +330,12 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 14px 0 5px } h2.h small { font
 .hb.g { font-family: 'SBL Greek', 'Times New Roman', 'DejaVu Serif', serif }
 .pw b { font-size: 9.4pt; font-weight: 600 } .pw small { font-size: 6.4pt; color: #6B7B78 } .pw em { display: block; font-size: 7.8pt; line-height: 1.25; color: #4D5E5B }
 .ccs { display: grid; gap: 7px } .cc { border-left: 4px solid; background: #FFFBF4; border-radius: 4px 14px 14px 4px; padding: 6px 10px; font-size: 8.4pt } .cc b { display: block; font-size: 9.6pt; font-weight: 600 }
-.bencao { margin-top: 14px; border-radius: 20px; color: #fff; padding: 11px 20px 13px; text-align: left }
+.bencao { margin-top: 10px; border-radius: 20px; color: #fff; padding: 11px 20px 13px; text-align: left }
 .bencao small { font-size: 6.4pt; letter-spacing: .2em; font-weight: 700; opacity: .9 } .bencao h3 { font-size: 26pt; line-height: 1.05 } .bencao p { font-size: 9.2pt; line-height: 1.5; margin-top: 3px }
 .notas2 { margin-top: 10px; font-size: 9pt } .ln { border-bottom: 1px solid #E1DACB; height: 22px }
 /* dia */
-.perg { margin-top: 10px; border: 1.8px dashed; border-radius: 16px; background: #FFF6D6; padding: 5px 14px 7px }
-.perg .scr { font-size: 15pt; color: #A06F0A; line-height: 1.1 } .perg p { font-size: 10.2pt; font-weight: 600; line-height: 1.35 }
+.perg { margin-top: 6px; border: 1.8px dashed; border-radius: 16px; background: #FFF6D6; padding: 5px 14px 7px }
+.perg .scr { font-size: 15pt; color: #A06F0A; line-height: 1.1 } .perg p { font-size: 9.8pt; font-weight: 600; line-height: 1.35 }
 .est2 { border-collapse: collapse; font-size: 8.2pt; width: 100% } .est2 td { padding: 2px 4px; border-bottom: 1px dotted #D8D2C0; vertical-align: top } .est2 .rf { font: 800 7.6pt 'Nunito Sans', sans-serif; white-space: nowrap; width: .62in }
 .pws2 { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 14px }
 .pw2 { display: flex; gap: 8px; align-items: flex-start; font-size: 7.9pt; line-height: 1.3 } .pw2 .hb { width: .84in; height: .66in; font-size: 16pt }
@@ -310,6 +346,29 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 14px 0 5px } h2.h small { font
 .ap { border-radius: 16px; padding: 9px 14px; font-size: 8.8pt; margin-top: 14px; line-height: 1.4 } .ap b { display: block; font-size: 10pt; margin-bottom: 2px }
 .fecha { position: absolute; left: .85in; right: .5in; bottom: .45in; font: 700 7.8pt 'Nunito Sans', sans-serif; color: #5A6B68; display: flex; gap: 6px; align-items: center }
 .verso .fecha { left: .5in; right: .85in }
+
+/* dia v2 */
+.et { font: 800 6pt 'Nunito Sans', sans-serif; font-style: normal; letter-spacing: .12em; color: #fff; border-radius: 99px; padding: 1px 7px; margin-right: 6px; vertical-align: 2px }
+.linhaA { display: grid; grid-template-columns: 1fr 1.95in; gap: 14px; align-items: start; margin-top: 2px }
+.tempo .bl { font-size: 8.3pt; line-height: 1.38; margin-bottom: 4px } .tempo .bl b { font-weight: 700 }
+.cur { background: #FFF2C9; border-radius: 12px; padding: 6px 11px; font-size: 8.4pt; line-height: 1.4 } .cur b { color: #A06F0A }
+.mapa-l { margin-top: 12px } .mapa-l svg { width: 100%; height: auto; display: block } .mapa-l p { font-size: 6.9pt; color: #6B7B78; font-style: italic; line-height: 1.3; margin-top: 3px }
+.obs3 { padding-left: 18px; font-size: 8.8pt; line-height: 1.4 } .obs3 li { margin-bottom: 2px } .vt { font-size: 8pt; margin-top: 3px }
+.pws3 { display: grid; gap: 6px }
+.pw3 { display: flex; gap: 10px; align-items: flex-start; background: #FFFBF4; border-radius: 14px; padding: 5px 9px }
+.pw3 .hb { width: .9in; height: .74in; font-size: 17pt }
+.pw3 .tx { flex: 1; font-size: 7.8pt; line-height: 1.3 } .pw3 .tx p { margin: 1px 0 0 } .pw3 .l1 b { font-size: 10pt; font-weight: 600 } .pw3 .l1 small { font-size: 6.2pt; color: #6B7B78 }
+.pw3 i { font: 800 5.9pt 'Nunito Sans', sans-serif; font-style: normal; letter-spacing: .1em; margin-right: 4px }
+.mulher { display: flex; gap: 12px; border-radius: 22px; padding: 8px 16px 8px 10px; margin-top: 8px; align-items: flex-start }
+.mulher .fig { flex: none; width: 1.15in } .mulher .fig svg { width: 100%; height: auto; display: block }
+.mulher .mt { flex: 1; font-size: 8.2pt; line-height: 1.38 } .mulher small { font-size: 6.4pt; letter-spacing: .14em; font-weight: 800; display: block }
+.mulher h3 { font-size: 15pt; font-weight: 500; line-height: 1.15 } .mulher h3 em { font: 600 7.4pt 'Nunito Sans', sans-serif; color: #6B7B78; font-style: normal; margin-left: 4px }
+.mulher .cz { font-style: italic; font-weight: 600; font-size: 10pt; margin: 2px 0 3px } .mulher .ph { margin-top: 4px } .mulher .ln { height: 17px }
+.glos { font-size: 8pt; line-height: 1.35 } .glos b { font-weight: 700 }
+.chips { display: flex; gap: 6px; flex-wrap: wrap } .chip { background: #FFFBF4; border: 1.4px solid; border-radius: 99px; padding: 2px 11px 2px 3px; display: flex; align-items: center; gap: 6px; font-size: 8.4pt }
+.chip svg { width: 26px; height: auto; border-radius: 50% } .chip small { font-size: 6.4pt; color: #6B7B78 }
+.tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 6px 0 14px }
+.tres div { background: #fff; border-radius: 16px; padding: 7px 10px; font-size: 8.2pt; line-height: 1.35; border: 1.5px solid #F4C9C2 } .tres b { display: block; font-size: 10pt; color: #2F6F68 }
 """
 
 FONTES = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?'

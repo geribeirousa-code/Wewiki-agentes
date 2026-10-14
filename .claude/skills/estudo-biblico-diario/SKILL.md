@@ -91,6 +91,21 @@ Direção visual da Gê (referência: planner floral em espiral): fundo creme, v
 
 Estrutura planejada: **capa → boas-vindas → sumário → [por semana: abertura (2 páginas) + 6 páginas de dia]**. Conteúdo em `Bíblia/planner/semanas/SEMANA-NN.json` (visão geral, pano de fundo, mapa, linha do tempo, plano de leitura, palavras da semana, bênção) e nos `DIA-NNN-*.json` (use `leitura.estrutura_planner` com 6 linhas; o planner mostra até 6 palavras e 6 conexões, 2 perguntas). As mesmas regras de fidelidade ao original e de selos de certeza valem aqui.
 
+### Público e tom (decisão da Gê, 2026-10-14)
+
+O planner é para a Gê **e para outras mulheres**: mães, mulheres que trabalham fora, empresárias, **sem hábito de estudar a Bíblia**. Frases curtas, sem jargão (explique "Septuaginta", "genealogia" etc. na hora ou no quadro "Palavras difíceis"), exemplos do dia a dia (casa, trabalho, filhos, negócio). Tom acolhedor, sem infantilizar e sem doutrinar.
+
+### Página do dia (v2, 1 folha)
+
+Ordem: **Naquele tempo** (quando, o que era comum, curiosidade) + **mapa estreito na lateral** → pergunta do dia → **Observar** (3 coisas para procurar) → **No original, ligado ao texto** (3 palavras) → **Uma mulher na história** (rodapé fixo) → fechamento do dia.
+Cada passo é rotulado ENTENDER, OBSERVAR ou APLICAR, para ensinar o método de leitura.
+
+Campos novos no `DIA-*.json`: `naquele_tempo{quando, comum, curiosidade}`, `mapa` (com `legenda` curta; **sempre que possível, todo dia tem mapa**), `observar[]` (3), `veja_tambem[]`, `original_planner[]` (3 a 4 itens com `significado`, **`no_texto`** = onde aparece e o que o verso diz, e **`muda`** = o que muda na leitura), `mulher{nome, titulo, ref, cartaz, reflexao, para_hoje, figura?}`.
+
+**Regra da mulher:** se o texto do dia fala de uma mulher, use ela, **no que foi bom e no que foi ruim** (Eva, Sara e Hagar, Raabe, Ana, Rute, Ester, Maria, mas também Mical, Dalila, Jezabel, Safira...), com uma reflexão curta de encorajamento que sirva a uma mulher comum de hoje. Sem mulher no texto, escolha uma do mesmo livro ou período. Não invente fatos nem fale por ela além do que o texto diz. Figuras em `scripts/mulheres.py` (`CATALOGO`; nova mulher = nova entrada). São ilustrações genéricas, não retratos.
+
+Cada semana (`SEMANA-NN.json`) ganhou `mulheres[]` (chips), `conexoes[]` (6) e `glossario[]` ("palavras difíceis").
+
 Status: **protótipo de 6 páginas** (capa, boas-vindas, sumário, semana 1 em 2 páginas, dia 1). Falta produzir as 94 semanas e dividir em volumes para encadernar.
 
 ## Limites honestos

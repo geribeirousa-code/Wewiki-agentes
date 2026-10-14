@@ -164,5 +164,59 @@
       "certeza": "maioria"
     }
   ],
-  "bencao": "Que nesta semana você redescubra que foi feita à imagem de Deus, chamada pelo nome e sustentada pela mesma palavra que acendeu a luz no primeiro dia. Que o seu descanso seja confiança, e o seu trabalho, adoração."
+  "bencao": "Que nesta semana você redescubra que foi feita à imagem de Deus, chamada pelo nome e sustentada pela mesma palavra que acendeu a luz no primeiro dia. Que o seu descanso seja confiança, e o seu trabalho, adoração.",
+  "mulheres": [
+    {
+      "nome": "Eva",
+      "ref": "Gn 1–4"
+    },
+    {
+      "nome": "A esposa de Noé",
+      "ref": "Gn 6:18; 7:7"
+    },
+    {
+      "nome": "Sara",
+      "ref": "Gn 11:29–12:5 (aqui ainda Sarai)"
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "Enuma Elish",
+      "texto": "poema babilônico antigo sobre a origem do mundo"
+    },
+    {
+      "termo": "Genealogia",
+      "texto": "lista de quem gerou quem; mostra a história passando de geração em geração"
+    },
+    {
+      "termo": "Aliança",
+      "texto": "um compromisso sério entre Deus e as pessoas, com promessas"
+    }
+  ],
+  "conexoes": [
+    {
+      "ref": "Jo 1:1–3",
+      "texto": "João também começa com “No princípio”."
+    },
+    {
+      "ref": "Hb 11:3",
+      "texto": "Pela fé entendemos que Deus fez o universo com a sua palavra."
+    },
+    {
+      "ref": "Mt 19:4–6",
+      "texto": "Jesus cita Gn 1:27 e 2:24 sobre o casamento."
+    },
+    {
+      "ref": "Is 45:18",
+      "texto": "Deus formou a terra para ser habitada."
+    },
+    {
+      "ref": "Hb 11:7",
+      "texto": "Noé: fé que o fez construir a arca."
+    },
+    {
+      "ref": "Rm 4:1–3",
+      "texto": "Paulo usa Abraão como exemplo de fé."
+    }
+  ]
 }

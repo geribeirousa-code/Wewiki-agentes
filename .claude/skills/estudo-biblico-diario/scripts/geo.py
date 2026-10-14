@@ -83,26 +83,41 @@ def _colide(r, caixas):
     return False
 
 
-def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None, tinta=None):
+_N_MAPA = [0]
+
+
+def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None, tinta=None, aspecto=None):
     """`mapa` (do JSON do dia): regiao, lugares[], rotas[], rios_destaque[], textos[], nota."""
     nomes = mapa.get("lugares", [])
     for r in mapa.get("rotas", []):
         nomes = nomes + [n for n in r["lugares"] if n not in nomes]
     AGUA, TERRA_COR, BORDA = agua or globals()["AGUA"], terra or globals()["TERRA_COR"], borda or globals()["BORDA"]
+    _N_MAPA[0] += 1
+    uid = f"m{_N_MAPA[0]}"   # ids únicos: vários mapas na mesma página não podem dividir clipPath
     desconhecidos = [n for n in nomes if n not in LUGARES]
     if desconhecidos:
         raise SystemExit("Lugares fora de dados/lugares.json (adicione com fonte): " + ", ".join(desconhecidos))
     regiao = mapa.get("regiao", "auto")
     bb = _bbox_auto(nomes) if regiao == "auto" else (tuple(mapa["bbox"]) if regiao == "bbox" else REGIOES[regiao])
+    if aspecto:   # ajusta o recorte à proporção altura/largura pedida (mapa estreito na lateral)
+        lon0, lat0, lon1, lat1 = bb
+        cx, cy = (lon0 + lon1) / 2, (lat0 + lat1) / 2
+        cs = math.cos(math.radians(cy))
+        w, h = (lon1 - lon0) * cs, lat1 - lat0
+        if h / w < aspecto:
+            h = w * aspecto
+        else:
+            w = h / aspecto
+        bb = (cx - w / cs / 2, cy - h / 2, cx + w / cs / 2, cy + h / 2)
     f, H, k, c = _proj(bb, largura)
     H = round(H)
     forte = B.escurecer(cor, 0.35)
     o = [f'<svg class="mapa" viewBox="0 0 {largura} {H}" xmlns="http://www.w3.org/2000/svg" role="img" '
          f'aria-label="Mapa esquemático">',
-         f'<defs><clipPath id="rec"><rect width="{largura}" height="{H}" rx="14"/></clipPath>'
-         f'<marker id="seta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
+         f'<defs><clipPath id="rec{uid}"><rect width="{largura}" height="{H}" rx="14"/></clipPath>'
+         f'<marker id="seta{uid}" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">'
          f'<path d="M0,0L10,5L0,10z" fill="{forte}"/></marker></defs>',
-         f'<g clip-path="url(#rec)"><rect width="{largura}" height="{H}" fill="{AGUA}"/>']
+         f'<g clip-path="url(#rec{uid})"><rect width="{largura}" height="{H}" fill="{AGUA}"/>']
     for r in TERRA["aneis"]:
         o.append(f'<path d="{_caminho(r, f)}" fill="{TERRA_COR}" stroke="{BORDA}" stroke-width="1.1" stroke-linejoin="round"/>')
     for r in TERRA["lagos"]:
@@ -164,7 +179,7 @@ def mapa_svg(mapa, cor="#FF7EB6", largura=520, agua=None, terra=None, borda=None
             q = 0.13 * n
             d += f" Q{mx + nx / n * q:.1f},{my + ny / n * q:.1f} {x1:.1f},{y1:.1f}"
         o.append(f'<path d="{d}" fill="none" stroke="{cr}" stroke-width="3" stroke-dasharray="7 5" '
-                 f'stroke-linecap="round" marker-end="url(#seta)" opacity=".95"/>')
+                 f'stroke-linecap="round" marker-end="url(#seta{uid})" opacity=".95"/>')
 
     # pinos principais
     marcados = []

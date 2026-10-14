@@ -10,7 +10,7 @@
   ],
   "passagem": "Gênesis 1–2",
   "titulo": "No princípio: Deus fala, e o mundo existe",
-  "pergunta_guia": "Se Deus cria só com a palavra e chama tudo de “bom”, o que isso diz sobre quem Ele é — e sobre o valor do que Ele fez?",
+  "pergunta_guia": "Se Deus criou tudo só falando e chamou tudo de “bom”, o que isso diz sobre quem Ele é? E sobre o seu valor?",
   "contexto": {
     "ficha": [
       [
@@ -109,7 +109,13 @@
     "nota": "Os dias 1–3 dão forma a “espaços”; os dias 4–6 os enchem (luz → luzeiros; céu e mar → aves e peixes; terra → animais e humanos). O padrão está no texto; o que ele quer dizer é interpretado de modos diferentes. A Bíblia não dá uma data para a criação."
   },
   "mapa": {
-    "regiao": "mesopotamia",
+    "regiao": "bbox",
+    "bbox": [
+      40.3,
+      29.3,
+      49.2,
+      38.7
+    ],
     "lugares": [
       "Assur"
     ],
@@ -120,11 +126,11 @@
     "textos": [
       {
         "texto": "Assíria",
-        "lon": 42.4,
-        "lat": 37.9
+        "lon": 43.0,
+        "lat": 37.6
       }
     ],
-    "legenda": "Gn 2:10–14 cita quatro rios; dois deles são o **Tigre** (“Hidequel”) e o **Eufrates**. **Onde ficava o Éden é discutido: o mapa não marca esse lugar.**"
+    "legenda": "Gn 2:14 cita o **Tigre** e o **Eufrates**. Onde ficava o Éden é discutido: não aparece no mapa."
   },
   "leitura": {
     "estrutura": [
@@ -349,5 +355,81 @@
     "Léxico Strong/BDB (Blue Letter Bible): H5828 conferido em 13/10/2026; demais números Strong a conferir antes de citar",
     "Comparação com o Enuma Elish e “imagem”: J. H. Walton, The Lost World of Genesis One (2009)",
     "Trechos da NVI: confira na sua Bíblia"
-  ]
+  ],
+  "naquele_tempo": {
+    "quando": {
+      "texto": "Gn 1–2 fala do começo de tudo, antes de qualquer data que a gente consiga marcar. O texto foi guardado e contado pelo povo de Israel muito depois (a tradição diz que por Moisés, por volta de 1450–1250 a.C.).",
+      "certeza": "debate"
+    },
+    "comum": {
+      "texto": "A vida era trabalho com as mãos: cuidar da terra, do rebanho, da água. Quase todos os povos tinham **vários deuses**, cada um para uma parte da vida (chuva, colheita, filhos). Ouvir que **um só Deus** fez tudo e abençoou o descanso era novidade.",
+      "certeza": "maioria"
+    },
+    "curiosidade": "Em português, “humano” e “húmus” (terra fértil) vêm de raízes parentes, no latim. O hebraico faz um jogo parecido: **adam** (a pessoa) vem de **adamah** (o solo), em Gn 2:7."
+  },
+  "observar": [
+    "Conte quantas vezes aparece “Disse Deus” e “Deus viu que era bom” (Gn 1).",
+    "Procure o único “não é bom” de todo o capítulo 2 (Gn 2:18).",
+    "O dia 7 não tem “houve tarde e manhã”. O que Deus faz nele? (Gn 2:1–3)"
+  ],
+  "veja_tambem": [
+    "Jo 1:1–3",
+    "Hb 11:3",
+    "Mt 19:4–6",
+    "Ap 21–22"
+  ],
+  "original_planner": [
+    {
+      "pt": "sem forma e vazia",
+      "orig": "תֹהוּ וָבֹהוּ",
+      "translit": "tohu wabohu",
+      "lingua": "hebraico",
+      "strong": "H8414 + H922",
+      "significado": "“Sem forma” e “vazio”. As duas palavras até rimam em hebraico.",
+      "no_texto": "Gn 1:2: “a terra estava sem forma e vazia”.",
+      "muda": "O que faltava era forma e gente. Por isso Deus dá forma (dias 1–3) e depois enche (dias 4–6). Is 45:18 diz que Ele não a criou vazia, mas para ser habitada.",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "imagem",
+      "orig": "צֶלֶם",
+      "translit": "tselem",
+      "lingua": "hebraico",
+      "strong": "H6754",
+      "significado": "“Imagem”: uma figura que representa alguém.",
+      "no_texto": "Gn 1:26–27: “à nossa imagem”, homem e mulher.",
+      "muda": "Reis antigos erguiam estátuas suas para mostrar quem mandava ali. Na Bíblia, cada pessoa, mulher e homem, é essa “imagem”. O seu valor vem de quem a fez.",
+      "certeza": "maioria"
+    },
+    {
+      "pt": "auxiliadora",
+      "orig": "עֵזֶר כְּנֶגְדּוֹ",
+      "translit": "ezer kenegdo",
+      "lingua": "hebraico",
+      "strong": "H5828 + H5048",
+      "significado": "“Ajuda” (ezer) + “que combina, à altura” (kenegdo).",
+      "no_texto": "Gn 2:18: “não é bom que o homem esteja só”.",
+      "muda": "“Ajudante” soa pequeno para nós. Mas a Bíblia usa ezer até para Deus (Sl 33:20). Aqui, ela é quem muda o único “não é bom”.",
+      "certeza": "consenso"
+    },
+    {
+      "pt": "criou",
+      "orig": "בָּרָא",
+      "translit": "bara’",
+      "lingua": "hebraico",
+      "strong": "H1254",
+      "significado": "O verbo “criar”. Na Bíblia, só Deus faz esse tipo de “criar”.",
+      "no_texto": "Gn 1:1, 21 e 27: o céu e a terra, os animais do mar e as pessoas.",
+      "muda": "Tudo começa com a iniciativa de Deus, não com o esforço humano.",
+      "certeza": "consenso"
+    }
+  ],
+  "mulher": {
+    "nome": "Eva",
+    "titulo": "Eva, a primeira mulher",
+    "ref": "Gn 1:27; 2:18–25",
+    "cartaz": "Antes de fazer qualquer coisa, já era “muito boa”.",
+    "reflexao": "Antes de qualquer erro, antes de produzir qualquer coisa, Deus olhou tudo o que fez e achou **“muito bom”** (Gn 1:31). Isso inclui você. Seu valor não vem de ser a mãe perfeita, a funcionária ou a empresária que não falha. Vem de ter sido criada por Ele.",
+    "para_hoje": "Quando a culpa de “não dar conta” aparecer hoje, lembre: você foi chamada de “muito boa” antes de produzir qualquer coisa."
+  }
 }
