@@ -20,6 +20,8 @@ import cenas
 from geo import mapa_svg
 from pdf import exportar_pdf
 
+NOME = "Mesa pra Dois"            # nome de trabalho (provisório; a Gê ainda não escolheu)
+SUBTITULO = "o meu diário de estudo bíblico com Jesus"
 PASTA_PLANNER = B.PASTA / "planner"
 IMAGENS = {}   # chave da cena -> caminho de uma pintura (jpg/png). Sem ela, usa o desenho vetorial simples.
 MAX_PALAVRAS_DIA = 3   # a página do dia é uma folha só: 3 palavras no original, bem ligadas ao texto
@@ -92,12 +94,12 @@ def capa(n):
 <div class="capa-bg">{flora.capa_delicada(816, 1056, 11)}</div>
 <div class="cartao">
   <div class="emb">{emblema(64, "#F4C3BB", "#FFF")}</div>
-  <div class="t1"><span class="scr">Estudo</span></div>
-  <div class="t1b">BÍBLIA</div>
+  <div class="t1"><span class="scr">Mesa</span></div>
+  <div class="t1b">PRA DOIS</div>
   <div class="div"><i></i>♥<i></i></div>
-  <div class="t2">EM PROFUNDIDADE</div>
-  <div class="t3">Uma jornada de 94 semanas<br>pelo contexto, pela cultura<br>e pelo texto original</div>
-  <div class="t4">para mulheres que vivem correndo</div>
+  <div class="t2sub">{e(SUBTITULO)}</div>
+  <div class="t3">94 semanas pelo contexto, pela cultura<br>e pelo texto original</div>
+  <div class="t4">um lugar só meu e dele</div>
 </div>""", n, "capa")
 
 
@@ -111,9 +113,9 @@ def boas_vindas(n):
     lista = "".join(f'<li><span class="bol">{i}</span><div><b>{a}</b><small>{b}</small></div></li>' for i, (a, b) in enumerate(passos, 1))
     return pg(f"""
 <div class="canto-fl">{flora.faixa(300, 150, 41, "salvia", 0)}</div>
-<div class="base-fl">{flora.faixa(816, 250, 77, "salvia", 0, 0.42, 0.55)}</div>
-<h1 class="scr gr">Esta jornada é de</h1>
-<div class="linha-nome"></div>
+<div class="base-fl" style="height:1.65in">{flora.faixa(816, 160, 77, "salvia", 0, 0.34, 0.5)}</div>
+<h1 class="scr gr">Esta mesa é de</h1>
+<div class="linha-nome"></div><p class="e-de">… e de Jesus.</p>
 <div class="datas2"><span>Comecei em ______ / ______ / ______</span><span>Termino em ______ / ______ / ______</span></div>
 <h2 class="sub">Como ler a Bíblia sem medo</h2>
 <div class="tres"><div><b>1 · Observar</b>O que o texto diz? Leia devagar e procure palavras repetidas, nomes e lugares.</div><div><b>2 · Entender</b>O que quis dizer para quem ouviu primeiro? Época, cultura e palavras no original ajudam.</div><div><b>3 · Aplicar</b>O que muda na minha casa, no meu trabalho, no meu coração?</div></div>
@@ -124,19 +126,102 @@ def boas_vindas(n):
 """, n, "boas")
 
 
-def sumario(n, semanas, pagina_inicial):
+def faixa_sigla(dias):
+    a, b = dias[0], dias[-1]
+    if a["sigla"] == b["sigla"]:
+        return f"{a['sigla']} {a['de']}–{b['ate']}"
+    return f"{a['sigla']} {a['de']} – {b['sigla']} {b['ate']}"
+
+
+def _cor_bloco(chave, f=0.0):
+    return B.misturar(B.BLOCO[chave][2], f)
+
+
+def plano_geral(n, semanas):
+    plano = B.ler_plano()
+    por_bloco = {}
+    for i, w in enumerate(semanas, 1):
+        por_bloco.setdefault(w[0]["bloco"], []).append(i)
+    vols = [("Volume 1", ["lei", "historicos"]), ("Volume 2", ["poeticos", "profetas"]), ("Volume 3", ["evangelhos", "atos", "paulinas", "gerais", "apocalipse"])]
+    dias_bloco = {c[0]: len([d for d in plano if d["bloco"] == c[0]]) for c in B.BLOCOS}
+    total = len(plano)
+    fita = "".join(f'<i style="flex:{dias_bloco[c[0]]};background:{_cor_bloco(c[0], .1)}" title="{c[1]}"></i>' for c in B.BLOCOS)
+    cartoes = []
+    for nome, chaves in vols:
+        sem = [x for c in chaves for x in por_bloco[c]]
+        linhas = "".join(
+            f'<li><span class="bl" style="background:{_cor_bloco(c, .1)}"></span><div><b>{e(B.BLOCO[c][1])}</b>'
+            f'<small>semanas {por_bloco[c][0]}–{por_bloco[c][-1]} · {dias_bloco[c]} dias</small></div></li>' for c in chaves)
+        cartoes.append(f'<div class="vol"><h3>{nome}</h3><p class="vs">semanas {sem[0]}–{sem[-1]} · cerca de {len(sem) * 10} páginas</p><ul>{linhas}</ul></div>')
+    dados = [("94", "semanas"), ("562", "dias de estudo"), ("1.189", "capítulos"), ("6", "dias por semana"), ("1h", "por dia"), ("~21", "meses")]
+    ds = "".join(f'<div><b>{a}</b><span>{b}</span></div>' for a, b in dados)
+    return pg(f"""
+<h1 class="scr tit-p">Meu plano de estudo</h1>
+<p class="intro-p">Do primeiro versículo ao último, em ordem de gênero, com o texto da sua Bíblia na mão e uma mesa guardada para Ele.</p>
+<div class="numeros">{ds}</div>
+<h2 class="h">A jornada inteira</h2>
+<div class="fita">{fita}</div>
+<div class="fita-leg"><span>Gênesis</span><span>Apocalipse</span></div>
+<h2 class="h">Os 3 volumes</h2>
+<div class="vols">{"".join(cartoes)}</div>
+<h2 class="h">Dica para não desistir</h2>
+<p class="intro-p">Se perder um dia, siga de onde parou. Não existe "atrasada" aqui. O domingo é seu e de Jesus, sem tarefa.</p>
+<div class="base-fl" style="height:1.9in">{flora.faixa(816, 182, 91, "salvia", 0, 0.36, 0.5)}</div>
+""", n, "geral")
+
+
+def semanas_vista(n, semanas, de, ate):
+    por = []
+    for i in range(de, ate + 1):
+        w = semanas[i - 1]
+        c = w[0]["bloco"]
+        por.append((i, c, faixa_sigla(w)))
+    blocos = []
+    atual, itens = None, []
+    for i, c, f in por:
+        if c != atual and itens:
+            blocos.append((atual, itens)); itens = []
+        atual = c
+        itens.append((i, f))
+    blocos.append((atual, itens))
+    html = ""
+    for c, itens in blocos:
+        cor, clara = _cor_bloco(c, .05), _cor_bloco(c, .82)
+        chips = "".join(f'<div class="sv" style="border-color:{cor}"><span class="ck" style="border-color:{cor}"></span><b>S{i}</b> {e(f)}</div>' for i, f in itens)
+        html += f'<h3 class="bh" style="background:{cor}">{e(B.BLOCO[c][1])}</h3><div class="svs" style="background:{clara}">{chips}</div>'
+    return pg(f'<h1 class="scr tit-p">As 94 semanas</h1><p class="intro-p peq">Pinte a bolinha quando terminar a semana.</p>{html}<div class="base-fl" style="height:1.9in">{flora.faixa(816, 182, 93, "salvia", 0, .3, .5)}</div>', n, "vista")
+
+
+def meu_porque(n):
+    return pg(f"""
+<h1 class="scr tit-p">Por que estou aqui</h1>
+<p class="intro-p">Este é o seu espaço. Escreva sem pressa e sem medo de errar.</p>
+<div class="pq"><b>Por que eu quero estudar a Bíblia agora?</b><div class="ln"></div><div class="ln"></div></div>
+<div class="pq"><b>O que costuma me atrapalhar?</b><div class="ln"></div><div class="ln"></div></div>
+<div class="pq"><b>O que eu peço a Jesus para este tempo?</b><div class="ln"></div><div class="ln"></div></div>
+<div class="duas-r">
+  <div class="pq"><b>Meu horário</b><div class="op"><span class="ck"></span>manhã <span class="ck"></span>tarde <span class="ck"></span>noite</div></div>
+  <div class="pq"><b>Meu cantinho</b><div class="ln"></div></div>
+</div>
+<div class="carta"><b class="scr">Carta para Jesus</b><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div>
+<p class="assina">Assinado: <u></u> &nbsp; Data: <u class="d"></u></p>
+<div class="base-fl" style="height:1.8in">{flora.faixa(816, 173, 95, "salvia", 0, 0.34, 0.5)}</div>
+""", n, "porque")
+
+
+def sumario(n, semanas, pagina_inicial, paginas_por_semana=10):
     linhas = []
     for i, w in enumerate(semanas[:len(TITULOS_SEMANAS)], 1):
         pal = flora.ORDEM[(i - 1) % 5]
         ink, tint, _ = ACENTO[pal]
-        pag = pagina_inicial + (i - 1) * 8
+        pag = pagina_inicial + (i - 1) * paginas_por_semana
         linhas.append(
             f'<div class="linha-s" style="background:{tint}"><div class="txt"><small style="color:{ink}">SEMANA {i}</small>'
             f'<b style="color:{ink}">{e(TITULOS_SEMANAS[i - 1])}</b><em>{e(faixa_passagem(w))}</em></div>'
             f'<span class="pag" style="color:{ink}">{pag}</span><div class="fx">{flora.faixa(190, 62, 100 + i, pal)}</div></div>')
     return pg(f"""
-<header class="faixa-t" style="background:#E4EFE8"><h1>Sumário</h1><div>{emblema(48)}</div></header>
-<div class="sumario">{"".join(linhas)}<p class="cont">… e assim por diante, até a semana 94 (Apocalipse). Esta é a amostra das 9 primeiras.</p></div>
+<header class="faixa-t" style="background:#E4EFE8"><h1>Sumário <small>Volume 1</small></h1><div>{emblema(48)}</div></header>
+<div class="sumario">{"".join(linhas)}<p class="cont">… e segue até a semana 35 (fim dos Históricos). Aqui, a amostra das 9 primeiras.</p></div>
 """, n, "sumario")
 
 
@@ -325,8 +410,8 @@ h1, h2, h3, p, ul, ol { margin: 0; padding: 0 }
 /* boas-vindas */
 .boas .canto-fl { position: absolute; right: .5in; top: .5in; width: 3.1in; opacity: .95 } .boas .canto-fl svg { width: 100%; height: auto; border-radius: 16px }
 .gr { font-size: 40pt; color: #2F6F68; margin-top: .55in; line-height: 1.1 }
-.linha-nome { border-bottom: 1.5px solid #CFC9B8; height: 30px; width: 3.7in }
-.boas .base-fl { position: absolute; left: 0; right: 0; bottom: 0; height: 2.6in } .boas .base-fl svg { width: 8.5in; height: 2.6in; display: block }
+.e-de { font-family: 'Parisienne', cursive; font-size: 22pt; color: #B0716A; margin-top: 2px } .linha-nome { border-bottom: 1.5px solid #CFC9B8; height: 30px; width: 3.7in }
+.base-fl { position: absolute; left: 0; right: 0; bottom: 0 } .base-fl svg { width: 8.5in; height: 100%; display: block }
 .datas2 { display: flex; flex-direction: column; gap: 6px; margin: 10px 0 22px; font-size: 9pt; color: #5A6B68 }
 .sub { font-size: 16pt; color: #2F6F68; font-weight: 600; margin: 4px 0 10px }
 .passos { list-style: none; display: grid; gap: 7px }
@@ -427,7 +512,7 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 /* capa v2 */
 .pg.capa .cartao { position: absolute; left: 1.44in; top: 3.08in; width: 5.63in; height: 4.9in; text-align: center; color: #2F5F5A; display: flex; flex-direction: column; align-items: center; justify-content: center }
 .pg.capa .emb { margin-bottom: 4px }
-.pg.capa .t1 .scr { font-size: 50pt; line-height: 1; color: #B0716A } .t1b { font-size: 46pt; letter-spacing: .16em; font-weight: 500; line-height: 1.05; margin-top: -4px; padding-left: .16em }
+.t2sub { font-style: italic; font-size: 12.5pt; color: #2F5F5A; margin-top: 2px } .pg.capa .t1 .scr { font-size: 58pt; line-height: 1; color: #B0716A } .t1b { font-size: 40pt; letter-spacing: .2em; font-weight: 500; line-height: 1.05; margin-top: -4px; padding-left: .16em }
 .div { display: flex; align-items: center; gap: 10px; color: #E98CA5; margin: 6px 0 4px; font-size: 11pt } .div i { display: block; width: 70px; height: 1px; background: #D9C9A8 }
 .pg.capa .t2 { font-size: 13pt; letter-spacing: .3em; margin-top: 4px } .pg.capa .t3 { font-size: 10.4pt; margin-top: 12px; line-height: 1.55 }
 .t4 { font-family: 'Parisienne', cursive; font-size: 17pt; color: #B0716A; margin-top: 14px }
@@ -461,6 +546,19 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .pincel { position: absolute; left: .25in; right: .6in; bottom: .38in; z-index: 3 }
 .pincel span { display: inline-block; background: #E4688F; color: #fff; font: italic 500 13.5pt 'Lora', serif; padding: 9px 30px 9px 22px; clip-path: polygon(0 12%, 3% 0, 97% 6%, 100% 38%, 98% 100%, 4% 94%, 1% 66%); box-shadow: 0 2px 0 #0000001A }
 .ptxt p { margin-top: 6px }
+
+/* front matter */
+h1.tit-p { font-size: 40pt; color: #2F6F68; line-height: 1.1; margin: 2px 0 4px } .intro-p { margin-bottom: 10px; font-size: 10pt; line-height: 1.55; color: #4D5E5B; max-width: 6in } .intro-p.peq { font-size: 8.6pt }
+.numeros { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; margin: 12px 0 4px } .numeros div { background: #E4EFE8; border-radius: 16px; padding: 8px 4px; text-align: center } .numeros b { display: block; font: 800 17pt 'Nunito Sans', sans-serif; color: #2F6F68 } .numeros span { font-size: 7.4pt; color: #5A6B68 }
+.fita { display: flex; height: 26px; border-radius: 13px; overflow: hidden; gap: 2px } .fita i { display: block } .fita-leg { display: flex; justify-content: space-between; font-size: 7.6pt; color: #6B7B78; margin-top: 3px }
+.vols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px } .vol { background: #FFFBF4; border: 1.6px solid #E7DCC4; border-radius: 18px; padding: 8px 12px 10px } .vol h3 { font-size: 14pt; font-weight: 500; color: #2F6F68 } .vol .vs { font-size: 7.6pt; color: #6B7B78; margin-bottom: 5px }
+.vol ul { list-style: none; display: grid; gap: 5px } .vol li { display: flex; gap: 8px; align-items: center } .vol .bl { width: 14px; height: 14px; border-radius: 50%; flex: none } .vol b { font-size: 9pt } .vol small { display: block; font-size: 7pt; color: #6B7B78; letter-spacing: 0 }
+.bh { font: 800 8pt 'Nunito Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #fff; padding: 3px 12px; border-radius: 99px 99px 0 0; width: fit-content; margin: 10px 0 0 }
+.svs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px 10px; padding: 8px 12px; border-radius: 0 14px 14px 14px } .sv { background: #fff; border: 1.3px solid; border-radius: 99px; padding: 1.5px 9px 1.5px 4px; font-size: 7.6pt; display: flex; align-items: center; gap: 5px; white-space: nowrap } .sv b { font: 800 7pt 'Nunito Sans', sans-serif; color: #6B7B78 }
+.pq { margin-bottom: 8px } .pq > b { font-size: 10pt; color: #2F6F68; display: block } .pq .ln { height: 25px } .pq .op { font-size: 9pt; margin-top: 6px }
+.carta { background: #FFF6F1; border: 1.6px dashed #E9B7AC; border-radius: 18px; padding: 8px 18px 10px; margin-top: 6px } .carta b.scr { font-size: 22pt; color: #B0716A; font-weight: 400 } .carta .ln { height: 25px; border-color: #F0D8D0 }
+.assina { font-size: 9pt; margin-top: 10px; color: #6B7B78 } .assina u { display: inline-block; width: 2.2in; border-bottom: 1px solid #CFC9B8; text-decoration: none } .assina u.d { width: 1in }
+.faixa-t h1 small { font: 700 9pt 'Nunito Sans', sans-serif; color: #6B7B78; letter-spacing: .1em; margin-left: 8px }
 """
 
 FONTES = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?'
@@ -472,10 +570,11 @@ def montar():
     sems = semanas_do_plano()
     s1 = json.loads((PASTA_PLANNER / "semanas" / "SEMANA-01.json").read_text(encoding="utf-8"))
     d1 = json.loads(next((B.PASTA / "estudos").glob("DIA-001-*.json")).read_text(encoding="utf-8"))
-    paginas = [capa(1), boas_vindas(2), sumario(3, sems, 4), semana_esq(4, s1, sems[0]), semana_dir(5, s1, sems[0]),
-               pagina_dia(6, d1, s1), revisao(7, s1), pausa(8, "banheiro", IMAGENS.get("banheiro")),
-               pausa(9, "controle", IMAGENS.get("controle")), pausa(10, "presenca", IMAGENS.get("presenca"))]
-    return (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Estudo Bíblia em Profundidade (protótipo)</title>'
+    paginas = [capa(1), boas_vindas(2), plano_geral(3, sems), semanas_vista(4, sems, 1, 47), semanas_vista(5, sems, 48, 94),
+               meu_porque(6), sumario(7, sems, 8),
+               semana_esq(8, s1, sems[0]), semana_dir(9, s1, sems[0]), pagina_dia(10, d1, s1),
+               revisao(16, s1), pausa(17, "banheiro", IMAGENS.get("banheiro"))]
+    return (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>{NOME} (protótipo)</title>'
             f'{FONTES}<style>{CSS}</style></head><body>{"".join(paginas)}</body></html>')
 
 
