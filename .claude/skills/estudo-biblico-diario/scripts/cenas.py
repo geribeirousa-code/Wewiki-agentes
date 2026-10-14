@@ -28,19 +28,19 @@ CENAS = {
         cena="inside a small home bathroom with the door closed, she stands with eyes shut and hands clasped in prayer, a laundry basket and a rubber duck nearby, toys on the floor; Jesus leans casually against the sink with arms crossed, smiling patiently."),
     "agenda": dict(
         ref="Lucas 10:41–42", legenda="Oração: entre “tirar o lixo” e “pagar o boleto”.",
-        bolhas=[("ela", "Eu vou te encaixar na agenda, prometo!"), ("jesus", "Eu não quero ser um item da lista. Eu quero você.")],
+        bolhas=[("ela", "Eu vou te encaixar na agenda, **prometo**!"), ("jesus", "Eu não quero ser um item da lista. Eu quero **você**.")],
         texto="Marta estava ocupada com muitas coisas e Jesus a chamou pelo nome, com carinho: uma só coisa é necessária. Ele não quer ser mais uma tarefa riscada. Quer a sua companhia.",
         oracao="“Senhor, ensina-me a parar um minuto sem culpa.”",
         cena="she holds a huge overflowing planner full of colorful sticky notes, a phone and a coffee, looking frazzled; Jesus holds up a tiny sticky note that says nothing (blank), smiling warmly at her."),
     "presenca": dict(
         ref="Romanos 8:1", legenda="A culpa de não ter orado “como deveria”.",
-        bolhas=[("ela", "Faz três dias que eu não leio a Bíblia… de novo."), ("jesus", "Eu não tenho lista de presença, filha.")],
+        bolhas=[("ela", "Faz três dias que eu não leio a Bíblia… de novo."), ("jesus", "Eu não tenho **lista de presença**, filha.")],
         texto="Para quem está em Cristo, diz a Bíblia, não há condenação. Ele não cobra caderneta de presença. Cada vez que você volta, ele já está esperando, sem sermão.",
         oracao="“Senhor, eu volto. Obrigada por não me cobrar.”",
         cena="she sits on the sofa late at night hugging a pillow, looking guilty, with a closed Bible on the table; Jesus sits beside her holding a blank attendance clipboard upside down and smiling gently."),
     "controle": dict(
         ref="1 Pedro 5:7", legenda="Eu dou conta de tudo sozinha!",
-        bolhas=[("jesus", "Posso segurar alguma coisa pra você?"), ("ela", "Não precisa, eu dou conta! (as pernas tremendo)")],
+        bolhas=[("ela", "Eu dou conta de **tudo** sozinha! (as pernas tremendo)"), ("jesus", "Posso segurar alguma coisa pra você?")],
         texto="Pedro escreveu: lancem sobre ele toda a ansiedade, porque ele cuida de vocês. Segurar tudo sozinha não prova que você é forte. Entregar é que é.",
         oracao="“Senhor, pega esta parte. Eu estou cansada.”",
         cena="she is balancing an absurd tower of things in her arms (laundry basket, laptop, a pot, a child's backpack, a calendar), her knees trembling but forcing a big smile; Jesus offers his open hands to take something, smiling."),

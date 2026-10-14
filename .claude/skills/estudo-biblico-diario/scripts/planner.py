@@ -289,12 +289,7 @@ def pausa(n, chave, imagem=None):
     html_b = []
     for k, (quem, txt) in enumerate(bol):
         pos = "u" if len(bol) == 1 else ("l" if quem == "ela" else "r")
-        # ela (esq.) e Jesus (dir.) ficam no alto, sem cobrir rostos; se Jesus fala primeiro, ela desce um pouco para a leitura seguir o diálogo
         topo = ""
-        if len(bol) > 1 and bol[0][0] == "jesus":
-            topo = f' style="top:{.12 if quem == "jesus" else .75:.2f}in"'
-        elif len(bol) > 1:
-            topo = ' style="top:.12in"'
         html_b.append(f'<div class="bal {quem} {pos}"{topo}>{fmt(txt)}</div>')
     return pg(f"""
 <div class="arte">{arte}{"".join(html_b)}<div class="pincel"><span>{fmt(c["legenda"])}</span></div></div>
@@ -302,7 +297,7 @@ def pausa(n, chave, imagem=None):
   <small>UMA PAUSA PARA VOCÊ · {e(c["ref"]).upper()}</small>
   <p>{fmt(c["texto"])}</p>
   <p class="or">{fmt(c["oracao"])}</p>
-  <div class="conv"><b>Converse com Ele</b>{"".join('<div class="ln"></div>' for _ in range(8))}</div>
+  <div class="conv"><b>Converse com Ele</b>{"".join('<div class="ln"></div>' for _ in range(5))}</div>
 </div>""", n, "pausa")
 
 
@@ -519,7 +514,7 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .capa-bg svg { width: 8.5in; height: 11in }
 /* pausa */
 .pg.pausa { padding: 0 }
-.pausa .arte { width: 8.5in; height: 5.67in; position: relative; overflow: hidden } .pausa .arte svg, .pausa .arte img { width: 100%; height: 100%; display: block; object-fit: cover }
+.pausa .arte { width: 8.5in; height: 6.6in; position: relative; overflow: hidden; background: #FBF1DF } .pausa .arte svg, .pausa .arte img { position: absolute; left: 0; bottom: 0; width: 8.5in; height: 5.67in; display: block; object-fit: cover; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 9%); mask-image: linear-gradient(to bottom, transparent 0, #000 9%) }
 .pausa .arte { background: #F8EEDD } .pausa .frase-old { position: absolute; top: .14in; left: 0; right: 0; text-align: center; font-family: 'Parisienne', cursive; font-size: 31pt; color: #8A5A33; line-height: 1.1; z-index: 2 } .pausa .falta { position: absolute; inset: .3in; border: 2px dashed #D9C9A8; border-radius: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #9AA8A4; font-size: 11pt }
 .pausa .arte::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: .5in; background: linear-gradient(to bottom, rgba(255,253,248,0), #FFFDF8) }
 .ptxt { padding: .15in 1in 0 1in; text-align: center }
@@ -538,11 +533,14 @@ h2.h { font-size: 14pt; font-weight: 500; margin: 11px 0 4px } h2.h small { font
 .celebra { margin-top: 4px } .celebra p { font-size: 9pt; margin-top: 6px } .celebra u { display: inline-block; width: 4.2in; border-bottom: 1px solid #DDD3EC; text-decoration: none; height: 12px }
 .semculpa { text-align: center; font-family: 'Parisienne', cursive; font-size: 17pt; color: #B0716A; margin-top: 12px }
 
-.bal { position: absolute; background: #FFFDF8; border: 2.6px solid #5B3A29; border-radius: 30px; padding: 6px 16px 8px; font: 400 15pt/1.18 'Patrick Hand', 'Comic Sans MS', cursive; color: #3B2A20; text-align: center; z-index: 3; box-shadow: 1px 2px 0 #0000001A }
-.bal.ela { border-color: #2F7C73 } .bal.jesus { border-color: #B0553A }
-.bal.l { left: .3in; top: .12in; width: 3.7in } .bal.r { right: .3in; top: .12in; width: 3.5in } .bal.u { left: 1.2in; right: 1.2in; top: .3in }
-.bal::after { content: ''; position: absolute; bottom: -17px; width: 22px; height: 22px; background: #FFFDF8; border-right: 2.6px solid; border-bottom: 2.6px solid; border-color: inherit; transform: skewX(-24deg) rotate(45deg) }
-.bal.l::after { left: 34% } .bal.r::after { right: 30% } .bal.u::after { left: 55% }
+ .bal { position: absolute; z-index: 3; padding: 9px 20px 11px; font: 400 16.5pt/1.15 'Patrick Hand', 'Comic Sans MS', cursive; color: #4A2B3A; text-align: center; border: 3px solid; border-radius: 46% 54% 50% 50% / 62% 58% 42% 38%; box-shadow: 2px 3px 0 #0000002A; transform: rotate(-1.6deg) }
+.bal b { font-weight: 400; font-size: 1.14em; color: #C23A6B; text-decoration: underline wavy #F4B400 1.5px; text-underline-offset: 3px }
+.bal.ela { background: #FFE0EA; border-color: #E4588A } .bal.jesus { background: #FFF2B8; border-color: #E8A210; transform: rotate(1.4deg); color: #4A3410 } .bal.jesus b { color: #B26A00 }
+.bal::after { content: ''; position: absolute; bottom: -19px; width: 24px; height: 24px; background: inherit; border-right: 3px solid; border-bottom: 3px solid; border-color: inherit; border-bottom-right-radius: 8px; transform: skewX(-22deg) rotate(45deg) }
+.bal.l::after { left: 44% } .bal.r::after { right: 38% } .bal.u::after { left: 55% }
+.bal::before { content: '✦'; position: absolute; top: -13px; font-size: 15pt; color: #F4B400; text-shadow: 1px 1px 0 #fff }
+.bal.l::before { left: 12px } .bal.r::before { right: 14px; color: #E4588A }
+.bal.l { left: .3in; top: .14in; width: 3.55in } .bal.r { right: .3in; top: .14in; width: 3.55in } .bal.u { left: 1.5in; right: 1.5in; top: .2in }
 .pincel { position: absolute; left: .25in; right: .6in; bottom: .38in; z-index: 3 }
 .pincel span { display: inline-block; background: #E4688F; color: #fff; font: italic 500 13.5pt 'Lora', serif; padding: 9px 30px 9px 22px; clip-path: polygon(0 12%, 3% 0, 97% 6%, 100% 38%, 98% 100%, 4% 94%, 1% 66%); box-shadow: 0 2px 0 #0000001A }
 .ptxt p { margin-top: 6px }
@@ -573,7 +571,9 @@ def montar():
     paginas = [capa(1), boas_vindas(2), plano_geral(3, sems), semanas_vista(4, sems, 1, 47), semanas_vista(5, sems, 48, 94),
                meu_porque(6), sumario(7, sems, 8),
                semana_esq(8, s1, sems[0]), semana_dir(9, s1, sems[0]), pagina_dia(10, d1, s1),
-               revisao(16, s1), pausa(17, "banheiro", IMAGENS.get("banheiro"))]
+               revisao(16, s1), pausa(17, "banheiro", IMAGENS.get("banheiro")),
+               pausa(18, "agenda", IMAGENS.get("agenda")), pausa(19, "controle", IMAGENS.get("controle")),
+               pausa(20, "presenca", IMAGENS.get("presenca"))]
     return (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>{NOME} (protótipo)</title>'
             f'{FONTES}<style>{CSS}</style></head><body>{"".join(paginas)}</body></html>')
 
